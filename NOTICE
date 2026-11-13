@@ -1,0 +1,20 @@
+ODYSSEY: Planetary Analog Mission Planner
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The Apache-2.0 licence applies only to the ODYSSEY team's original code and
+documentation. It does not relicense third-party code, data, imagery or fonts,
+which remain under their own terms (see THIRD_PARTY_NOTICES.md and DATA_SOURCES.md).
+
+This product includes text adapted from WA-on-test2/Reranker
+(mission_reranker.suggest_weights system prompt, Apache-2.0), reproduced in
+server/evidence/bridge.py.
+
+Optional external components are not included in this repository:
+- mernaahany/Earth-Location-Nasa (no licence file; not redistributed)
+- WA-on-test2/Reranker (Apache-2.0; repository is private)
+
+Contains modified Copernicus Sentinel data and Copernicus DEM data
+(© DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018, provided
+under COPERNICUS by the European Union and ESA), ESA WorldCover 2021 (CC-BY 4.0),
+Macrostrat (CC-BY 4.0), RADARSAT-1 data (Canadian Space Agency, open licence),
+and NASA data (POWER, MODIS, LRO LOLA via PDS, MGS MOLA, GIBS, Blue Marble).

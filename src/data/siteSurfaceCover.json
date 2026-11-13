@@ -1,0 +1,4731 @@
+{
+ "product": "ESA WorldCover 10 m 2021 v200",
+ "license": "CC-BY 4.0, \u00a9 ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+ "access": "Microsoft Planetary Computer STAC, collection esa-worldcover",
+ "resolutionM": 10,
+ "date": "2021",
+ "overallAccuracy": "76.7% (WorldCover 2021 v200 validation report)",
+ "resampling": "nearest (categorical)",
+ "classes": {
+  "10": "tree",
+  "20": "shrubland",
+  "30": "grassland",
+  "40": "cropland",
+  "50": "built",
+  "60": "bareSparse",
+  "70": "snowIce",
+  "80": "water",
+  "90": "herbaceousWetland",
+  "95": "mangrove",
+  "100": "mossLichen"
+ },
+ "note": "Class fractions inside the stated window. bareSparse is ground with < 10% vegetation all year: rock, sand, gravel or bare soil. It is an upper bound on exposed rock, not a rock-exposure measurement.",
+ "curated": {
+  "atacama": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S24W069"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0001,
+    "cropland": 0.0,
+    "built": 0.0004,
+    "bareSparse": 0.9992,
+    "snowIce": 0.0,
+    "water": 0.0003,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32719)"
+  },
+  "gobi": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42E102"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0035,
+    "grassland": 0.0014,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9951,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32648)"
+  },
+  "svalbard": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N78E015"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.105,
+    "cropland": 0.0,
+    "built": 0.0017,
+    "bareSparse": 0.3453,
+    "snowIce": 0.0633,
+    "water": 0.1529,
+    "herbaceousWetland": 0.0396,
+    "mangrove": 0.0,
+    "mossLichen": 0.2921
+   },
+   "bestBlockBareSparse": 0.9115,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32633)"
+  },
+  "dryvalleys": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "20.48 x 12.80 km DEM window (EPSG:32758)"
+  },
+  "cratersmoon": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42W114"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.021,
+    "shrubland": 0.0129,
+    "grassland": 0.2697,
+    "cropland": 0.0,
+    "built": 0.0004,
+    "bareSparse": 0.6959,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32612)"
+  },
+  "meteorcrater": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33W111",
+    "ESA_WorldCover_10m_2021_v200_N33W114"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0005,
+    "shrubland": 0.0059,
+    "grassland": 0.6417,
+    "cropland": 0.0001,
+    "built": 0.0002,
+    "bareSparse": 0.3515,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.7086,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32612)"
+  },
+  "hawaii": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N18W156"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.3751,
+    "shrubland": 0.0707,
+    "grassland": 0.2949,
+    "cropland": 0.0,
+    "built": 0.0034,
+    "bareSparse": 0.2559,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32605)"
+  },
+  "puna": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S27W069"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.999,
+    "snowIce": 0.0,
+    "water": 0.001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32719)"
+  },
+  "danakil": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N12E039"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9985,
+    "snowIce": 0.0,
+    "water": 0.0007,
+    "herbaceousWetland": 0.0007,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32637)"
+  },
+  "khaybar": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E039"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9999,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32637)"
+  },
+  "namib": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S24E012",
+    "ESA_WorldCover_10m_2021_v200_S24E015"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0016,
+    "shrubland": 0.0049,
+    "grassland": 0.0001,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9934,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32733)"
+  },
+  "bodele": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N15E015",
+    "ESA_WorldCover_10m_2021_v200_N15E018"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32634)"
+  },
+  "makgadikgadi": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S21E024"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0002,
+    "shrubland": 0.0516,
+    "grassland": 0.3728,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.4575,
+    "snowIce": 0.0,
+    "water": 0.0809,
+    "herbaceousWetland": 0.037,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32735)"
+  },
+  "nullarbor": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S33E126",
+    "ESA_WorldCover_10m_2021_v200_S33E129"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0005,
+    "grassland": 0.9995,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.0003,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32752)"
+  },
+  "chyulu": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S03E036"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1662,
+    "shrubland": 0.3431,
+    "grassland": 0.4272,
+    "cropland": 0.0321,
+    "built": 0.0,
+    "bareSparse": 0.0314,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.4209,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32737)"
+  },
+  "undara": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S21E144"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.6738,
+    "shrubland": 0.0023,
+    "grassland": 0.3236,
+    "cropland": 0.0,
+    "built": 0.0002,
+    "bareSparse": 0.0001,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.0015,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32755)"
+  },
+  "kerguelen": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S51E069"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.005,
+    "shrubland": 0.0058,
+    "grassland": 0.1265,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.6089,
+    "snowIce": 0.0002,
+    "water": 0.2515,
+    "herbaceousWetland": 0.0021,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.9995,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32742)"
+  },
+  "devon": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N72W087",
+    "ESA_WorldCover_10m_2021_v200_N72W090",
+    "ESA_WorldCover_10m_2021_v200_N75W087",
+    "ESA_WorldCover_10m_2021_v200_N75W090"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.3763,
+    "snowIce": 0.0034,
+    "water": 0.0009,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.6194
+   },
+   "bestBlockBareSparse": 0.7359,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32616)"
+  },
+  "riotinto": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36W009"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.3379,
+    "shrubland": 0.1917,
+    "grassland": 0.3454,
+    "cropland": 0.0159,
+    "built": 0.0161,
+    "bareSparse": 0.0605,
+    "snowIce": 0.0,
+    "water": 0.0324,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.8466,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32629)"
+  },
+  "lonar": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N18E075"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0187,
+    "shrubland": 0.0143,
+    "grassland": 0.1476,
+    "cropland": 0.7899,
+    "built": 0.0167,
+    "bareSparse": 0.0021,
+    "snowIce": 0.0,
+    "water": 0.0108,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.0208,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32643)"
+  },
+  "qaidam": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E093"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9993,
+    "snowIce": 0.0,
+    "water": 0.0007,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32646)"
+  },
+  "iceland": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N63W021"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0796,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.5055,
+    "snowIce": 0.1116,
+    "water": 0.0253,
+    "herbaceousWetland": 0.0002,
+    "mangrove": 0.0,
+    "mossLichen": 0.2778
+   },
+   "bestBlockBareSparse": 0.8345,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32627)"
+  },
+  "wadirum": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N27E033"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0015,
+    "grassland": 0.0089,
+    "cropland": 0.0,
+    "built": 0.0013,
+    "bareSparse": 0.9884,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32636)"
+  },
+  "ergchebbi": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30W006"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0012,
+    "shrubland": 0.0008,
+    "grassland": 0.0005,
+    "cropland": 0.0004,
+    "built": 0.0046,
+    "bareSparse": 0.9925,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32630)"
+  },
+  "wawannamus": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E015"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0003,
+    "shrubland": 0.0007,
+    "grassland": 0.0001,
+    "cropland": 0.0002,
+    "built": 0.0001,
+    "bareSparse": 0.9925,
+    "snowIce": 0.0,
+    "water": 0.006,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32633)"
+  },
+  "oldoinyo": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S03E033",
+    "ESA_WorldCover_10m_2021_v200_S03E036"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0086,
+    "shrubland": 0.0745,
+    "grassland": 0.8386,
+    "cropland": 0.009,
+    "built": 0.0001,
+    "bareSparse": 0.0678,
+    "snowIce": 0.0,
+    "water": 0.0014,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.5831,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32736)"
+  },
+  "uyuni": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S21W069"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9999,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32719)"
+  },
+  "pinacate": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30W114"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.001,
+    "shrubland": 0.6153,
+    "grassland": 0.0907,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.2929,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.8397,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32612)"
+  },
+  "mojave": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33W117"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0185,
+    "shrubland": 0.5702,
+    "grassland": 0.1511,
+    "cropland": 0.0,
+    "built": 0.0003,
+    "bareSparse": 0.2594,
+    "snowIce": 0.0,
+    "water": 0.0006,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.9836,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32611)"
+  },
+  "kamchatka": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N54E159"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.9831,
+    "shrubland": 0.0,
+    "grassland": 0.0076,
+    "cropland": 0.0,
+    "built": 0.0013,
+    "bareSparse": 0.0025,
+    "snowIce": 0.0,
+    "water": 0.0052,
+    "herbaceousWetland": 0.0002,
+    "mangrove": 0.0,
+    "mossLichen": 0.0001
+   },
+   "bestBlockBareSparse": 0.0767,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32657)"
+  },
+  "kawahijen": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S09E114"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.7378,
+    "shrubland": 0.0,
+    "grassland": 0.2405,
+    "cropland": 0.0159,
+    "built": 0.0022,
+    "bareSparse": 0.002,
+    "snowIce": 0.0,
+    "water": 0.0016,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.1091,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32750)"
+  },
+  "pinnacles": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S33E114"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.3048,
+    "shrubland": 0.0527,
+    "grassland": 0.0487,
+    "cropland": 0.0035,
+    "built": 0.0014,
+    "bareSparse": 0.0593,
+    "snowIce": 0.0,
+    "water": 0.5296,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.819,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32750)"
+  },
+  "whitedesert": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N27E027"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.0003,
+    "grassland": 0.0008,
+    "cropland": 0.006,
+    "built": 0.0013,
+    "bareSparse": 0.9914,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32635)"
+  },
+  "axelheiberg": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N78W090",
+    "ESA_WorldCover_10m_2021_v200_N78W093"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0099,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.1914,
+    "snowIce": 0.7143,
+    "water": 0.003,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0814
+   },
+   "bestBlockBareSparse": 0.8715,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32616)"
+  },
+  "kangerlussuaq": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N66W051"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0518,
+    "shrubland": 0.0,
+    "grassland": 0.4175,
+    "cropland": 0.0,
+    "built": 0.0004,
+    "bareSparse": 0.1151,
+    "snowIce": 0.0001,
+    "water": 0.1427,
+    "herbaceousWetland": 0.0007,
+    "mangrove": 0.0,
+    "mossLichen": 0.2717
+   },
+   "bestBlockBareSparse": 0.9429,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32622)"
+  },
+  "deathvalley": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36W117",
+    "ESA_WorldCover_10m_2021_v200_N36W120"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0004,
+    "shrubland": 0.0232,
+    "grassland": 0.0243,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9517,
+    "snowIce": 0.0,
+    "water": 0.0003,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 1.0,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32611)"
+  },
+  "wolfeCreek": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S21E126"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.01,
+    "shrubland": 0.0475,
+    "grassland": 0.9424,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0001,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.0018,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32752)"
+  },
+  "lanzarote": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N27W015"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0016,
+    "shrubland": 0.0023,
+    "grassland": 0.4205,
+    "cropland": 0.0106,
+    "built": 0.0542,
+    "bareSparse": 0.4789,
+    "snowIce": 0.0,
+    "water": 0.0317,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.9973,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32628)"
+  },
+  "socotra": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N12E051",
+    "ESA_WorldCover_10m_2021_v200_N12E054"
+   ],
+   "validPixels": 2621440,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0056,
+    "shrubland": 0.5259,
+    "grassland": 0.4443,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0241,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "bestBlockBareSparse": 0.1924,
+   "block": "2 x 2 km, 500 m stride, >= 90% valid pixels",
+   "window": "20.48 x 12.80 km DEM window (EPSG:32640)"
+  }
+ },
+ "candidates": {
+  "alcedo": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S03W093"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1965,
+    "shrubland": 0.5279,
+    "grassland": 0.2332,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0425,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32715)"
+  },
+  "altiplano": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S18W069",
+    "ESA_WorldCover_10m_2021_v200_S21W069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0017,
+    "grassland": 0.9049,
+    "cropland": 0.0041,
+    "built": 0.0004,
+    "bareSparse": 0.0884,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0003,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32719)"
+  },
+  "ambrym": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S18E168"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.5498,
+    "shrubland": 0.0008,
+    "grassland": 0.2372,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.2122,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32759)"
+  },
+  "askja": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N63W018"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8608,
+    "snowIce": 0.0131,
+    "water": 0.1167,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0094
+   },
+   "window": "10 x 10 km centred window (EPSG:32628)"
+  },
+  "aso": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30E129"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.5642,
+    "shrubland": 0.0,
+    "grassland": 0.2435,
+    "cropland": 0.1557,
+    "built": 0.0106,
+    "bareSparse": 0.0259,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32652)"
+  },
+  "badainjaran": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39E099",
+    "ESA_WorldCover_10m_2021_v200_N39E102"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0016,
+    "grassland": 0.0014,
+    "cropland": 0.0003,
+    "built": 0.0,
+    "bareSparse": 0.9957,
+    "snowIce": 0.0,
+    "water": 0.001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32648)"
+  },
+  "baffin": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N66W066",
+    "ESA_WorldCover_10m_2021_v200_N66W069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0818,
+    "snowIce": 0.9074,
+    "water": 0.005,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0059
+   },
+   "window": "10 x 10 km centred window (EPSG:32620)"
+  },
+  "bingham": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39W114"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.301,
+    "shrubland": 0.2054,
+    "grassland": 0.1465,
+    "cropland": 0.0001,
+    "built": 0.0064,
+    "bareSparse": 0.3402,
+    "snowIce": 0.0,
+    "water": 0.0004,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32612)"
+  },
+  "bplibya": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E024"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32635)"
+  },
+  "brent": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45W081"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.9158,
+    "shrubland": 0.0,
+    "grassland": 0.0122,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0001,
+    "snowIce": 0.0,
+    "water": 0.0672,
+    "herbaceousWetland": 0.0046,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32617)"
+  },
+  "campiflegrei": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39E012"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.3228,
+    "shrubland": 0.0187,
+    "grassland": 0.0787,
+    "cropland": 0.0078,
+    "built": 0.2268,
+    "bareSparse": 0.0048,
+    "snowIce": 0.0,
+    "water": 0.3401,
+    "herbaceousWetland": 0.0003,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32633)"
+  },
+  "carlsbad": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30W105"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0028,
+    "shrubland": 0.5499,
+    "grassland": 0.3451,
+    "cropland": 0.0,
+    "built": 0.0023,
+    "bareSparse": 0.0997,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32613)"
+  },
+  "cerrogalan": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S27W069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.1323,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8677,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32719)"
+  },
+  "charlevoix": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45W072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.8371,
+    "shrubland": 0.0,
+    "grassland": 0.1336,
+    "cropland": 0.019,
+    "built": 0.0032,
+    "bareSparse": 0.0005,
+    "snowIce": 0.0,
+    "water": 0.0053,
+    "herbaceousWetland": 0.0012,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32619)"
+  },
+  "coipasa": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S21W069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0042,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.5222,
+    "snowIce": 0.0,
+    "water": 0.4735,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32719)"
+  },
+  "cotopaxi": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S03W081"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0007,
+    "shrubland": 0.002,
+    "grassland": 0.4598,
+    "cropland": 0.0005,
+    "built": 0.0,
+    "bareSparse": 0.4027,
+    "snowIce": 0.1344,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32717)"
+  },
+  "couture": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N60W078"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0421,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0042,
+    "snowIce": 0.0,
+    "water": 0.9412,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0125
+   },
+   "window": "10 x 10 km centred window (EPSG:32618)"
+  },
+  "dalgaranga": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S27E117"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0173,
+    "shrubland": 0.3532,
+    "grassland": 0.4787,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.1508,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32750)"
+  },
+  "dashtekavir": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33E054"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32640)"
+  },
+  "dashtemargo": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30E060"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0114,
+    "grassland": 0.0025,
+    "cropland": 0.3028,
+    "built": 0.0018,
+    "bareSparse": 0.681,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0005,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32641)"
+  },
+  "deception": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km centred window (EPSG:32720)"
+  },
+  "dhala": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E078"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0347,
+    "shrubland": 0.0081,
+    "grassland": 0.2221,
+    "cropland": 0.7106,
+    "built": 0.0106,
+    "bareSparse": 0.0007,
+    "snowIce": 0.0,
+    "water": 0.0133,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32644)"
+  },
+  "ellesmere": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N78W081"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0008,
+    "snowIce": 0.9992,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32617)"
+  },
+  "ennedi": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N15E021"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0066,
+    "grassland": 0.0291,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9642,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32634)"
+  },
+  "erebus": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km centred window (EPSG:32758)"
+  },
+  "ertaale": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N12E039"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0018,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9981,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32637)"
+  },
+  "etna": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E012",
+    "ESA_WorldCover_10m_2021_v200_N36E015"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1715,
+    "shrubland": 0.0,
+    "grassland": 0.1837,
+    "cropland": 0.0,
+    "built": 0.0002,
+    "bareSparse": 0.6446,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32633)"
+  },
+  "falklands": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S54W060"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0013,
+    "shrubland": 0.0001,
+    "grassland": 0.8208,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.1777,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32721)"
+  },
+  "fogo": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N12W027"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0038,
+    "shrubland": 0.033,
+    "grassland": 0.3382,
+    "cropland": 0.0,
+    "built": 0.001,
+    "bareSparse": 0.6241,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32626)"
+  },
+  "fournaise": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S24E054"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1648,
+    "shrubland": 0.0039,
+    "grassland": 0.454,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.3772,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32740)"
+  },
+  "franzjosef": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N78E054"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0006,
+    "shrubland": 0.0,
+    "grassland": 0.0004,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0337,
+    "snowIce": 0.3722,
+    "water": 0.5855,
+    "herbaceousWetland": 0.0002,
+    "mangrove": 0.0,
+    "mossLichen": 0.0075
+   },
+   "window": "10 x 10 km centred window (EPSG:32640)"
+  },
+  "galapagoslava": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S03W093"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.6366,
+    "shrubland": 0.2791,
+    "grassland": 0.0831,
+    "cropland": 0.0,
+    "built": 0.0007,
+    "bareSparse": 0.0004,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32715)"
+  },
+  "gossesbluff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S24E132"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0234,
+    "shrubland": 0.3168,
+    "grassland": 0.6533,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0065,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32753)"
+  },
+  "gow": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N54W105"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.694,
+    "shrubland": 0.0215,
+    "grassland": 0.0796,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.202,
+    "herbaceousWetland": 0.0006,
+    "mangrove": 0.0,
+    "mossLichen": 0.0023
+   },
+   "window": "10 x 10 km centred window (EPSG:32613)"
+  },
+  "hohxil": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33E090"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.3016,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.4095,
+    "snowIce": 0.0,
+    "water": 0.2883,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0006
+   },
+   "window": "10 x 10 km centred window (EPSG:32646)"
+  },
+  "holleford": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42W078"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.6335,
+    "shrubland": 0.0,
+    "grassland": 0.1683,
+    "cropland": 0.0534,
+    "built": 0.006,
+    "bareSparse": 0.0006,
+    "snowIce": 0.0,
+    "water": 0.1077,
+    "herbaceousWetland": 0.0305,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32618)"
+  },
+  "ilerouleau": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48W075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1656,
+    "shrubland": 0.0004,
+    "grassland": 0.0046,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.8293,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32618)"
+  },
+  "jamesross": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km centred window (EPSG:32721)"
+  },
+  "jujuy": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S24W066",
+    "ESA_WorldCover_10m_2021_v200_S24W069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0072,
+    "grassland": 0.5308,
+    "cropland": 0.0003,
+    "built": 0.0011,
+    "bareSparse": 0.4607,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32720)"
+  },
+  "kalahari": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S24E021"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.5782,
+    "grassland": 0.4218,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32734)"
+  },
+  "karoo": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S33E021"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0865,
+    "grassland": 0.6836,
+    "cropland": 0.0008,
+    "built": 0.0,
+    "bareSparse": 0.229,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32734)"
+  },
+  "karymsky": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N54E159"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.538,
+    "shrubland": 0.0004,
+    "grassland": 0.228,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.1856,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0479
+   },
+   "window": "10 x 10 km centred window (EPSG:32657)"
+  },
+  "kgalagadi": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S27E018"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0676,
+    "grassland": 0.9322,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0002,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32734)"
+  },
+  "kiruna": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N66E018"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.446,
+    "shrubland": 0.0006,
+    "grassland": 0.1823,
+    "cropland": 0.0,
+    "built": 0.0754,
+    "bareSparse": 0.09,
+    "snowIce": 0.0001,
+    "water": 0.113,
+    "herbaceousWetland": 0.0215,
+    "mangrove": 0.0,
+    "mossLichen": 0.0712
+   },
+   "window": "10 x 10 km centred window (EPSG:32634)"
+  },
+  "kola": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N69E030"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0761,
+    "shrubland": 0.0,
+    "grassland": 0.1652,
+    "cropland": 0.0,
+    "built": 0.0025,
+    "bareSparse": 0.0871,
+    "snowIce": 0.0,
+    "water": 0.061,
+    "herbaceousWetland": 0.0076,
+    "mangrove": 0.0,
+    "mossLichen": 0.6005
+   },
+   "window": "10 x 10 km centred window (EPSG:32636)"
+  },
+  "krafla": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N63W018"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0036,
+    "shrubland": 0.0081,
+    "grassland": 0.2461,
+    "cropland": 0.0,
+    "built": 0.0001,
+    "bareSparse": 0.1764,
+    "snowIce": 0.0001,
+    "water": 0.0007,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.565
+   },
+   "window": "10 x 10 km centred window (EPSG:32628)"
+  },
+  "krakatoa": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S09E105"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.102,
+    "shrubland": 0.0,
+    "grassland": 0.0036,
+    "cropland": 0.0001,
+    "built": 0.0,
+    "bareSparse": 0.022,
+    "snowIce": 0.0,
+    "water": 0.8723,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32748)"
+  },
+  "kufra": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E021"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32634)"
+  },
+  "lamoinerie": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N57W069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0702,
+    "shrubland": 0.0002,
+    "grassland": 0.2502,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0036,
+    "snowIce": 0.0,
+    "water": 0.5548,
+    "herbaceousWetland": 0.0008,
+    "mangrove": 0.0,
+    "mossLichen": 0.1202
+   },
+   "window": "10 x 10 km centred window (EPSG:32619)"
+  },
+  "lavabeds": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39W123"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.2434,
+    "shrubland": 0.0001,
+    "grassland": 0.4676,
+    "cropland": 0.0001,
+    "built": 0.002,
+    "bareSparse": 0.2868,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32610)"
+  },
+  "lut": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30E057"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32640)"
+  },
+  "mammoth": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36W087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.9858,
+    "shrubland": 0.0,
+    "grassland": 0.0049,
+    "cropland": 0.0006,
+    "built": 0.001,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0078,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32616)"
+  },
+  "manicouagan": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N51W069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.9149,
+    "shrubland": 0.0018,
+    "grassland": 0.0445,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0334,
+    "herbaceousWetland": 0.0034,
+    "mangrove": 0.0,
+    "mossLichen": 0.002
+   },
+   "window": "10 x 10 km centred window (EPSG:32619)"
+  },
+  "mayon": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N12E123"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.784,
+    "shrubland": 0.0,
+    "grassland": 0.1639,
+    "cropland": 0.0015,
+    "built": 0.0003,
+    "bareSparse": 0.0502,
+    "snowIce": 0.0,
+    "water": 0.0002,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32651)"
+  },
+  "melbourne": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km centred window (EPSG:32758)"
+  },
+  "mistastin": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N54W066"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.026,
+    "shrubland": 0.0,
+    "grassland": 0.0571,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0005,
+    "snowIce": 0.0,
+    "water": 0.892,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0243
+   },
+   "window": "10 x 10 km centred window (EPSG:32620)"
+  },
+  "mulu": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N03E114"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.9968,
+    "shrubland": 0.0,
+    "grassland": 0.0032,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32650)"
+  },
+  "murzuq": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E012"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32633)"
+  },
+  "mutnovsky": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N51E156"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0804,
+    "shrubland": 0.0083,
+    "grassland": 0.0422,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.7061,
+    "snowIce": 0.0506,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.1124
+   },
+   "window": "10 x 10 km centred window (EPSG:32657)"
+  },
+  "nazca": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S15W075",
+    "ESA_WorldCover_10m_2021_v200_S15W078"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0491,
+    "shrubland": 0.059,
+    "grassland": 0.0015,
+    "cropland": 0.0898,
+    "built": 0.0044,
+    "bareSparse": 0.7961,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32718)"
+  },
+  "nicholson": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N60W105"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0131,
+    "shrubland": 0.0,
+    "grassland": 0.3439,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0024,
+    "snowIce": 0.0,
+    "water": 0.5204,
+    "herbaceousWetland": 0.0014,
+    "mangrove": 0.0,
+    "mossLichen": 0.1189
+   },
+   "window": "10 x 10 km centred window (EPSG:32613)"
+  },
+  "novayazemlya": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N72E054"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0363,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.361,
+    "snowIce": 0.185,
+    "water": 0.2238,
+    "herbaceousWetland": 0.0288,
+    "mangrove": 0.0,
+    "mossLichen": 0.1651
+   },
+   "window": "10 x 10 km centred window (EPSG:32640)"
+  },
+  "nyamuragira": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S03E027"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.3893,
+    "shrubland": 0.1431,
+    "grassland": 0.4446,
+    "cropland": 0.0011,
+    "built": 0.0,
+    "bareSparse": 0.0215,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0004,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32735)"
+  },
+  "nyiragongo": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S03E027"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.6402,
+    "shrubland": 0.1718,
+    "grassland": 0.0954,
+    "cropland": 0.0727,
+    "built": 0.0001,
+    "bareSparse": 0.015,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0048,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32735)"
+  },
+  "oasiscrater": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E024"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32635)"
+  },
+  "patagonia": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S45W069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.1056,
+    "grassland": 0.3672,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.5271,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32719)"
+  },
+  "patagoniaice": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S51W075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1976,
+    "shrubland": 0.0,
+    "grassland": 0.1885,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.2486,
+    "snowIce": 0.2029,
+    "water": 0.1309,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0315
+   },
+   "window": "10 x 10 km centred window (EPSG:32718)"
+  },
+  "patagoniavolcanic": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S42W069",
+    "ESA_WorldCover_10m_2021_v200_S42W072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.5373,
+    "grassland": 0.4461,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0165,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32719)"
+  },
+  "phongnha": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N15E105"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.9924,
+    "shrubland": 0.0,
+    "grassland": 0.0076,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32648)"
+  },
+  "piccaninny": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S18E126"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1148,
+    "shrubland": 0.0062,
+    "grassland": 0.875,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0021,
+    "snowIce": 0.0,
+    "water": 0.0019,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32752)"
+  },
+  "pingualuit": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N60W075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0635,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.2667,
+    "snowIce": 0.0002,
+    "water": 0.1685,
+    "herbaceousWetland": 0.0004,
+    "mangrove": 0.0,
+    "mossLichen": 0.5007
+   },
+   "window": "10 x 10 km centred window (EPSG:32618)"
+  },
+  "postojna": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E012"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.6974,
+    "shrubland": 0.0001,
+    "grassland": 0.2366,
+    "cropland": 0.0304,
+    "built": 0.0352,
+    "bareSparse": 0.0002,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32633)"
+  },
+  "qaanaaq": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N75W072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0087,
+    "cropland": 0.0,
+    "built": 0.0011,
+    "bareSparse": 0.2732,
+    "snowIce": 0.1242,
+    "water": 0.4961,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0967
+   },
+   "window": "10 x 10 km centred window (EPSG:32619)"
+  },
+  "qiangtang": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0716,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.887,
+    "snowIce": 0.0,
+    "water": 0.0414,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32645)"
+  },
+  "ramgarh": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.092,
+    "shrubland": 0.0609,
+    "grassland": 0.1873,
+    "cropland": 0.6335,
+    "built": 0.0097,
+    "bareSparse": 0.0083,
+    "snowIce": 0.0,
+    "water": 0.0083,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32643)"
+  },
+  "registan": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30E063"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0029,
+    "grassland": 0.0,
+    "cropland": 0.0186,
+    "built": 0.0,
+    "bareSparse": 0.9735,
+    "snowIce": 0.0,
+    "water": 0.0049,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32641)"
+  },
+  "richtersveld": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S30E015"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.3052,
+    "grassland": 0.1962,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.4985,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32733)"
+  },
+  "rinjani": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S09E114"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.4252,
+    "shrubland": 0.0,
+    "grassland": 0.494,
+    "cropland": 0.0001,
+    "built": 0.0,
+    "bareSparse": 0.0793,
+    "snowIce": 0.0,
+    "water": 0.0013,
+    "herbaceousWetland": 0.0001,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32750)"
+  },
+  "roterkamm": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S30E015"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0001,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9999,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32733)"
+  },
+  "sakurajima": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30E129"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.6092,
+    "shrubland": 0.0,
+    "grassland": 0.0176,
+    "cropland": 0.0017,
+    "built": 0.0271,
+    "bareSparse": 0.0949,
+    "snowIce": 0.0,
+    "water": 0.2495,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32652)"
+  },
+  "sechura": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S06W081"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0253,
+    "shrubland": 0.7188,
+    "grassland": 0.2402,
+    "cropland": 0.0,
+    "built": 0.003,
+    "bareSparse": 0.0127,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32717)"
+  },
+  "severnayazemlya": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N78E096"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 1.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32647)"
+  },
+  "shoemaker": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S27E120"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0019,
+    "shrubland": 0.3765,
+    "grassland": 0.3276,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.2941,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32751)"
+  },
+  "sierranegra": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S03W093"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1252,
+    "shrubland": 0.3293,
+    "grassland": 0.1184,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.4251,
+    "snowIce": 0.0,
+    "water": 0.002,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32715)"
+  },
+  "siwa": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N27E024"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.2636,
+    "shrubland": 0.021,
+    "grassland": 0.0063,
+    "cropland": 0.0183,
+    "built": 0.0408,
+    "bareSparse": 0.4827,
+    "snowIce": 0.0,
+    "water": 0.1596,
+    "herbaceousWetland": 0.0075,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32635)"
+  },
+  "sossusvlei": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S27E015"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0362,
+    "grassland": 0.0075,
+    "cropland": 0.0022,
+    "built": 0.0,
+    "bareSparse": 0.9538,
+    "snowIce": 0.0,
+    "water": 0.0003,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32733)"
+  },
+  "southgeorgia": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S57W039"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0012,
+    "shrubland": 0.0001,
+    "grassland": 0.0046,
+    "cropland": 0.0001,
+    "built": 0.0,
+    "bareSparse": 0.0688,
+    "snowIce": 0.6558,
+    "water": 0.2597,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0096
+   },
+   "window": "10 x 10 km centred window (EPSG:32724)"
+  },
+  "sudbury": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45W084"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.6393,
+    "shrubland": 0.0,
+    "grassland": 0.177,
+    "cropland": 0.1165,
+    "built": 0.0436,
+    "bareSparse": 0.0028,
+    "snowIce": 0.0,
+    "water": 0.002,
+    "herbaceousWetland": 0.0188,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32617)"
+  },
+  "surtshellir": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N63W021"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0066,
+    "snowIce": 0.9934,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32627)"
+  },
+  "taal": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N12E120"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0937,
+    "shrubland": 0.0,
+    "grassland": 0.0057,
+    "cropland": 0.0108,
+    "built": 0.0064,
+    "bareSparse": 0.1216,
+    "snowIce": 0.0,
+    "water": 0.7615,
+    "herbaceousWetland": 0.0003,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32651)"
+  },
+  "taklamakan": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E081"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0001,
+    "grassland": 0.0,
+    "cropland": 0.0001,
+    "built": 0.0,
+    "bareSparse": 0.9999,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32644)"
+  },
+  "tambora": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S09E117"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0319,
+    "shrubland": 0.0,
+    "grassland": 0.8229,
+    "cropland": 0.0005,
+    "built": 0.0,
+    "bareSparse": 0.1356,
+    "snowIce": 0.0,
+    "water": 0.0091,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32750)"
+  },
+  "tassili": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E006",
+    "ESA_WorldCover_10m_2021_v200_N24E009"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0025,
+    "shrubland": 0.0337,
+    "grassland": 0.0104,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9534,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32632)"
+  },
+  "teide": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N27W018"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0607,
+    "shrubland": 0.0409,
+    "grassland": 0.305,
+    "cropland": 0.0,
+    "built": 0.0006,
+    "bareSparse": 0.5927,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32628)"
+  },
+  "tengger": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E102",
+    "ESA_WorldCover_10m_2021_v200_N36E105"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0115,
+    "grassland": 0.0236,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9579,
+    "snowIce": 0.0,
+    "water": 0.0049,
+    "herbaceousWetland": 0.0021,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32648)"
+  },
+  "thar": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N24E069",
+    "ESA_WorldCover_10m_2021_v200_N27E069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0087,
+    "shrubland": 0.1208,
+    "grassland": 0.002,
+    "cropland": 0.1239,
+    "built": 0.011,
+    "bareSparse": 0.7335,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32642)"
+  },
+  "tianshuihai": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33E075",
+    "ESA_WorldCover_10m_2021_v200_N33E078"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9941,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0058
+   },
+   "window": "10 x 10 km centred window (EPSG:32644)"
+  },
+  "tswaing": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S27E027"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0193,
+    "shrubland": 0.2381,
+    "grassland": 0.3716,
+    "cropland": 0.0899,
+    "built": 0.2666,
+    "bareSparse": 0.0132,
+    "snowIce": 0.0,
+    "water": 0.0013,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32735)"
+  },
+  "turpan": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0003,
+    "shrubland": 0.1408,
+    "grassland": 0.0082,
+    "cropland": 0.228,
+    "built": 0.013,
+    "bareSparse": 0.596,
+    "snowIce": 0.0,
+    "water": 0.0031,
+    "herbaceousWetland": 0.0105,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32645)"
+  },
+  "veevers": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S24E123"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.0325,
+    "grassland": 0.6275,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.3398,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32751)"
+  },
+  "victoriaisland": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N69W111"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0009,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.1251,
+    "snowIce": 0.0,
+    "water": 0.2213,
+    "herbaceousWetland": 0.0056,
+    "mangrove": 0.0,
+    "mossLichen": 0.6472
+   },
+   "window": "10 x 10 km centred window (EPSG:32612)"
+  },
+  "villarrica": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S42W072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.1702,
+    "shrubland": 0.0,
+    "grassland": 0.1726,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.3763,
+    "snowIce": 0.2808,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32719)"
+  },
+  "vulcano": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E012",
+    "ESA_WorldCover_10m_2021_v200_N36E015"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0994,
+    "shrubland": 0.0283,
+    "grassland": 0.0623,
+    "cropland": 0.0018,
+    "built": 0.0062,
+    "bareSparse": 0.0122,
+    "snowIce": 0.0,
+    "water": 0.7887,
+    "herbaceousWetland": 0.0012,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32633)"
+  },
+  "wabar": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N21E048"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32639)"
+  },
+  "waitomo": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S39E174"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.4773,
+    "shrubland": 0.0,
+    "grassland": 0.5048,
+    "cropland": 0.0164,
+    "built": 0.0013,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km centred window (EPSG:32760)"
+  },
+  "wardhunt": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km centred window (EPSG:32618)"
+  },
+  "westclearwater": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N54W075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.2804,
+    "shrubland": 0.0332,
+    "grassland": 0.3458,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.2122,
+    "herbaceousWetland": 0.0113,
+    "mangrove": 0.0,
+    "mossLichen": 0.117
+   },
+   "window": "10 x 10 km centred window (EPSG:32618)"
+  }
+ },
+ "generated": {
+  "GD-84e741dffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32732); not the full region"
+  },
+  "GD-84e76b7ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32731); not the full region"
+  },
+  "GD-84e7747ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32735); not the full region"
+  },
+  "GD-8403543ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N81W078"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.0,
+    "grassland": 0.0447,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.1929,
+    "snowIce": 0.7286,
+    "water": 0.0098,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0239
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32618); not the full region"
+  },
+  "GD-84f2a27ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32703); not the full region"
+  },
+  "GD-840d707ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N69W147"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0039,
+    "shrubland": 0.0,
+    "grassland": 0.2697,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.1751,
+    "snowIce": 0.0482,
+    "water": 0.0255,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.4777
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32606); not the full region"
+  },
+  "GD-84ed5cdffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32757); not the full region"
+  },
+  "GD-84f2857ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32708); not the full region"
+  },
+  "GD-84f3b35ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32757); not the full region"
+  },
+  "GD-84035edffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N78W081"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0244,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.4766,
+    "snowIce": 0.0054,
+    "water": 0.1185,
+    "herbaceousWetland": 0.0221,
+    "mangrove": 0.0,
+    "mossLichen": 0.3529
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32617); not the full region"
+  },
+  "GD-84ed569ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32758); not the full region"
+  },
+  "GD-84ef4a1ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32720); not the full region"
+  },
+  "GD-8402283ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N78W093"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.137,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.3043,
+    "snowIce": 0.0193,
+    "water": 0.0637,
+    "herbaceousWetland": 0.0068,
+    "mangrove": 0.0,
+    "mossLichen": 0.4689
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32615); not the full region"
+  },
+  "GD-84ef1e7ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32726); not the full region"
+  },
+  "GD-84f3b47ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32757); not the full region"
+  },
+  "GD-84f39ebffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32758); not the full region"
+  },
+  "GD-84ed73dffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32758); not the full region"
+  },
+  "GD-84f39b9ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32760); not the full region"
+  },
+  "GD-84f3b5dffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32758); not the full region"
+  },
+  "GD-84ed4b9ffffffff": {
+   "status": "no_coverage",
+   "items": [],
+   "window": "10 x 10 km window at the region's representative point (EPSG:32758); not the full region"
+  },
+  "GD-8425169ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E087",
+    "ESA_WorldCover_10m_2021_v200_N48E090"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0016,
+    "shrubland": 0.0,
+    "grassland": 0.4999,
+    "cropland": 0.0,
+    "built": 0.0333,
+    "bareSparse": 0.4365,
+    "snowIce": 0.0,
+    "water": 0.0287,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32646); not the full region"
+  },
+  "GD-8424943ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E093"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0001,
+    "cropland": 0.0,
+    "built": 0.0037,
+    "bareSparse": 0.9961,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32646); not the full region"
+  },
+  "GD-8420887ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0002,
+    "shrubland": 0.0,
+    "grassland": 0.0568,
+    "cropland": 0.0281,
+    "built": 0.0039,
+    "bareSparse": 0.8784,
+    "snowIce": 0.0007,
+    "water": 0.0313,
+    "herbaceousWetland": 0.0006,
+    "mangrove": 0.0,
+    "mossLichen": 0.0001
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-842482bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E096"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0159,
+    "grassland": 0.0866,
+    "cropland": 0.0502,
+    "built": 0.0047,
+    "bareSparse": 0.8217,
+    "snowIce": 0.0,
+    "water": 0.0004,
+    "herbaceousWetland": 0.0205,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32647); not the full region"
+  },
+  "GD-842512bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E090"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.0013,
+    "grassland": 0.2619,
+    "cropland": 0.0011,
+    "built": 0.0,
+    "bareSparse": 0.6935,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.042,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32646); not the full region"
+  },
+  "GD-84240a9ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42E102"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0233,
+    "grassland": 0.1168,
+    "cropland": 0.0094,
+    "built": 0.0,
+    "bareSparse": 0.8503,
+    "snowIce": 0.0,
+    "water": 0.0002,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32648); not the full region"
+  },
+  "GD-843d049ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33E075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0739,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.774,
+    "snowIce": 0.0066,
+    "water": 0.0002,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.1453
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-843d683ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E090"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 1.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32646); not the full region"
+  },
+  "GD-843d035ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N30E078"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.462,
+    "cropland": 0.0,
+    "built": 0.0004,
+    "bareSparse": 0.5102,
+    "snowIce": 0.0,
+    "water": 0.018,
+    "herbaceousWetland": 0.0061,
+    "mangrove": 0.0,
+    "mossLichen": 0.0033
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32644); not the full region"
+  },
+  "GD-8425a0bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0004,
+    "shrubland": 0.0043,
+    "grassland": 0.5189,
+    "cropland": 0.014,
+    "built": 0.0012,
+    "bareSparse": 0.4605,
+    "snowIce": 0.0,
+    "water": 0.0007,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32645); not the full region"
+  },
+  "GD-8424345ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E096"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0338,
+    "shrubland": 0.0001,
+    "grassland": 0.9112,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0549,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32647); not the full region"
+  },
+  "GD-8424aedffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39E096"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0001,
+    "grassland": 0.0082,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9917,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32647); not the full region"
+  },
+  "GD-84258e3ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42E093"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0054,
+    "shrubland": 0.0,
+    "grassland": 0.8456,
+    "cropland": 0.0028,
+    "built": 0.0,
+    "bareSparse": 0.1461,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32646); not the full region"
+  },
+  "GD-843d617ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0028,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9971,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32645); not the full region"
+  },
+  "GD-843d26bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33E075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0006,
+    "shrubland": 0.0,
+    "grassland": 0.0423,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.797,
+    "snowIce": 0.1153,
+    "water": 0.0244,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0204
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-843d2c3ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E078"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.3074,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.6926,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32644); not the full region"
+  },
+  "GD-8425151ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E090"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0002,
+    "grassland": 0.8851,
+    "cropland": 0.0016,
+    "built": 0.0,
+    "bareSparse": 0.0863,
+    "snowIce": 0.0,
+    "water": 0.0008,
+    "herbaceousWetland": 0.0259,
+    "mangrove": 0.0,
+    "mossLichen": 0.0001
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32646); not the full region"
+  },
+  "GD-8424a2dffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39E093"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.1378,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8614,
+    "snowIce": 0.0,
+    "water": 0.0003,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0004
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32646); not the full region"
+  },
+  "GD-84b22e5ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S27W072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.1628,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8372,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32719); not the full region"
+  },
+  "GD-8424f2dffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E102"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0034,
+    "shrubland": 0.0122,
+    "grassland": 0.0032,
+    "cropland": 0.6319,
+    "built": 0.037,
+    "bareSparse": 0.312,
+    "snowIce": 0.0,
+    "water": 0.0003,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32648); not the full region"
+  },
+  "GD-843d62dffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E084"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.0,
+    "grassland": 0.0118,
+    "cropland": 0.0057,
+    "built": 0.0001,
+    "bareSparse": 0.9823,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32645); not the full region"
+  },
+  "GD-8425a4bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.0,
+    "grassland": 0.7939,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.2056,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0003,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32645); not the full region"
+  },
+  "GD-84208d5ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E072",
+    "ESA_WorldCover_10m_2021_v200_N39E072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0001,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.4918,
+    "snowIce": 0.4886,
+    "water": 0.0004,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0191
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-84249cdffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E096"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.0,
+    "grassland": 0.0186,
+    "cropland": 0.0495,
+    "built": 0.0061,
+    "bareSparse": 0.9257,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32647); not the full region"
+  },
+  "GD-843d22dffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33E075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.4754,
+    "cropland": 0.0002,
+    "built": 0.0,
+    "bareSparse": 0.5224,
+    "snowIce": 0.0,
+    "water": 0.0001,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0018
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-8424aa9ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39E099"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0009,
+    "grassland": 0.0002,
+    "cropland": 0.0,
+    "built": 0.0001,
+    "bareSparse": 0.9987,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32647); not the full region"
+  },
+  "GD-8424861ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N36E096"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0175,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9825,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32647); not the full region"
+  },
+  "GD-84b2e43ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S33W072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0001,
+    "shrubland": 0.0,
+    "grassland": 0.1345,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8636,
+    "snowIce": 0.0016,
+    "water": 0.0003,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32719); not the full region"
+  },
+  "GD-84245c3ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42E111"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0009,
+    "grassland": 0.0311,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.968,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32649); not the full region"
+  },
+  "GD-84200c3ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E075"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0006,
+    "grassland": 0.961,
+    "cropland": 0.0,
+    "built": 0.0001,
+    "bareSparse": 0.0384,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-842401bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E102"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.1724,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8276,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32648); not the full region"
+  },
+  "GD-84242b5ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E102"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.6912,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.3088,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32648); not the full region"
+  },
+  "GD-8425a2bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0034,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9966,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32645); not the full region"
+  },
+  "GD-8425a6bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.2796,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.7204,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32645); not the full region"
+  },
+  "GD-8420265ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E066"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.9983,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0017,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32642); not the full region"
+  },
+  "GD-8424407ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42E111",
+    "ESA_WorldCover_10m_2021_v200_N45E111"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0017,
+    "grassland": 0.1011,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8972,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32649); not the full region"
+  },
+  "GD-8424535ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42E108"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0293,
+    "grassland": 0.07,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.9007,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32649); not the full region"
+  },
+  "GD-8424717ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E108"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0005,
+    "grassland": 0.743,
+    "cropland": 0.0001,
+    "built": 0.0001,
+    "bareSparse": 0.2547,
+    "snowIce": 0.0,
+    "water": 0.0017,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32649); not the full region"
+  },
+  "GD-8424c5dffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39E105"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0049,
+    "shrubland": 0.0382,
+    "grassland": 0.0239,
+    "cropland": 0.2582,
+    "built": 0.0609,
+    "bareSparse": 0.5432,
+    "snowIce": 0.0,
+    "water": 0.0534,
+    "herbaceousWetland": 0.0173,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32648); not the full region"
+  },
+  "GD-843d467ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N33E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.0014,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8116,
+    "snowIce": 0.0004,
+    "water": 0.1866,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32645); not the full region"
+  },
+  "GD-84245dbffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N42E111"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0003,
+    "grassland": 0.2634,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.7363,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32649); not the full region"
+  },
+  "GD-8424ec5ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N39E108"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0025,
+    "grassland": 0.0551,
+    "cropland": 0.0033,
+    "built": 0.0,
+    "bareSparse": 0.9389,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32649); not the full region"
+  },
+  "GD-84246ddffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E114"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0004,
+    "shrubland": 0.0,
+    "grassland": 0.9117,
+    "cropland": 0.0042,
+    "built": 0.0504,
+    "bareSparse": 0.0171,
+    "snowIce": 0.0,
+    "water": 0.0147,
+    "herbaceousWetland": 0.0014,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32650); not the full region"
+  },
+  "GD-842001bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0001,
+    "grassland": 0.9261,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0738,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-8421193ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E066"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0004,
+    "grassland": 0.9923,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0061,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0012,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32642); not the full region"
+  },
+  "GD-8425b5bffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E087"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.1653,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.8347,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32645); not the full region"
+  },
+  "GD-8420051ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.9996,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0004,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32642); not the full region"
+  },
+  "GD-8415955ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E114",
+    "ESA_WorldCover_10m_2021_v200_N48E117"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.9478,
+    "cropland": 0.0013,
+    "built": 0.0023,
+    "bareSparse": 0.0249,
+    "snowIce": 0.0,
+    "water": 0.0131,
+    "herbaceousWetland": 0.0104,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32650); not the full region"
+  },
+  "GD-84210a3ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E066"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0033,
+    "shrubland": 0.0271,
+    "grassland": 0.9569,
+    "cropland": 0.0016,
+    "built": 0.0,
+    "bareSparse": 0.0043,
+    "snowIce": 0.0,
+    "water": 0.0036,
+    "herbaceousWetland": 0.0031,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32642); not the full region"
+  },
+  "GD-84202d5ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0016,
+    "shrubland": 0.0,
+    "grassland": 0.9227,
+    "cropland": 0.0382,
+    "built": 0.0099,
+    "bareSparse": 0.0065,
+    "snowIce": 0.0,
+    "water": 0.0058,
+    "herbaceousWetland": 0.0154,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-84202e1ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0007,
+    "grassland": 0.9848,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0126,
+    "snowIce": 0.0,
+    "water": 0.0003,
+    "herbaceousWetland": 0.0016,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32642); not the full region"
+  },
+  "GD-8420205ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E066"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0016,
+    "grassland": 0.9971,
+    "cropland": 0.0,
+    "built": 0.0005,
+    "bareSparse": 0.0008,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32642); not the full region"
+  },
+  "GD-8415b35ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N48E114"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0,
+    "grassland": 0.997,
+    "cropland": 0.0002,
+    "built": 0.0,
+    "bareSparse": 0.0021,
+    "snowIce": 0.0,
+    "water": 0.0003,
+    "herbaceousWetland": 0.0004,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32650); not the full region"
+  },
+  "GD-8420033ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N45E072"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0004,
+    "grassland": 0.83,
+    "cropland": 0.0,
+    "built": 0.0011,
+    "bareSparse": 0.1686,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32643); not the full region"
+  },
+  "GD-84155abffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N57E129",
+    "ESA_WorldCover_10m_2021_v200_N60E129"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.9202,
+    "shrubland": 0.0,
+    "grassland": 0.0787,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0011
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32652); not the full region"
+  },
+  "GD-8421733ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N51E069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0343,
+    "shrubland": 0.0,
+    "grassland": 0.6709,
+    "cropland": 0.2003,
+    "built": 0.0675,
+    "bareSparse": 0.0131,
+    "snowIce": 0.0,
+    "water": 0.0064,
+    "herbaceousWetland": 0.0075,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32642); not the full region"
+  },
+  "GD-8414725ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_N57E132"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.7218,
+    "shrubland": 0.0,
+    "grassland": 0.2728,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0001,
+    "snowIce": 0.0,
+    "water": 0.0041,
+    "herbaceousWetland": 0.0008,
+    "mangrove": 0.0,
+    "mossLichen": 0.0004
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32653); not the full region"
+  },
+  "GD-84b8087ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S30E126"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0033,
+    "shrubland": 0.8485,
+    "grassland": 0.1481,
+    "cropland": 0.0,
+    "built": 0.0,
+    "bareSparse": 0.0,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32752); not the full region"
+  },
+  "GD-84b8287ffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S33E126"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0,
+    "shrubland": 0.0006,
+    "grassland": 0.9993,
+    "cropland": 0.0001,
+    "built": 0.0,
+    "bareSparse": 0.0001,
+    "snowIce": 0.0,
+    "water": 0.0,
+    "herbaceousWetland": 0.0,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32752); not the full region"
+  },
+  "GD-84e093dffffffff": {
+   "status": "ok",
+   "items": [
+    "ESA_WorldCover_10m_2021_v200_S51E069"
+   ],
+   "validPixels": 1000000,
+   "coverage": 1.0,
+   "fractions": {
+    "tree": 0.0017,
+    "shrubland": 0.003,
+    "grassland": 0.3732,
+    "cropland": 0.0007,
+    "built": 0.0,
+    "bareSparse": 0.065,
+    "snowIce": 0.0,
+    "water": 0.4362,
+    "herbaceousWetland": 0.1202,
+    "mangrove": 0.0,
+    "mossLichen": 0.0
+   },
+   "window": "10 x 10 km window at the region's representative point (EPSG:32742); not the full region"
+  }
+ }
+}

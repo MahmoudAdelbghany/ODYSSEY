@@ -1,0 +1,827 @@
+{
+  "source": "Sentinel-2 Level-2A B04/B03/B02 surface reflectance, ESA Copernicus, via the AWS Open Data registry and Element 84 Earth Search",
+  "license": "Copernicus Sentinel Data Terms and Conditions. Free and open; contains modified Copernicus Sentinel data. Attribution required.",
+  "resolution": "10 m native Sentinel-2 B04/B03/B02; no resampling",
+  "processing": "2-98% display stretch and sRGB transfer; no generated detail",
+  "sites": {
+    "kerguelen": {
+      "file": "/sites/close/kerguelen.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.1,
+        639.6
+      ],
+      "mpp": 10.0,
+      "date": "2026-01-23",
+      "cloud": 14.34,
+      "scene": "S2B_42FWL_20260123_0_L2A",
+      "bounds": [
+        69.35872,
+        -49.35812,
+        69.64157,
+        -49.24177
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "qaidam": {
+      "file": "/sites/close/qaidam.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.7,
+        470.0
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-11",
+      "cloud": 0.47,
+      "scene": "S2C_46SEF_20261111_0_L2A",
+      "bounds": [
+        93.88411,
+        36.92597,
+        94.11572,
+        37.04328
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "gobi": {
+      "file": "/sites/close/gobi.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.5,
+        639.9
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-12",
+      "cloud": 0.0,
+      "scene": "S2C_48TUN_20261112_0_L2A",
+      "bounds": [
+        102.87345,
+        42.44015,
+        103.12622,
+        42.5597
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "dryvalleys": {
+      "file": "/sites/close/dryvalleys.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.5,
+        746.3
+      ],
+      "mpp": 10.0,
+      "date": "2026-10-22",
+      "cloud": 5.41,
+      "scene": "S2B_57CWQ_20261022_0_L2A",
+      "bounds": [
+        161.56294,
+        -77.55214,
+        162.4358,
+        -77.42823
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "ergchebbi": {
+      "file": "/sites/close/ergchebbi.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1536.1,
+        640.4
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-10",
+      "cloud": 6.52,
+      "scene": "S2B_30RUV_20261110_0_L2A",
+      "bounds": [
+        -4.16184,
+        31.09095,
+        -3.94573,
+        31.20818
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "atacama": {
+      "file": "/sites/close/atacama.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.2,
+        639.9
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-08",
+      "cloud": 1.51,
+      "scene": "S2C_19KEQ_20261108_0_L2A",
+      "bounds": [
+        -68.30061,
+        -23.5583,
+        -68.09934,
+        -23.44166
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "puna": {
+      "file": "/sites/close/puna.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.3,
+        640.0
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-10",
+      "cloud": 4.21,
+      "scene": "S2B_19JFN_20261110_0_L2A",
+      "bounds": [
+        -67.60171,
+        -24.55875,
+        -67.39826,
+        -24.44118
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "danakil": {
+      "file": "/sites/close/danakil.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.2,
+        639.9
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-10",
+      "cloud": 10.44,
+      "scene": "S2A_37PFR_20261110_0_L2A",
+      "bounds": [
+        40.20478,
+        14.18161,
+        40.39524,
+        14.29835
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "khaybar": {
+      "file": "/sites/close/khaybar.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.1,
+        640.1
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-11",
+      "cloud": 10.56,
+      "scene": "S2C_37REH_20261111_0_L2A",
+      "bounds": [
+        39.79815,
+        24.94157,
+        40.00192,
+        25.05838
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "namib": {
+      "file": "/sites/close/namib.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        2.0,
+        640.1
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-11",
+      "cloud": 0.0,
+      "scene": "S2A_33KWQ_20261111_1_L2A",
+      "bounds": [
+        14.9998,
+        -23.5578,
+        15.20048,
+        -23.44205
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "bodele": {
+      "file": "/sites/close/bodele.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.2,
+        639.8
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-10",
+      "cloud": 10.33,
+      "scene": "S2B_33QZU_20261110_0_L2A",
+      "bounds": [
+        17.90302,
+        16.94078,
+        18.097,
+        17.05916
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "makgadikgadi": {
+      "file": "/sites/close/makgadikgadi.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.0,
+        640.0
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-12",
+      "cloud": 0.27,
+      "scene": "S2B_35KLT_20261112_0_L2A",
+      "bounds": [
+        25.40123,
+        -20.55863,
+        25.5987,
+        -20.44131
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "nullarbor": {
+      "file": "/sites/close/nullarbor.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1072.0,
+        640.2
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-01",
+      "cloud": 0.0,
+      "scene": "S2C_52JDM_20261101_0_L2A",
+      "bounds": [
+        128.88822,
+        -30.5577,
+        129.10177,
+        -30.44219
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "chyulu": {
+      "file": "/sites/close/chyulu.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.8,
+        639.9
+      ],
+      "mpp": 10.0,
+      "date": "2026-10-21",
+      "cloud": 5.28,
+      "scene": "S2A_37MCT_20261021_1_L2A",
+      "bounds": [
+        37.70786,
+        -2.75799,
+        37.89218,
+        -2.64203
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "undara": {
+      "file": "/sites/close/undara.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.8,
+        640.4
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-11",
+      "cloud": 0.39,
+      "scene": "S2B_55KBV_20261111_0_L2A",
+      "bounds": [
+        144.50245,
+        -18.25895,
+        144.69754,
+        -18.14094
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "devon": {
+      "file": "/sites/close/devon.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1072.0,
+        640.3
+      ],
+      "mpp": 10.0,
+      "date": "2026-10-01",
+      "cloud": 1.64,
+      "scene": "S2C_16XDJ_20261001_1_L2A",
+      "bounds": [
+        -87.37244,
+        74.94237,
+        -86.66091,
+        75.05714
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "svalbard": {
+      "file": "/sites/close/svalbard.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.7,
+        640.0
+      ],
+      "mpp": 10.0,
+      "date": "2026-08-27",
+      "cloud": 1.11,
+      "scene": "S2C_33XWG_20260827_2_L2A",
+      "bounds": [
+        15.15085,
+        78.14137,
+        16.05367,
+        78.25793
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "riotinto": {
+      "file": "/sites/close/riotinto.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.5,
+        639.9
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-06",
+      "cloud": 12.42,
+      "scene": "S2B_29SQB_20261106_0_L2A",
+      "bounds": [
+        -6.71789,
+        37.63994,
+        -6.48205,
+        37.75994
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "lonar": {
+      "file": "/sites/close/lonar.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.1,
+        639.7
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-11",
+      "cloud": 0.0,
+      "scene": "S2B_43QFC_20261111_1_L2A",
+      "bounds": [
+        76.40163,
+        19.9113,
+        76.59841,
+        20.02859
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "iceland": {
+      "file": "/sites/close/iceland.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.2,
+        149.1
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-11",
+      "cloud": 9.72,
+      "scene": "S2C_27VWL_20261111_0_L2A",
+      "bounds": [
+        -19.21576,
+        63.89556,
+        -18.78978,
+        64.01611
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "wadirum": {
+      "file": "/sites/close/wadirum.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.6,
+        639.8
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-12",
+      "cloud": 0.0,
+      "scene": "S2A_36RYT_20261112_0_L2A",
+      "bounds": [
+        35.31309,
+        29.52031,
+        35.52711,
+        29.63958
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "wawannamus": {
+      "file": "/sites/close/wawannamus.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.9,
+        640.4
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-10",
+      "cloud": 0.0,
+      "scene": "S2A_33RYH_20261110_0_L2A",
+      "bounds": [
+        17.69748,
+        24.84037,
+        17.90263,
+        24.95963
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "oldoinyo": {
+      "file": "/sites/close/oldoinyo.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.6,
+        848.1
+      ],
+      "mpp": 10.0,
+      "date": "2026-10-24",
+      "cloud": 14.17,
+      "scene": "S2B_36MZC_20261024_0_L2A",
+      "bounds": [
+        35.81784,
+        -2.79925,
+        36.00214,
+        -2.68315
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "uyuni": {
+      "file": "/sites/close/uyuni.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.8,
+        640.3
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-08",
+      "cloud": 14.68,
+      "scene": "S2C_19KFT_20261108_0_L2A",
+      "bounds": [
+        -67.58844,
+        -20.1886,
+        -67.39145,
+        -20.07129
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "pinacate": {
+      "file": "/sites/close/pinacate.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.0,
+        639.7
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-07",
+      "cloud": 0.03,
+      "scene": "S2C_12STA_20261107_0_L2A",
+      "bounds": [
+        -113.60966,
+        31.71012,
+        -113.39048,
+        31.82974
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "mojave": {
+      "file": "/sites/close/mojave.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.3,
+        639.9
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-10",
+      "cloud": 2.3,
+      "scene": "S2C_11SPU_20261110_0_L2A",
+      "bounds": [
+        -115.61319,
+        34.94086,
+        -115.38672,
+        35.05902
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "cratersmoon": {
+      "file": "/sites/close/cratersmoon.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.2,
+        640.2
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-10",
+      "cloud": 0.18,
+      "scene": "S2C_11TQJ_20261110_0_L2A",
+      "bounds": [
+        -113.62944,
+        43.33857,
+        -113.37038,
+        43.46135
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "kamchatka": {
+      "file": "/sites/close/kamchatka.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.7,
+        639.9
+      ],
+      "mpp": 10.0,
+      "date": "2026-09-03",
+      "cloud": 4.77,
+      "scene": "S2C_57VWC_20260903_1_L2A",
+      "bounds": [
+        159.83465,
+        55.94106,
+        160.16594,
+        56.05871
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "kawahijen": {
+      "file": "/sites/close/kawahijen.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.7,
+        639.8
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-05",
+      "cloud": 7.01,
+      "scene": "S2C_49MHM_20261105_0_L2A",
+      "bounds": [
+        114.14679,
+        -8.11854,
+        114.33328,
+        -8.00148
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "pinnacles": {
+      "file": "/sites/close/pinnacles.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.6,
+        640.1
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-11",
+      "cloud": 14.33,
+      "scene": "S2B_50JLM_20261111_0_L2A",
+      "bounds": [
+        114.9921,
+        -30.65923,
+        115.20787,
+        -30.54067
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "whitedesert": {
+      "file": "/sites/close/whitedesert.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.3,
+        640.0
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-11",
+      "cloud": 0.01,
+      "scene": "S2B_35RNL_20261111_0_L2A",
+      "bounds": [
+        27.89603,
+        27.24145,
+        28.10401,
+        27.35848
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "axelheiberg": {
+      "file": "/sites/close/axelheiberg.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.1,
+        639.7
+      ],
+      "mpp": 10.0,
+      "date": "2026-09-25",
+      "cloud": 6.41,
+      "scene": "S2B_15XWJ_20260925_1_L2A",
+      "bounds": [
+        -90.51152,
+        79.33763,
+        -89.48354,
+        79.46159
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "kangerlussuaq": {
+      "file": "/sites/close/kangerlussuaq.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.1,
+        639.8
+      ],
+      "mpp": 10.0,
+      "date": "2026-10-26",
+      "cloud": 5.2,
+      "scene": "S2A_22WEV_20261026_0_L2A",
+      "bounds": [
+        -50.93502,
+        66.94196,
+        -50.46391,
+        67.05767
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "deathvalley": {
+      "file": "/sites/close/deathvalley.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1967.6,
+        639.7
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-08",
+      "cloud": 0.05,
+      "scene": "S2B_11SMA_20261108_0_L2A",
+      "bounds": [
+        -117.11979,
+        36.44226,
+        -116.89094,
+        36.55766
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "meteorcrater": {
+      "file": "/sites/close/meteorcrater.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.6,
+        640.0
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-09",
+      "cloud": 0.0,
+      "scene": "S2B_12SVD_20261109_0_L2A",
+      "bounds": [
+        -111.1323,
+        34.97222,
+        -110.90763,
+        35.08768
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "wolfeCreek": {
+      "file": "/sites/close/wolfeCreek.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.0,
+        639.9
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-09",
+      "cloud": 1.29,
+      "scene": "S2B_52KCD_20261109_0_L2A",
+      "bounds": [
+        127.69217,
+        -19.22845,
+        127.88776,
+        -19.11152
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "lanzarote": {
+      "file": "/sites/close/lanzarote.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.3,
+        639.8
+      ],
+      "mpp": 10.0,
+      "date": "2026-10-23",
+      "cloud": 9.78,
+      "scene": "S2B_28RFT_20261023_0_L2A",
+      "bounds": [
+        -13.73588,
+        28.98113,
+        -13.52407,
+        29.09877
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "hawaii": {
+      "file": "/sites/close/hawaii.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1024.1,
+        640.0
+      ],
+      "mpp": 10.0,
+      "date": "2026-09-28",
+      "cloud": 6.98,
+      "scene": "S2B_4QHG_20260928_0_L2A",
+      "bounds": [
+        -155.38862,
+        19.36028,
+        -155.19133,
+        19.47969
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    },
+    "socotra": {
+      "file": "/sites/close/socotra.jpg",
+      "width": 2048,
+      "height": 1280,
+      "sitePx": [
+        1023.9,
+        639.7
+      ],
+      "mpp": 10.0,
+      "date": "2026-11-05",
+      "cloud": 13.07,
+      "scene": "S2A_39PZP_20261105_2_L2A",
+      "bounds": [
+        53.90525,
+        12.44112,
+        54.09481,
+        12.55881
+      ],
+      "bands": "B04 / B03 / B02 surface reflectance",
+      "credit": "Contains modified Copernicus Sentinel data 2026"
+    }
+  }
+}

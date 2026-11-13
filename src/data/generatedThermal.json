@@ -1,0 +1,3407 @@
+{
+  "generatedAt": "2026-11-13",
+  "policy": "m6-v4",
+  "selectionVersion": "m9-selection-v1",
+  "modis": {
+    "collection": "modis-11A1-061",
+    "product": "MODIS/MYD11A1 v061",
+    "bands": [
+      "LST_Day_1km",
+      "LST_Night_1km",
+      "QC_Day",
+      "QC_Night"
+    ],
+    "scale": 0.02,
+    "qc": "QC bits 0-1 == 00 or 01 accepted; fill rejected",
+    "support": "native 1 km centre pixel; clear-sky; day and night separate",
+    "access": "Microsoft Planetary Computer STAC",
+    "cap": 12,
+    "statuses": "NO DATA / INSUFFICIENT / LIMITED / MODERATE / STRONGER SAMPLE are display categories, not confidence levels"
+  },
+  "earth": {
+    "GD-84ef4a1ffffffff": {
+      "window": "2023-12-01/2024-02-29",
+      "hemisphere": "south",
+      "cap": 12,
+      "availableDates": 91,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 9,
+      "day": {
+        "nAccepted": 4,
+        "nGoodQC": 3,
+        "nOtherQC": 1,
+        "status": "LIMITED",
+        "meanK": 258.63,
+        "minK": 254.38,
+        "maxK": 262.26,
+        "observations": [
+          {
+            "date": "2023351",
+            "K": 262.26,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023351.h16v16.061.2023352092606"
+          },
+          {
+            "date": "2024011",
+            "K": 260.96,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024011.h16v16.061.2024012140547"
+          },
+          {
+            "date": "2024052",
+            "K": 256.94,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024052.h16v16.061.2024056104708"
+          },
+          {
+            "date": "2024060",
+            "K": 254.38,
+            "qc": 8,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024060.h16v16.061.2024066053323"
+          }
+        ],
+        "nRejected": 8
+      },
+      "night": {
+        "nAccepted": 11,
+        "nGoodQC": 8,
+        "nOtherQC": 3,
+        "status": "MODERATE",
+        "meanK": 252.05,
+        "minK": 238.86,
+        "maxK": 256.52,
+        "observations": [
+          {
+            "date": "2023335",
+            "K": 251.46,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023335.h16v16.061.2023340032526"
+          },
+          {
+            "date": "2023343",
+            "K": 238.86,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023343.h16v16.061.2023344090643"
+          },
+          {
+            "date": "2023351",
+            "K": 253.52,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023351.h16v16.061.2023353210928"
+          },
+          {
+            "date": "2023360",
+            "K": 255.66,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023360.h16v16.061.2023365112228"
+          },
+          {
+            "date": "2024003",
+            "K": 254.5,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024003.h16v16.061.2024005153856"
+          },
+          {
+            "date": "2024011",
+            "K": 256.52,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024011.h16v16.061.2024012140547"
+          },
+          {
+            "date": "2024019",
+            "K": 253.4,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024019.h16v16.061.2024027130514"
+          },
+          {
+            "date": "2024027",
+            "K": 254.0,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024027.h16v16.061.2024030215928"
+          },
+          {
+            "date": "2024035",
+            "K": 251.94,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2024035.h16v16.061.2024040053154"
+          },
+          {
+            "date": "2024044",
+            "K": 248.5,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024044.h16v16.061.2024045204359"
+          },
+          {
+            "date": "2024052",
+            "K": 254.24,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024052.h16v16.061.2024056104708"
+          }
+        ],
+        "nRejected": 1
+      },
+      "unpairedDayNightDeltaK": 6.58,
+      "pairedDayNight": {
+        "nPaired": 3,
+        "meanDeltaK": 5.29,
+        "minDeltaK": 2.7,
+        "maxDeltaK": 8.74,
+        "observations": [
+          {
+            "date": "2023351",
+            "dayK": 262.26,
+            "nightK": 253.52,
+            "deltaK": 8.74,
+            "dayItemId": "MOD11A1.A2023351.h16v16.061.2023352092606",
+            "nightItemId": "MYD11A1.A2023351.h16v16.061.2023353210928"
+          },
+          {
+            "date": "2024011",
+            "dayK": 260.96,
+            "nightK": 256.52,
+            "deltaK": 4.44,
+            "dayItemId": "MOD11A1.A2024011.h16v16.061.2024012140547",
+            "nightItemId": "MOD11A1.A2024011.h16v16.061.2024012140547"
+          },
+          {
+            "date": "2024052",
+            "dayK": 256.94,
+            "nightK": 254.24,
+            "deltaK": 2.7,
+            "dayItemId": "MOD11A1.A2024052.h16v16.061.2024056104708",
+            "nightItemId": "MOD11A1.A2024052.h16v16.061.2024056104708"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 4,
+        "meanNeighborhoodStdK": 0.92,
+        "meanAbsCenterNeighborhoodK": 0.65,
+        "maxAbsCenterNeighborhoodK": 2.12,
+        "meanValidPixels": 25.0,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 252.25,
+        "minK": 246.32,
+        "maxK": 259.73,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-8420887ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 8,
+      "day": {
+        "nAccepted": 7,
+        "nGoodQC": 5,
+        "nOtherQC": 2,
+        "status": "MODERATE",
+        "meanK": 301.0,
+        "minK": 297.54,
+        "maxK": 304.92,
+        "observations": [
+          {
+            "date": "2023160",
+            "K": 302.8,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023160.h23v05.061.2023164024908"
+          },
+          {
+            "date": "2023169",
+            "K": 304.92,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h23v05.061.2023170113158"
+          },
+          {
+            "date": "2023185",
+            "K": 300.48,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023185.h23v05.061.2023192063548"
+          },
+          {
+            "date": "2023193",
+            "K": 301.76,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023193.h23v05.061.2023201212507"
+          },
+          {
+            "date": "2023218",
+            "K": 297.54,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023218.h23v05.061.2023220202932"
+          },
+          {
+            "date": "2023226",
+            "K": 298.46,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023226.h23v05.061.2023227175911"
+          },
+          {
+            "date": "2023243",
+            "K": 301.06,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h23v05.061.2023244180214"
+          }
+        ],
+        "nRejected": 5
+      },
+      "night": {
+        "nAccepted": 9,
+        "nGoodQC": 2,
+        "nOtherQC": 7,
+        "status": "MODERATE",
+        "meanK": 282.59,
+        "minK": 279.9,
+        "maxK": 286.12,
+        "observations": [
+          {
+            "date": "2023160",
+            "K": 282.46,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023160.h23v05.061.2023164030054"
+          },
+          {
+            "date": "2023169",
+            "K": 282.1,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023169.h23v05.061.2023170184816"
+          },
+          {
+            "date": "2023177",
+            "K": 281.9,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023177.h23v05.061.2023178093314"
+          },
+          {
+            "date": "2023193",
+            "K": 286.12,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023193.h23v05.061.2023201212507"
+          },
+          {
+            "date": "2023210",
+            "K": 281.32,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023210.h23v05.061.2023215173946"
+          },
+          {
+            "date": "2023218",
+            "K": 279.9,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023218.h23v05.061.2023220202932"
+          },
+          {
+            "date": "2023226",
+            "K": 284.72,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023226.h23v05.061.2023227173712"
+          },
+          {
+            "date": "2023235",
+            "K": 282.28,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023235.h23v05.061.2023236175507"
+          },
+          {
+            "date": "2023243",
+            "K": 282.48,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023243.h23v05.061.2023244180214"
+          }
+        ],
+        "nRejected": 3
+      },
+      "unpairedDayNightDeltaK": 18.41,
+      "pairedDayNight": {
+        "nPaired": 6,
+        "meanDeltaK": 18.13,
+        "minDeltaK": 13.74,
+        "maxDeltaK": 22.82,
+        "observations": [
+          {
+            "date": "2023160",
+            "dayK": 302.8,
+            "nightK": 282.46,
+            "deltaK": 20.34,
+            "dayItemId": "MYD11A1.A2023160.h23v05.061.2023164024908",
+            "nightItemId": "MOD11A1.A2023160.h23v05.061.2023164030054"
+          },
+          {
+            "date": "2023169",
+            "dayK": 304.92,
+            "nightK": 282.1,
+            "deltaK": 22.82,
+            "dayItemId": "MOD11A1.A2023169.h23v05.061.2023170113158",
+            "nightItemId": "MYD11A1.A2023169.h23v05.061.2023170184816"
+          },
+          {
+            "date": "2023193",
+            "dayK": 301.76,
+            "nightK": 286.12,
+            "deltaK": 15.64,
+            "dayItemId": "MOD11A1.A2023193.h23v05.061.2023201212507",
+            "nightItemId": "MOD11A1.A2023193.h23v05.061.2023201212507"
+          },
+          {
+            "date": "2023218",
+            "dayK": 297.54,
+            "nightK": 279.9,
+            "deltaK": 17.64,
+            "dayItemId": "MOD11A1.A2023218.h23v05.061.2023220202932",
+            "nightItemId": "MOD11A1.A2023218.h23v05.061.2023220202932"
+          },
+          {
+            "date": "2023226",
+            "dayK": 298.46,
+            "nightK": 284.72,
+            "deltaK": 13.74,
+            "dayItemId": "MYD11A1.A2023226.h23v05.061.2023227175911",
+            "nightItemId": "MOD11A1.A2023226.h23v05.061.2023227173712"
+          },
+          {
+            "date": "2023243",
+            "dayK": 301.06,
+            "nightK": 282.48,
+            "deltaK": 18.58,
+            "dayItemId": "MOD11A1.A2023243.h23v05.061.2023244180214",
+            "nightItemId": "MOD11A1.A2023243.h23v05.061.2023244180214"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 7,
+        "meanNeighborhoodStdK": 4.25,
+        "meanAbsCenterNeighborhoodK": 3.25,
+        "maxAbsCenterNeighborhoodK": 7.8,
+        "meanValidPixels": 24.0,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 269.58,
+        "minK": 256.85,
+        "maxK": 280.85,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-8424943ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 9,
+      "day": {
+        "nAccepted": 10,
+        "nGoodQC": 9,
+        "nOtherQC": 1,
+        "status": "MODERATE",
+        "meanK": 321.48,
+        "minK": 315.64,
+        "maxK": 327.34,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 315.64,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023152.h25v05.061.2023153211614"
+          },
+          {
+            "date": "2023160",
+            "K": 322.98,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023160.h25v05.061.2023164030307"
+          },
+          {
+            "date": "2023169",
+            "K": 315.82,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h25v05.061.2023170113203"
+          },
+          {
+            "date": "2023177",
+            "K": 322.46,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023177.h25v05.061.2023178093231"
+          },
+          {
+            "date": "2023185",
+            "K": 326.22,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023185.h25v05.061.2023192173457"
+          },
+          {
+            "date": "2023202",
+            "K": 322.48,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023202.h25v05.061.2023214184031"
+          },
+          {
+            "date": "2023210",
+            "K": 327.34,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023210.h25v05.061.2023215174223"
+          },
+          {
+            "date": "2023218",
+            "K": 319.24,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023218.h25v05.061.2023220204305"
+          },
+          {
+            "date": "2023235",
+            "K": 323.9,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023235.h25v05.061.2023236175627"
+          },
+          {
+            "date": "2023243",
+            "K": 318.72,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023243.h25v05.061.2023244182238"
+          }
+        ],
+        "nRejected": 2
+      },
+      "night": {
+        "nAccepted": 8,
+        "nGoodQC": 8,
+        "nOtherQC": 0,
+        "status": "MODERATE",
+        "meanK": 285.0,
+        "minK": 278.02,
+        "maxK": 292.44,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 278.4,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023152.h25v05.061.2023153214718"
+          },
+          {
+            "date": "2023169",
+            "K": 286.34,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h25v05.061.2023170113203"
+          },
+          {
+            "date": "2023202",
+            "K": 278.02,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023202.h25v05.061.2023214184031"
+          },
+          {
+            "date": "2023210",
+            "K": 292.44,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023210.h25v05.061.2023215174223"
+          },
+          {
+            "date": "2023218",
+            "K": 288.08,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023218.h25v05.061.2023220204305"
+          },
+          {
+            "date": "2023226",
+            "K": 290.2,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023226.h25v05.061.2023227172553"
+          },
+          {
+            "date": "2023235",
+            "K": 283.14,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023235.h25v05.061.2023236094202"
+          },
+          {
+            "date": "2023243",
+            "K": 283.38,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h25v05.061.2023244180044"
+          }
+        ],
+        "nRejected": 4
+      },
+      "unpairedDayNightDeltaK": 36.48,
+      "pairedDayNight": {
+        "nPaired": 7,
+        "meanDeltaK": 36.19,
+        "minDeltaK": 29.48,
+        "maxDeltaK": 44.46,
+        "observations": [
+          {
+            "date": "2023152",
+            "dayK": 315.64,
+            "nightK": 278.4,
+            "deltaK": 37.24,
+            "dayItemId": "MOD11A1.A2023152.h25v05.061.2023153211614",
+            "nightItemId": "MYD11A1.A2023152.h25v05.061.2023153214718"
+          },
+          {
+            "date": "2023169",
+            "dayK": 315.82,
+            "nightK": 286.34,
+            "deltaK": 29.48,
+            "dayItemId": "MOD11A1.A2023169.h25v05.061.2023170113203",
+            "nightItemId": "MOD11A1.A2023169.h25v05.061.2023170113203"
+          },
+          {
+            "date": "2023202",
+            "dayK": 322.48,
+            "nightK": 278.02,
+            "deltaK": 44.46,
+            "dayItemId": "MOD11A1.A2023202.h25v05.061.2023214184031",
+            "nightItemId": "MOD11A1.A2023202.h25v05.061.2023214184031"
+          },
+          {
+            "date": "2023210",
+            "dayK": 327.34,
+            "nightK": 292.44,
+            "deltaK": 34.9,
+            "dayItemId": "MOD11A1.A2023210.h25v05.061.2023215174223",
+            "nightItemId": "MOD11A1.A2023210.h25v05.061.2023215174223"
+          },
+          {
+            "date": "2023218",
+            "dayK": 319.24,
+            "nightK": 288.08,
+            "deltaK": 31.16,
+            "dayItemId": "MOD11A1.A2023218.h25v05.061.2023220204305",
+            "nightItemId": "MOD11A1.A2023218.h25v05.061.2023220204305"
+          },
+          {
+            "date": "2023235",
+            "dayK": 323.9,
+            "nightK": 283.14,
+            "deltaK": 40.76,
+            "dayItemId": "MYD11A1.A2023235.h25v05.061.2023236175627",
+            "nightItemId": "MOD11A1.A2023235.h25v05.061.2023236094202"
+          },
+          {
+            "date": "2023243",
+            "dayK": 318.72,
+            "nightK": 283.38,
+            "deltaK": 35.34,
+            "dayItemId": "MYD11A1.A2023243.h25v05.061.2023244182238",
+            "nightItemId": "MOD11A1.A2023243.h25v05.061.2023244180044"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 10,
+        "meanNeighborhoodStdK": 1.09,
+        "meanAbsCenterNeighborhoodK": 0.82,
+        "maxAbsCenterNeighborhoodK": 1.9,
+        "meanValidPixels": 25.0,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 279.83,
+        "minK": 266.52,
+        "maxK": 292.48,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-8425169ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 8,
+      "day": {
+        "nAccepted": 10,
+        "nGoodQC": 5,
+        "nOtherQC": 5,
+        "status": "MODERATE",
+        "meanK": 302.96,
+        "minK": 287.58,
+        "maxK": 309.58,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 287.58,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023152.h23v04.061.2023153211528"
+          },
+          {
+            "date": "2023160",
+            "K": 301.88,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023160.h23v04.061.2023164030907"
+          },
+          {
+            "date": "2023169",
+            "K": 309.58,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h23v04.061.2023170113232"
+          },
+          {
+            "date": "2023177",
+            "K": 304.08,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023177.h23v04.061.2023179021956"
+          },
+          {
+            "date": "2023193",
+            "K": 300.12,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023193.h23v04.061.2023201221237"
+          },
+          {
+            "date": "2023202",
+            "K": 305.94,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023202.h23v04.061.2023214183713"
+          },
+          {
+            "date": "2023210",
+            "K": 304.42,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023210.h23v04.061.2023215174522"
+          },
+          {
+            "date": "2023226",
+            "K": 301.88,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023226.h23v04.061.2023227175859"
+          },
+          {
+            "date": "2023235",
+            "K": 309.54,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023235.h23v04.061.2023236094537"
+          },
+          {
+            "date": "2023243",
+            "K": 304.54,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h23v04.061.2023244180137"
+          }
+        ],
+        "nRejected": 2
+      },
+      "night": {
+        "nAccepted": 10,
+        "nGoodQC": 4,
+        "nOtherQC": 6,
+        "status": "MODERATE",
+        "meanK": 282.8,
+        "minK": 274.3,
+        "maxK": 288.78,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 277.9,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023152.h23v04.061.2023153211528"
+          },
+          {
+            "date": "2023160",
+            "K": 287.44,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023160.h23v04.061.2023164030907"
+          },
+          {
+            "date": "2023169",
+            "K": 287.68,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h23v04.061.2023170113232"
+          },
+          {
+            "date": "2023177",
+            "K": 280.38,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023177.h23v04.061.2023178093305"
+          },
+          {
+            "date": "2023185",
+            "K": 279.02,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023185.h23v04.061.2023192172542"
+          },
+          {
+            "date": "2023193",
+            "K": 288.78,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023193.h23v04.061.2023201221237"
+          },
+          {
+            "date": "2023202",
+            "K": 288.22,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023202.h23v04.061.2023214183713"
+          },
+          {
+            "date": "2023210",
+            "K": 282.3,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023210.h23v04.061.2023215132839"
+          },
+          {
+            "date": "2023226",
+            "K": 274.3,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023226.h23v04.061.2023227175859"
+          },
+          {
+            "date": "2023243",
+            "K": 282.02,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023243.h23v04.061.2023244182436"
+          }
+        ],
+        "nRejected": 2
+      },
+      "unpairedDayNightDeltaK": 20.16,
+      "pairedDayNight": {
+        "nPaired": 9,
+        "meanDeltaK": 19.0,
+        "minDeltaK": 9.68,
+        "maxDeltaK": 27.58,
+        "observations": [
+          {
+            "date": "2023152",
+            "dayK": 287.58,
+            "nightK": 277.9,
+            "deltaK": 9.68,
+            "dayItemId": "MOD11A1.A2023152.h23v04.061.2023153211528",
+            "nightItemId": "MOD11A1.A2023152.h23v04.061.2023153211528"
+          },
+          {
+            "date": "2023160",
+            "dayK": 301.88,
+            "nightK": 287.44,
+            "deltaK": 14.44,
+            "dayItemId": "MOD11A1.A2023160.h23v04.061.2023164030907",
+            "nightItemId": "MOD11A1.A2023160.h23v04.061.2023164030907"
+          },
+          {
+            "date": "2023169",
+            "dayK": 309.58,
+            "nightK": 287.68,
+            "deltaK": 21.9,
+            "dayItemId": "MOD11A1.A2023169.h23v04.061.2023170113232",
+            "nightItemId": "MOD11A1.A2023169.h23v04.061.2023170113232"
+          },
+          {
+            "date": "2023177",
+            "dayK": 304.08,
+            "nightK": 280.38,
+            "deltaK": 23.7,
+            "dayItemId": "MYD11A1.A2023177.h23v04.061.2023179021956",
+            "nightItemId": "MOD11A1.A2023177.h23v04.061.2023178093305"
+          },
+          {
+            "date": "2023193",
+            "dayK": 300.12,
+            "nightK": 288.78,
+            "deltaK": 11.34,
+            "dayItemId": "MOD11A1.A2023193.h23v04.061.2023201221237",
+            "nightItemId": "MOD11A1.A2023193.h23v04.061.2023201221237"
+          },
+          {
+            "date": "2023202",
+            "dayK": 305.94,
+            "nightK": 288.22,
+            "deltaK": 17.72,
+            "dayItemId": "MOD11A1.A2023202.h23v04.061.2023214183713",
+            "nightItemId": "MOD11A1.A2023202.h23v04.061.2023214183713"
+          },
+          {
+            "date": "2023210",
+            "dayK": 304.42,
+            "nightK": 282.3,
+            "deltaK": 22.12,
+            "dayItemId": "MOD11A1.A2023210.h23v04.061.2023215174522",
+            "nightItemId": "MYD11A1.A2023210.h23v04.061.2023215132839"
+          },
+          {
+            "date": "2023226",
+            "dayK": 301.88,
+            "nightK": 274.3,
+            "deltaK": 27.58,
+            "dayItemId": "MYD11A1.A2023226.h23v04.061.2023227175859",
+            "nightItemId": "MYD11A1.A2023226.h23v04.061.2023227175859"
+          },
+          {
+            "date": "2023243",
+            "dayK": 304.54,
+            "nightK": 282.02,
+            "deltaK": 22.52,
+            "dayItemId": "MOD11A1.A2023243.h23v04.061.2023244180137",
+            "nightItemId": "MYD11A1.A2023243.h23v04.061.2023244182436"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 10,
+        "meanNeighborhoodStdK": 2.14,
+        "meanAbsCenterNeighborhoodK": 1.55,
+        "maxAbsCenterNeighborhoodK": 3.54,
+        "meanValidPixels": 21.8,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 271.2,
+        "minK": 253.16,
+        "maxK": 287.63,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-84e7747ffffffff": {
+      "window": "2023-12-01/2024-02-29",
+      "hemisphere": "south",
+      "cap": 12,
+      "availableDates": 91,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 8,
+      "day": {
+        "nAccepted": 12,
+        "nGoodQC": 10,
+        "nOtherQC": 2,
+        "status": "STRONGER SAMPLE",
+        "meanK": 245.71,
+        "minK": 232.58,
+        "maxK": 252.14,
+        "observations": [
+          {
+            "date": "2023335",
+            "K": 242.34,
+            "qc": 8,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023335.h18v16.061.2023340033002"
+          },
+          {
+            "date": "2023343",
+            "K": 232.58,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023343.h18v16.061.2023344090705"
+          },
+          {
+            "date": "2023351",
+            "K": 249.98,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023351.h18v16.061.2023352092619"
+          },
+          {
+            "date": "2023360",
+            "K": 252.14,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023360.h18v16.061.2023365112121"
+          },
+          {
+            "date": "2024003",
+            "K": 248.7,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024003.h18v16.061.2024005154414"
+          },
+          {
+            "date": "2024011",
+            "K": 239.62,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024011.h18v16.061.2024012142759"
+          },
+          {
+            "date": "2024019",
+            "K": 250.64,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024019.h18v16.061.2024027132844"
+          },
+          {
+            "date": "2024027",
+            "K": 248.64,
+            "qc": 8,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2024027.h18v16.061.2024030230543"
+          },
+          {
+            "date": "2024035",
+            "K": 247.96,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024035.h18v16.061.2024039080748"
+          },
+          {
+            "date": "2024044",
+            "K": 248.16,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2024044.h18v16.061.2024045224421"
+          },
+          {
+            "date": "2024052",
+            "K": 245.16,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024052.h18v16.061.2024056102855"
+          },
+          {
+            "date": "2024060",
+            "K": 242.56,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024060.h18v16.061.2024066054646"
+          }
+        ],
+        "nRejected": 0
+      },
+      "night": {
+        "nAccepted": 12,
+        "nGoodQC": 10,
+        "nOtherQC": 2,
+        "status": "STRONGER SAMPLE",
+        "meanK": 242.75,
+        "minK": 236.2,
+        "maxK": 247.0,
+        "observations": [
+          {
+            "date": "2023335",
+            "K": 237.1,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023335.h18v16.061.2023340033002"
+          },
+          {
+            "date": "2023343",
+            "K": 241.74,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023343.h18v16.061.2023344090705"
+          },
+          {
+            "date": "2023351",
+            "K": 243.3,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023351.h18v16.061.2023352092619"
+          },
+          {
+            "date": "2023360",
+            "K": 245.74,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023360.h18v16.061.2023365105505"
+          },
+          {
+            "date": "2024003",
+            "K": 244.68,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024003.h18v16.061.2024005154414"
+          },
+          {
+            "date": "2024011",
+            "K": 236.2,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024011.h18v16.061.2024012142759"
+          },
+          {
+            "date": "2024019",
+            "K": 247.0,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024019.h18v16.061.2024027132844"
+          },
+          {
+            "date": "2024027",
+            "K": 246.22,
+            "qc": 8,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2024027.h18v16.061.2024030230543"
+          },
+          {
+            "date": "2024035",
+            "K": 245.06,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024035.h18v16.061.2024039080748"
+          },
+          {
+            "date": "2024044",
+            "K": 244.78,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024044.h18v16.061.2024045204345"
+          },
+          {
+            "date": "2024052",
+            "K": 243.2,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024052.h18v16.061.2024056102855"
+          },
+          {
+            "date": "2024060",
+            "K": 237.94,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2024060.h18v16.061.2024066045804"
+          }
+        ],
+        "nRejected": 0
+      },
+      "unpairedDayNightDeltaK": 2.96,
+      "pairedDayNight": {
+        "nPaired": 12,
+        "meanDeltaK": 2.96,
+        "minDeltaK": -9.16,
+        "maxDeltaK": 6.68,
+        "observations": [
+          {
+            "date": "2023335",
+            "dayK": 242.34,
+            "nightK": 237.1,
+            "deltaK": 5.24,
+            "dayItemId": "MOD11A1.A2023335.h18v16.061.2023340033002",
+            "nightItemId": "MOD11A1.A2023335.h18v16.061.2023340033002"
+          },
+          {
+            "date": "2023343",
+            "dayK": 232.58,
+            "nightK": 241.74,
+            "deltaK": -9.16,
+            "dayItemId": "MOD11A1.A2023343.h18v16.061.2023344090705",
+            "nightItemId": "MOD11A1.A2023343.h18v16.061.2023344090705"
+          },
+          {
+            "date": "2023351",
+            "dayK": 249.98,
+            "nightK": 243.3,
+            "deltaK": 6.68,
+            "dayItemId": "MOD11A1.A2023351.h18v16.061.2023352092619",
+            "nightItemId": "MOD11A1.A2023351.h18v16.061.2023352092619"
+          },
+          {
+            "date": "2023360",
+            "dayK": 252.14,
+            "nightK": 245.74,
+            "deltaK": 6.4,
+            "dayItemId": "MOD11A1.A2023360.h18v16.061.2023365112121",
+            "nightItemId": "MYD11A1.A2023360.h18v16.061.2023365105505"
+          },
+          {
+            "date": "2024003",
+            "dayK": 248.7,
+            "nightK": 244.68,
+            "deltaK": 4.02,
+            "dayItemId": "MOD11A1.A2024003.h18v16.061.2024005154414",
+            "nightItemId": "MOD11A1.A2024003.h18v16.061.2024005154414"
+          },
+          {
+            "date": "2024011",
+            "dayK": 239.62,
+            "nightK": 236.2,
+            "deltaK": 3.42,
+            "dayItemId": "MOD11A1.A2024011.h18v16.061.2024012142759",
+            "nightItemId": "MOD11A1.A2024011.h18v16.061.2024012142759"
+          },
+          {
+            "date": "2024019",
+            "dayK": 250.64,
+            "nightK": 247.0,
+            "deltaK": 3.64,
+            "dayItemId": "MOD11A1.A2024019.h18v16.061.2024027132844",
+            "nightItemId": "MOD11A1.A2024019.h18v16.061.2024027132844"
+          },
+          {
+            "date": "2024027",
+            "dayK": 248.64,
+            "nightK": 246.22,
+            "deltaK": 2.42,
+            "dayItemId": "MYD11A1.A2024027.h18v16.061.2024030230543",
+            "nightItemId": "MYD11A1.A2024027.h18v16.061.2024030230543"
+          },
+          {
+            "date": "2024035",
+            "dayK": 247.96,
+            "nightK": 245.06,
+            "deltaK": 2.9,
+            "dayItemId": "MOD11A1.A2024035.h18v16.061.2024039080748",
+            "nightItemId": "MOD11A1.A2024035.h18v16.061.2024039080748"
+          },
+          {
+            "date": "2024044",
+            "dayK": 248.16,
+            "nightK": 244.78,
+            "deltaK": 3.38,
+            "dayItemId": "MYD11A1.A2024044.h18v16.061.2024045224421",
+            "nightItemId": "MOD11A1.A2024044.h18v16.061.2024045204345"
+          },
+          {
+            "date": "2024052",
+            "dayK": 245.16,
+            "nightK": 243.2,
+            "deltaK": 1.96,
+            "dayItemId": "MOD11A1.A2024052.h18v16.061.2024056102855",
+            "nightItemId": "MOD11A1.A2024052.h18v16.061.2024056102855"
+          },
+          {
+            "date": "2024060",
+            "dayK": 242.56,
+            "nightK": 237.94,
+            "deltaK": 4.62,
+            "dayItemId": "MOD11A1.A2024060.h18v16.061.2024066054646",
+            "nightItemId": "MYD11A1.A2024060.h18v16.061.2024066045804"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 12,
+        "meanNeighborhoodStdK": 0.76,
+        "meanAbsCenterNeighborhoodK": 0.52,
+        "maxAbsCenterNeighborhoodK": 2.07,
+        "meanValidPixels": 24.3,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 240.97,
+        "minK": 233.95,
+        "maxK": 251.85,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-84f3b5dffffffff": {
+      "window": "2023-12-01/2024-02-29",
+      "hemisphere": "south",
+      "cap": 12,
+      "availableDates": 91,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 12,
+      "day": {
+        "nAccepted": 11,
+        "nGoodQC": 9,
+        "nOtherQC": 2,
+        "status": "MODERATE",
+        "meanK": 249.02,
+        "minK": 232.72,
+        "maxK": 255.84,
+        "observations": [
+          {
+            "date": "2023335",
+            "K": 253.5,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023335.h21v16.061.2023340033040"
+          },
+          {
+            "date": "2023343",
+            "K": 254.14,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023343.h21v16.061.2023344090656"
+          },
+          {
+            "date": "2023351",
+            "K": 254.08,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023351.h21v16.061.2023352092547"
+          },
+          {
+            "date": "2023360",
+            "K": 252.56,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023360.h21v16.061.2023365105613"
+          },
+          {
+            "date": "2024003",
+            "K": 255.84,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024003.h21v16.061.2024005154715"
+          },
+          {
+            "date": "2024011",
+            "K": 255.16,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024011.h21v16.061.2024012141208"
+          },
+          {
+            "date": "2024027",
+            "K": 250.52,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024027.h21v16.061.2024030211715"
+          },
+          {
+            "date": "2024035",
+            "K": 250.98,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024035.h21v16.061.2024039064956"
+          },
+          {
+            "date": "2024044",
+            "K": 242.72,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024044.h21v16.061.2024045204653"
+          },
+          {
+            "date": "2024052",
+            "K": 237.0,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024052.h21v16.061.2024056105114"
+          },
+          {
+            "date": "2024060",
+            "K": 232.72,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024060.h21v16.061.2024066055222"
+          }
+        ],
+        "nRejected": 1
+      },
+      "night": {
+        "nAccepted": 12,
+        "nGoodQC": 9,
+        "nOtherQC": 3,
+        "status": "STRONGER SAMPLE",
+        "meanK": 246.26,
+        "minK": 234.22,
+        "maxK": 253.08,
+        "observations": [
+          {
+            "date": "2023335",
+            "K": 252.32,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023335.h21v16.061.2023340033040"
+          },
+          {
+            "date": "2023343",
+            "K": 251.3,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023343.h21v16.061.2023344174539"
+          },
+          {
+            "date": "2023351",
+            "K": 251.6,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023351.h21v16.061.2023352092547"
+          },
+          {
+            "date": "2023360",
+            "K": 249.06,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023360.h21v16.061.2023365112300"
+          },
+          {
+            "date": "2024003",
+            "K": 250.12,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024003.h21v16.061.2024005154715"
+          },
+          {
+            "date": "2024011",
+            "K": 253.08,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024011.h21v16.061.2024012141208"
+          },
+          {
+            "date": "2024019",
+            "K": 242.76,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024019.h21v16.061.2024027132550"
+          },
+          {
+            "date": "2024027",
+            "K": 244.5,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024027.h21v16.061.2024030211715"
+          },
+          {
+            "date": "2024035",
+            "K": 246.82,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2024035.h21v16.061.2024039064956"
+          },
+          {
+            "date": "2024044",
+            "K": 243.62,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024044.h21v16.061.2024045204653"
+          },
+          {
+            "date": "2024052",
+            "K": 234.22,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2024052.h21v16.061.2024055231704"
+          },
+          {
+            "date": "2024060",
+            "K": 235.68,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024060.h21v16.061.2024066055222"
+          }
+        ],
+        "nRejected": 0
+      },
+      "unpairedDayNightDeltaK": 2.76,
+      "pairedDayNight": {
+        "nPaired": 11,
+        "meanDeltaK": 2.45,
+        "minDeltaK": -2.96,
+        "maxDeltaK": 6.02,
+        "observations": [
+          {
+            "date": "2023335",
+            "dayK": 253.5,
+            "nightK": 252.32,
+            "deltaK": 1.18,
+            "dayItemId": "MOD11A1.A2023335.h21v16.061.2023340033040",
+            "nightItemId": "MOD11A1.A2023335.h21v16.061.2023340033040"
+          },
+          {
+            "date": "2023343",
+            "dayK": 254.14,
+            "nightK": 251.3,
+            "deltaK": 2.84,
+            "dayItemId": "MOD11A1.A2023343.h21v16.061.2023344090656",
+            "nightItemId": "MYD11A1.A2023343.h21v16.061.2023344174539"
+          },
+          {
+            "date": "2023351",
+            "dayK": 254.08,
+            "nightK": 251.6,
+            "deltaK": 2.48,
+            "dayItemId": "MOD11A1.A2023351.h21v16.061.2023352092547",
+            "nightItemId": "MOD11A1.A2023351.h21v16.061.2023352092547"
+          },
+          {
+            "date": "2023360",
+            "dayK": 252.56,
+            "nightK": 249.06,
+            "deltaK": 3.5,
+            "dayItemId": "MYD11A1.A2023360.h21v16.061.2023365105613",
+            "nightItemId": "MOD11A1.A2023360.h21v16.061.2023365112300"
+          },
+          {
+            "date": "2024003",
+            "dayK": 255.84,
+            "nightK": 250.12,
+            "deltaK": 5.72,
+            "dayItemId": "MOD11A1.A2024003.h21v16.061.2024005154715",
+            "nightItemId": "MOD11A1.A2024003.h21v16.061.2024005154715"
+          },
+          {
+            "date": "2024011",
+            "dayK": 255.16,
+            "nightK": 253.08,
+            "deltaK": 2.08,
+            "dayItemId": "MOD11A1.A2024011.h21v16.061.2024012141208",
+            "nightItemId": "MOD11A1.A2024011.h21v16.061.2024012141208"
+          },
+          {
+            "date": "2024027",
+            "dayK": 250.52,
+            "nightK": 244.5,
+            "deltaK": 6.02,
+            "dayItemId": "MOD11A1.A2024027.h21v16.061.2024030211715",
+            "nightItemId": "MOD11A1.A2024027.h21v16.061.2024030211715"
+          },
+          {
+            "date": "2024035",
+            "dayK": 250.98,
+            "nightK": 246.82,
+            "deltaK": 4.16,
+            "dayItemId": "MOD11A1.A2024035.h21v16.061.2024039064956",
+            "nightItemId": "MOD11A1.A2024035.h21v16.061.2024039064956"
+          },
+          {
+            "date": "2024044",
+            "dayK": 242.72,
+            "nightK": 243.62,
+            "deltaK": -0.9,
+            "dayItemId": "MOD11A1.A2024044.h21v16.061.2024045204653",
+            "nightItemId": "MOD11A1.A2024044.h21v16.061.2024045204653"
+          },
+          {
+            "date": "2024052",
+            "dayK": 237.0,
+            "nightK": 234.22,
+            "deltaK": 2.78,
+            "dayItemId": "MOD11A1.A2024052.h21v16.061.2024056105114",
+            "nightItemId": "MYD11A1.A2024052.h21v16.061.2024055231704"
+          },
+          {
+            "date": "2024060",
+            "dayK": 232.72,
+            "nightK": 235.68,
+            "deltaK": -2.96,
+            "dayItemId": "MOD11A1.A2024060.h21v16.061.2024066055222",
+            "nightItemId": "MOD11A1.A2024060.h21v16.061.2024066055222"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 11,
+        "meanNeighborhoodStdK": 3.52,
+        "meanAbsCenterNeighborhoodK": 1.76,
+        "maxAbsCenterNeighborhoodK": 3.82,
+        "meanValidPixels": 24.9,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 246.41,
+        "minK": 237.27,
+        "maxK": 260.96,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-840d707ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 7,
+      "day": {
+        "nAccepted": 7,
+        "nGoodQC": 2,
+        "nOtherQC": 5,
+        "status": "MODERATE",
+        "meanK": 287.07,
+        "minK": 280.08,
+        "maxK": 298.68,
+        "observations": [
+          {
+            "date": "2023169",
+            "K": 280.08,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023169.h12v02.061.2023170112924"
+          },
+          {
+            "date": "2023185",
+            "K": 293.36,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023185.h12v02.061.2023192063348"
+          },
+          {
+            "date": "2023210",
+            "K": 298.68,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023210.h12v02.061.2023215173533"
+          },
+          {
+            "date": "2023218",
+            "K": 283.88,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023218.h12v02.061.2023220202858"
+          },
+          {
+            "date": "2023226",
+            "K": 283.1,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023226.h12v02.061.2023227172147"
+          },
+          {
+            "date": "2023235",
+            "K": 284.92,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023235.h12v02.061.2023236094034"
+          },
+          {
+            "date": "2023243",
+            "K": 285.48,
+            "qc": 81,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023243.h12v02.061.2023244175553"
+          }
+        ],
+        "nRejected": 5
+      },
+      "night": {
+        "nAccepted": 8,
+        "nGoodQC": 2,
+        "nOtherQC": 6,
+        "status": "MODERATE",
+        "meanK": 279.59,
+        "minK": 263.8,
+        "maxK": 290.46,
+        "observations": [
+          {
+            "date": "2023160",
+            "K": 279.1,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023160.h12v02.061.2023164030108"
+          },
+          {
+            "date": "2023169",
+            "K": 275.34,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023169.h12v02.061.2023170112924"
+          },
+          {
+            "date": "2023177",
+            "K": 284.06,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023177.h12v02.061.2023179021858"
+          },
+          {
+            "date": "2023185",
+            "K": 290.46,
+            "qc": 81,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023185.h12v02.061.2023192063348"
+          },
+          {
+            "date": "2023210",
+            "K": 285.26,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023210.h12v02.061.2023215125143"
+          },
+          {
+            "date": "2023218",
+            "K": 282.18,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023218.h12v02.061.2023220202858"
+          },
+          {
+            "date": "2023226",
+            "K": 276.5,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023226.h12v02.061.2023227175435"
+          },
+          {
+            "date": "2023235",
+            "K": 263.8,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023235.h12v02.061.2023236174619"
+          }
+        ],
+        "nRejected": 4
+      },
+      "unpairedDayNightDeltaK": 7.48,
+      "pairedDayNight": {
+        "nPaired": 6,
+        "meanDeltaK": 8.41,
+        "minDeltaK": 1.7,
+        "maxDeltaK": 21.12,
+        "observations": [
+          {
+            "date": "2023169",
+            "dayK": 280.08,
+            "nightK": 275.34,
+            "deltaK": 4.74,
+            "dayItemId": "MOD11A1.A2023169.h12v02.061.2023170112924",
+            "nightItemId": "MOD11A1.A2023169.h12v02.061.2023170112924"
+          },
+          {
+            "date": "2023185",
+            "dayK": 293.36,
+            "nightK": 290.46,
+            "deltaK": 2.9,
+            "dayItemId": "MOD11A1.A2023185.h12v02.061.2023192063348",
+            "nightItemId": "MOD11A1.A2023185.h12v02.061.2023192063348"
+          },
+          {
+            "date": "2023210",
+            "dayK": 298.68,
+            "nightK": 285.26,
+            "deltaK": 13.42,
+            "dayItemId": "MOD11A1.A2023210.h12v02.061.2023215173533",
+            "nightItemId": "MYD11A1.A2023210.h12v02.061.2023215125143"
+          },
+          {
+            "date": "2023218",
+            "dayK": 283.88,
+            "nightK": 282.18,
+            "deltaK": 1.7,
+            "dayItemId": "MYD11A1.A2023218.h12v02.061.2023220202858",
+            "nightItemId": "MYD11A1.A2023218.h12v02.061.2023220202858"
+          },
+          {
+            "date": "2023226",
+            "dayK": 283.1,
+            "nightK": 276.5,
+            "deltaK": 6.6,
+            "dayItemId": "MOD11A1.A2023226.h12v02.061.2023227172147",
+            "nightItemId": "MYD11A1.A2023226.h12v02.061.2023227175435"
+          },
+          {
+            "date": "2023235",
+            "dayK": 284.92,
+            "nightK": 263.8,
+            "deltaK": 21.12,
+            "dayItemId": "MOD11A1.A2023235.h12v02.061.2023236094034",
+            "nightItemId": "MYD11A1.A2023235.h12v02.061.2023236174619"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 7,
+        "meanNeighborhoodStdK": 1.9,
+        "meanAbsCenterNeighborhoodK": 0.8,
+        "maxAbsCenterNeighborhoodK": 1.57,
+        "meanValidPixels": 21.6,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 262.58,
+        "minK": 248.85,
+        "maxK": 280.55,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-842512bffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 8,
+      "day": {
+        "nAccepted": 10,
+        "nGoodQC": 8,
+        "nOtherQC": 2,
+        "status": "MODERATE",
+        "meanK": 312.94,
+        "minK": 302.6,
+        "maxK": 317.72,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 302.6,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023152.h24v04.061.2023153214707"
+          },
+          {
+            "date": "2023160",
+            "K": 316.8,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023160.h24v04.061.2023164030153"
+          },
+          {
+            "date": "2023169",
+            "K": 316.02,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h24v04.061.2023170113249"
+          },
+          {
+            "date": "2023177",
+            "K": 309.42,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023177.h24v04.061.2023178093239"
+          },
+          {
+            "date": "2023185",
+            "K": 316.92,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023185.h24v04.061.2023192170304"
+          },
+          {
+            "date": "2023202",
+            "K": 314.02,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023202.h24v04.061.2023214184019"
+          },
+          {
+            "date": "2023218",
+            "K": 317.72,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023218.h24v04.061.2023220203709"
+          },
+          {
+            "date": "2023226",
+            "K": 308.48,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023226.h24v04.061.2023227172732"
+          },
+          {
+            "date": "2023235",
+            "K": 313.48,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023235.h24v04.061.2023236095035"
+          },
+          {
+            "date": "2023243",
+            "K": 313.98,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h24v04.061.2023244175916"
+          }
+        ],
+        "nRejected": 2
+      },
+      "night": {
+        "nAccepted": 7,
+        "nGoodQC": 7,
+        "nOtherQC": 0,
+        "status": "MODERATE",
+        "meanK": 287.27,
+        "minK": 283.32,
+        "maxK": 291.96,
+        "observations": [
+          {
+            "date": "2023160",
+            "K": 289.86,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023160.h24v04.061.2023164030153"
+          },
+          {
+            "date": "2023169",
+            "K": 287.92,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h24v04.061.2023170113249"
+          },
+          {
+            "date": "2023177",
+            "K": 283.32,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023177.h24v04.061.2023178093239"
+          },
+          {
+            "date": "2023202",
+            "K": 291.96,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023202.h24v04.061.2023214184019"
+          },
+          {
+            "date": "2023210",
+            "K": 284.06,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023210.h24v04.061.2023215125407"
+          },
+          {
+            "date": "2023218",
+            "K": 285.78,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023218.h24v04.061.2023220201117"
+          },
+          {
+            "date": "2023243",
+            "K": 288.0,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h24v04.061.2023244175916"
+          }
+        ],
+        "nRejected": 5
+      },
+      "unpairedDayNightDeltaK": 25.67,
+      "pairedDayNight": {
+        "nPaired": 6,
+        "meanDeltaK": 26.85,
+        "minDeltaK": 22.06,
+        "maxDeltaK": 31.94,
+        "observations": [
+          {
+            "date": "2023160",
+            "dayK": 316.8,
+            "nightK": 289.86,
+            "deltaK": 26.94,
+            "dayItemId": "MOD11A1.A2023160.h24v04.061.2023164030153",
+            "nightItemId": "MOD11A1.A2023160.h24v04.061.2023164030153"
+          },
+          {
+            "date": "2023169",
+            "dayK": 316.02,
+            "nightK": 287.92,
+            "deltaK": 28.1,
+            "dayItemId": "MOD11A1.A2023169.h24v04.061.2023170113249",
+            "nightItemId": "MOD11A1.A2023169.h24v04.061.2023170113249"
+          },
+          {
+            "date": "2023177",
+            "dayK": 309.42,
+            "nightK": 283.32,
+            "deltaK": 26.1,
+            "dayItemId": "MOD11A1.A2023177.h24v04.061.2023178093239",
+            "nightItemId": "MOD11A1.A2023177.h24v04.061.2023178093239"
+          },
+          {
+            "date": "2023202",
+            "dayK": 314.02,
+            "nightK": 291.96,
+            "deltaK": 22.06,
+            "dayItemId": "MOD11A1.A2023202.h24v04.061.2023214184019",
+            "nightItemId": "MOD11A1.A2023202.h24v04.061.2023214184019"
+          },
+          {
+            "date": "2023218",
+            "dayK": 317.72,
+            "nightK": 285.78,
+            "deltaK": 31.94,
+            "dayItemId": "MOD11A1.A2023218.h24v04.061.2023220203709",
+            "nightItemId": "MYD11A1.A2023218.h24v04.061.2023220201117"
+          },
+          {
+            "date": "2023243",
+            "dayK": 313.98,
+            "nightK": 288.0,
+            "deltaK": 25.98,
+            "dayItemId": "MOD11A1.A2023243.h24v04.061.2023244175916",
+            "nightItemId": "MOD11A1.A2023243.h24v04.061.2023244175916"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 10,
+        "meanNeighborhoodStdK": 2.06,
+        "meanAbsCenterNeighborhoodK": 1.38,
+        "maxAbsCenterNeighborhoodK": 2.1,
+        "meanValidPixels": 24.5,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 276.82,
+        "minK": 257.76,
+        "maxK": 293.79,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-8425151ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 6,
+      "day": {
+        "nAccepted": 9,
+        "nGoodQC": 5,
+        "nOtherQC": 4,
+        "status": "MODERATE",
+        "meanK": 311.81,
+        "minK": 305.26,
+        "maxK": 319.24,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 305.26,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023152.h23v04.061.2023153211528"
+          },
+          {
+            "date": "2023160",
+            "K": 319.24,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023160.h23v04.061.2023164030907"
+          },
+          {
+            "date": "2023169",
+            "K": 314.94,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h23v04.061.2023170113232"
+          },
+          {
+            "date": "2023185",
+            "K": 307.38,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023185.h23v04.061.2023192063205"
+          },
+          {
+            "date": "2023193",
+            "K": 311.86,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023193.h23v04.061.2023201014601"
+          },
+          {
+            "date": "2023202",
+            "K": 315.72,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023202.h23v04.061.2023214090526"
+          },
+          {
+            "date": "2023226",
+            "K": 305.48,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023226.h23v04.061.2023227172611"
+          },
+          {
+            "date": "2023235",
+            "K": 314.58,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023235.h23v04.061.2023236094537"
+          },
+          {
+            "date": "2023243",
+            "K": 311.84,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h23v04.061.2023244180137"
+          }
+        ],
+        "nRejected": 3
+      },
+      "night": {
+        "nAccepted": 8,
+        "nGoodQC": 5,
+        "nOtherQC": 3,
+        "status": "MODERATE",
+        "meanK": 286.87,
+        "minK": 280.7,
+        "maxK": 291.94,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 280.7,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023152.h23v04.061.2023153214704"
+          },
+          {
+            "date": "2023160",
+            "K": 285.78,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023160.h23v04.061.2023164024850"
+          },
+          {
+            "date": "2023169",
+            "K": 288.36,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h23v04.061.2023170113232"
+          },
+          {
+            "date": "2023177",
+            "K": 281.16,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023177.h23v04.061.2023179021956"
+          },
+          {
+            "date": "2023202",
+            "K": 291.82,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023202.h23v04.061.2023214183713"
+          },
+          {
+            "date": "2023210",
+            "K": 291.94,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023210.h23v04.061.2023215174522"
+          },
+          {
+            "date": "2023218",
+            "K": 287.24,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023218.h23v04.061.2023220203045"
+          },
+          {
+            "date": "2023243",
+            "K": 287.92,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023243.h23v04.061.2023244182436"
+          }
+        ],
+        "nRejected": 4
+      },
+      "unpairedDayNightDeltaK": 24.94,
+      "pairedDayNight": {
+        "nPaired": 5,
+        "meanDeltaK": 26.48,
+        "minDeltaK": 23.9,
+        "maxDeltaK": 33.46,
+        "observations": [
+          {
+            "date": "2023152",
+            "dayK": 305.26,
+            "nightK": 280.7,
+            "deltaK": 24.56,
+            "dayItemId": "MOD11A1.A2023152.h23v04.061.2023153211528",
+            "nightItemId": "MYD11A1.A2023152.h23v04.061.2023153214704"
+          },
+          {
+            "date": "2023160",
+            "dayK": 319.24,
+            "nightK": 285.78,
+            "deltaK": 33.46,
+            "dayItemId": "MOD11A1.A2023160.h23v04.061.2023164030907",
+            "nightItemId": "MYD11A1.A2023160.h23v04.061.2023164024850"
+          },
+          {
+            "date": "2023169",
+            "dayK": 314.94,
+            "nightK": 288.36,
+            "deltaK": 26.58,
+            "dayItemId": "MOD11A1.A2023169.h23v04.061.2023170113232",
+            "nightItemId": "MOD11A1.A2023169.h23v04.061.2023170113232"
+          },
+          {
+            "date": "2023202",
+            "dayK": 315.72,
+            "nightK": 291.82,
+            "deltaK": 23.9,
+            "dayItemId": "MYD11A1.A2023202.h23v04.061.2023214090526",
+            "nightItemId": "MOD11A1.A2023202.h23v04.061.2023214183713"
+          },
+          {
+            "date": "2023243",
+            "dayK": 311.84,
+            "nightK": 287.92,
+            "deltaK": 23.92,
+            "dayItemId": "MOD11A1.A2023243.h23v04.061.2023244180137",
+            "nightItemId": "MYD11A1.A2023243.h23v04.061.2023244182436"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 9,
+        "meanNeighborhoodStdK": 1.7,
+        "meanAbsCenterNeighborhoodK": 0.81,
+        "maxAbsCenterNeighborhoodK": 2.35,
+        "meanValidPixels": 24.8,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 276.68,
+        "minK": 255.43,
+        "maxK": 294.94,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-84245c3ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 10,
+      "day": {
+        "nAccepted": 8,
+        "nGoodQC": 6,
+        "nOtherQC": 2,
+        "status": "MODERATE",
+        "meanK": 311.27,
+        "minK": 306.16,
+        "maxK": 318.92,
+        "observations": [
+          {
+            "date": "2023160",
+            "K": 311.82,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023160.h26v04.061.2023164024823"
+          },
+          {
+            "date": "2023177",
+            "K": 308.64,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023177.h26v04.061.2023178093241"
+          },
+          {
+            "date": "2023185",
+            "K": 306.16,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023185.h26v04.061.2023192063259"
+          },
+          {
+            "date": "2023202",
+            "K": 313.14,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023202.h26v04.061.2023214185935"
+          },
+          {
+            "date": "2023210",
+            "K": 313.2,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023210.h26v04.061.2023215174207"
+          },
+          {
+            "date": "2023218",
+            "K": 307.1,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023218.h26v04.061.2023220202902"
+          },
+          {
+            "date": "2023226",
+            "K": 318.92,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023226.h26v04.061.2023227172555"
+          },
+          {
+            "date": "2023243",
+            "K": 311.22,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h26v04.061.2023244180043"
+          }
+        ],
+        "nRejected": 4
+      },
+      "night": {
+        "nAccepted": 10,
+        "nGoodQC": 9,
+        "nOtherQC": 1,
+        "status": "MODERATE",
+        "meanK": 288.14,
+        "minK": 281.88,
+        "maxK": 297.32,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 282.82,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023152.h26v04.061.2023153211624"
+          },
+          {
+            "date": "2023160",
+            "K": 286.06,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023160.h26v04.061.2023164030348"
+          },
+          {
+            "date": "2023177",
+            "K": 290.54,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023177.h26v04.061.2023178093241"
+          },
+          {
+            "date": "2023185",
+            "K": 285.42,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023185.h26v04.061.2023192171438"
+          },
+          {
+            "date": "2023202",
+            "K": 288.5,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023202.h26v04.061.2023214090341"
+          },
+          {
+            "date": "2023210",
+            "K": 287.42,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023210.h26v04.061.2023215174207"
+          },
+          {
+            "date": "2023218",
+            "K": 295.16,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023218.h26v04.061.2023220202902"
+          },
+          {
+            "date": "2023226",
+            "K": 297.32,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023226.h26v04.061.2023227172555"
+          },
+          {
+            "date": "2023235",
+            "K": 281.88,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023235.h26v04.061.2023236175522"
+          },
+          {
+            "date": "2023243",
+            "K": 286.3,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h26v04.061.2023244180043"
+          }
+        ],
+        "nRejected": 2
+      },
+      "unpairedDayNightDeltaK": 23.13,
+      "pairedDayNight": {
+        "nPaired": 8,
+        "meanDeltaK": 21.69,
+        "minDeltaK": 11.94,
+        "maxDeltaK": 25.78,
+        "observations": [
+          {
+            "date": "2023160",
+            "dayK": 311.82,
+            "nightK": 286.06,
+            "deltaK": 25.76,
+            "dayItemId": "MYD11A1.A2023160.h26v04.061.2023164024823",
+            "nightItemId": "MOD11A1.A2023160.h26v04.061.2023164030348"
+          },
+          {
+            "date": "2023177",
+            "dayK": 308.64,
+            "nightK": 290.54,
+            "deltaK": 18.1,
+            "dayItemId": "MOD11A1.A2023177.h26v04.061.2023178093241",
+            "nightItemId": "MOD11A1.A2023177.h26v04.061.2023178093241"
+          },
+          {
+            "date": "2023185",
+            "dayK": 306.16,
+            "nightK": 285.42,
+            "deltaK": 20.74,
+            "dayItemId": "MOD11A1.A2023185.h26v04.061.2023192063259",
+            "nightItemId": "MYD11A1.A2023185.h26v04.061.2023192171438"
+          },
+          {
+            "date": "2023202",
+            "dayK": 313.14,
+            "nightK": 288.5,
+            "deltaK": 24.64,
+            "dayItemId": "MOD11A1.A2023202.h26v04.061.2023214185935",
+            "nightItemId": "MYD11A1.A2023202.h26v04.061.2023214090341"
+          },
+          {
+            "date": "2023210",
+            "dayK": 313.2,
+            "nightK": 287.42,
+            "deltaK": 25.78,
+            "dayItemId": "MOD11A1.A2023210.h26v04.061.2023215174207",
+            "nightItemId": "MOD11A1.A2023210.h26v04.061.2023215174207"
+          },
+          {
+            "date": "2023218",
+            "dayK": 307.1,
+            "nightK": 295.16,
+            "deltaK": 11.94,
+            "dayItemId": "MOD11A1.A2023218.h26v04.061.2023220202902",
+            "nightItemId": "MOD11A1.A2023218.h26v04.061.2023220202902"
+          },
+          {
+            "date": "2023226",
+            "dayK": 318.92,
+            "nightK": 297.32,
+            "deltaK": 21.6,
+            "dayItemId": "MOD11A1.A2023226.h26v04.061.2023227172555",
+            "nightItemId": "MOD11A1.A2023226.h26v04.061.2023227172555"
+          },
+          {
+            "date": "2023243",
+            "dayK": 311.22,
+            "nightK": 286.3,
+            "deltaK": 24.92,
+            "dayItemId": "MOD11A1.A2023243.h26v04.061.2023244180043",
+            "nightItemId": "MOD11A1.A2023243.h26v04.061.2023244180043"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 8,
+        "meanNeighborhoodStdK": 0.97,
+        "meanAbsCenterNeighborhoodK": 0.41,
+        "maxAbsCenterNeighborhoodK": 1.11,
+        "meanValidPixels": 23.9,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 278.62,
+        "minK": 258.39,
+        "maxK": 297.77,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-8420265ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 10,
+      "day": {
+        "nAccepted": 9,
+        "nGoodQC": 6,
+        "nOtherQC": 3,
+        "status": "MODERATE",
+        "meanK": 315.52,
+        "minK": 303.46,
+        "maxK": 322.68,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 315.98,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023152.h22v04.061.2023153211438"
+          },
+          {
+            "date": "2023160",
+            "K": 316.86,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023160.h22v04.061.2023164024748"
+          },
+          {
+            "date": "2023185",
+            "K": 313.6,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023185.h22v04.061.2023192070432"
+          },
+          {
+            "date": "2023193",
+            "K": 319.14,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023193.h22v04.061.2023201220547"
+          },
+          {
+            "date": "2023202",
+            "K": 312.6,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023202.h22v04.061.2023214183346"
+          },
+          {
+            "date": "2023210",
+            "K": 322.68,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023210.h22v04.061.2023215174953"
+          },
+          {
+            "date": "2023218",
+            "K": 321.66,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023218.h22v04.061.2023220202826"
+          },
+          {
+            "date": "2023226",
+            "K": 303.46,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023226.h22v04.061.2023227172851"
+          },
+          {
+            "date": "2023235",
+            "K": 313.7,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023235.h22v04.061.2023236094508"
+          }
+        ],
+        "nRejected": 3
+      },
+      "night": {
+        "nAccepted": 11,
+        "nGoodQC": 9,
+        "nOtherQC": 2,
+        "status": "MODERATE",
+        "meanK": 288.86,
+        "minK": 277.14,
+        "maxK": 296.88,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 283.7,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023152.h22v04.061.2023153214646"
+          },
+          {
+            "date": "2023160",
+            "K": 290.92,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023160.h22v04.061.2023164030248"
+          },
+          {
+            "date": "2023169",
+            "K": 289.78,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023169.h22v04.061.2023170184604"
+          },
+          {
+            "date": "2023177",
+            "K": 286.76,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023177.h22v04.061.2023178093232"
+          },
+          {
+            "date": "2023185",
+            "K": 287.24,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023185.h22v04.061.2023192070432"
+          },
+          {
+            "date": "2023193",
+            "K": 296.3,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023193.h22v04.061.2023201220547"
+          },
+          {
+            "date": "2023202",
+            "K": 294.72,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023202.h22v04.061.2023214183346"
+          },
+          {
+            "date": "2023210",
+            "K": 296.88,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023210.h22v04.061.2023215174953"
+          },
+          {
+            "date": "2023218",
+            "K": 290.22,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023218.h22v04.061.2023220202826"
+          },
+          {
+            "date": "2023226",
+            "K": 283.84,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023226.h22v04.061.2023227172851"
+          },
+          {
+            "date": "2023243",
+            "K": 277.14,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023243.h22v04.061.2023244183101"
+          }
+        ],
+        "nRejected": 1
+      },
+      "unpairedDayNightDeltaK": 26.66,
+      "pairedDayNight": {
+        "nPaired": 8,
+        "meanDeltaK": 25.27,
+        "minDeltaK": 17.88,
+        "maxDeltaK": 32.28,
+        "observations": [
+          {
+            "date": "2023152",
+            "dayK": 315.98,
+            "nightK": 283.7,
+            "deltaK": 32.28,
+            "dayItemId": "MOD11A1.A2023152.h22v04.061.2023153211438",
+            "nightItemId": "MYD11A1.A2023152.h22v04.061.2023153214646"
+          },
+          {
+            "date": "2023160",
+            "dayK": 316.86,
+            "nightK": 290.92,
+            "deltaK": 25.94,
+            "dayItemId": "MYD11A1.A2023160.h22v04.061.2023164024748",
+            "nightItemId": "MOD11A1.A2023160.h22v04.061.2023164030248"
+          },
+          {
+            "date": "2023185",
+            "dayK": 313.6,
+            "nightK": 287.24,
+            "deltaK": 26.36,
+            "dayItemId": "MOD11A1.A2023185.h22v04.061.2023192070432",
+            "nightItemId": "MOD11A1.A2023185.h22v04.061.2023192070432"
+          },
+          {
+            "date": "2023193",
+            "dayK": 319.14,
+            "nightK": 296.3,
+            "deltaK": 22.84,
+            "dayItemId": "MOD11A1.A2023193.h22v04.061.2023201220547",
+            "nightItemId": "MOD11A1.A2023193.h22v04.061.2023201220547"
+          },
+          {
+            "date": "2023202",
+            "dayK": 312.6,
+            "nightK": 294.72,
+            "deltaK": 17.88,
+            "dayItemId": "MOD11A1.A2023202.h22v04.061.2023214183346",
+            "nightItemId": "MOD11A1.A2023202.h22v04.061.2023214183346"
+          },
+          {
+            "date": "2023210",
+            "dayK": 322.68,
+            "nightK": 296.88,
+            "deltaK": 25.8,
+            "dayItemId": "MOD11A1.A2023210.h22v04.061.2023215174953",
+            "nightItemId": "MOD11A1.A2023210.h22v04.061.2023215174953"
+          },
+          {
+            "date": "2023218",
+            "dayK": 321.66,
+            "nightK": 290.22,
+            "deltaK": 31.44,
+            "dayItemId": "MOD11A1.A2023218.h22v04.061.2023220202826",
+            "nightItemId": "MOD11A1.A2023218.h22v04.061.2023220202826"
+          },
+          {
+            "date": "2023226",
+            "dayK": 303.46,
+            "nightK": 283.84,
+            "deltaK": 19.62,
+            "dayItemId": "MOD11A1.A2023226.h22v04.061.2023227172851",
+            "nightItemId": "MOD11A1.A2023226.h22v04.061.2023227172851"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 9,
+        "meanNeighborhoodStdK": 1.48,
+        "meanAbsCenterNeighborhoodK": 0.79,
+        "maxAbsCenterNeighborhoodK": 3.04,
+        "meanValidPixels": 24.4,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 279.63,
+        "minK": 259.33,
+        "maxK": 298.12,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-8414725ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 6,
+      "day": {
+        "nAccepted": 8,
+        "nGoodQC": 4,
+        "nOtherQC": 4,
+        "status": "MODERATE",
+        "meanK": 297.07,
+        "minK": 290.42,
+        "maxK": 303.36,
+        "observations": [
+          {
+            "date": "2023160",
+            "K": 291.44,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023160.h25v03.061.2023164030356"
+          },
+          {
+            "date": "2023169",
+            "K": 290.42,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023169.h25v03.061.2023170113034"
+          },
+          {
+            "date": "2023177",
+            "K": 300.86,
+            "qc": 17,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023177.h25v03.061.2023179022122"
+          },
+          {
+            "date": "2023185",
+            "K": 303.36,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023185.h25v03.061.2023192063358"
+          },
+          {
+            "date": "2023193",
+            "K": 300.1,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023193.h25v03.061.2023201221739"
+          },
+          {
+            "date": "2023210",
+            "K": 299.58,
+            "qc": 17,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023210.h25v03.061.2023215174221"
+          },
+          {
+            "date": "2023218",
+            "K": 295.02,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023218.h25v03.061.2023220202932"
+          },
+          {
+            "date": "2023243",
+            "K": 295.76,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h25v03.061.2023244180042"
+          }
+        ],
+        "nRejected": 4
+      },
+      "night": {
+        "nAccepted": 5,
+        "nGoodQC": 2,
+        "nOtherQC": 3,
+        "status": "LIMITED",
+        "meanK": 282.48,
+        "minK": 277.7,
+        "maxK": 286.38,
+        "observations": [
+          {
+            "date": "2023169",
+            "K": 283.1,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023169.h25v03.061.2023170113034"
+          },
+          {
+            "date": "2023177",
+            "K": 282.46,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023177.h25v03.061.2023179022122"
+          },
+          {
+            "date": "2023185",
+            "K": 286.38,
+            "qc": 81,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023185.h25v03.061.2023192172831"
+          },
+          {
+            "date": "2023193",
+            "K": 282.74,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023193.h25v03.061.2023201005038"
+          },
+          {
+            "date": "2023243",
+            "K": 277.7,
+            "qc": 81,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023243.h25v03.061.2023244182751"
+          }
+        ],
+        "nRejected": 7
+      },
+      "unpairedDayNightDeltaK": 14.59,
+      "pairedDayNight": {
+        "nPaired": 5,
+        "meanDeltaK": 15.62,
+        "minDeltaK": 7.32,
+        "maxDeltaK": 18.4,
+        "observations": [
+          {
+            "date": "2023169",
+            "dayK": 290.42,
+            "nightK": 283.1,
+            "deltaK": 7.32,
+            "dayItemId": "MOD11A1.A2023169.h25v03.061.2023170113034",
+            "nightItemId": "MOD11A1.A2023169.h25v03.061.2023170113034"
+          },
+          {
+            "date": "2023177",
+            "dayK": 300.86,
+            "nightK": 282.46,
+            "deltaK": 18.4,
+            "dayItemId": "MYD11A1.A2023177.h25v03.061.2023179022122",
+            "nightItemId": "MYD11A1.A2023177.h25v03.061.2023179022122"
+          },
+          {
+            "date": "2023185",
+            "dayK": 303.36,
+            "nightK": 286.38,
+            "deltaK": 16.98,
+            "dayItemId": "MOD11A1.A2023185.h25v03.061.2023192063358",
+            "nightItemId": "MYD11A1.A2023185.h25v03.061.2023192172831"
+          },
+          {
+            "date": "2023193",
+            "dayK": 300.1,
+            "nightK": 282.74,
+            "deltaK": 17.36,
+            "dayItemId": "MOD11A1.A2023193.h25v03.061.2023201221739",
+            "nightItemId": "MYD11A1.A2023193.h25v03.061.2023201005038"
+          },
+          {
+            "date": "2023243",
+            "dayK": 295.76,
+            "nightK": 277.7,
+            "deltaK": 18.06,
+            "dayItemId": "MOD11A1.A2023243.h25v03.061.2023244180042",
+            "nightItemId": "MYD11A1.A2023243.h25v03.061.2023244182751"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 8,
+        "meanNeighborhoodStdK": 1.62,
+        "meanAbsCenterNeighborhoodK": 0.88,
+        "maxAbsCenterNeighborhoodK": 4.58,
+        "meanValidPixels": 24.5,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 265.17,
+        "minK": 242.47,
+        "maxK": 288.74,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-843d467ffffffff": {
+      "window": "2023-06-01/2023-08-31",
+      "hemisphere": "north",
+      "cap": 12,
+      "availableDates": 92,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 4,
+      "day": {
+        "nAccepted": 6,
+        "nGoodQC": 2,
+        "nOtherQC": 4,
+        "status": "MODERATE",
+        "meanK": 292.43,
+        "minK": 275.82,
+        "maxK": 306.44,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 282.52,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023152.h25v05.061.2023153211614"
+          },
+          {
+            "date": "2023169",
+            "K": 275.82,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023169.h25v05.061.2023170113203"
+          },
+          {
+            "date": "2023193",
+            "K": 306.44,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023193.h25v05.061.2023201005837"
+          },
+          {
+            "date": "2023210",
+            "K": 292.66,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023210.h25v05.061.2023215130204"
+          },
+          {
+            "date": "2023235",
+            "K": 302.7,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023235.h25v05.061.2023236175627"
+          },
+          {
+            "date": "2023243",
+            "K": 294.42,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h25v05.061.2023244180044"
+          }
+        ],
+        "nRejected": 6
+      },
+      "night": {
+        "nAccepted": 6,
+        "nGoodQC": 4,
+        "nOtherQC": 2,
+        "status": "MODERATE",
+        "meanK": 271.06,
+        "minK": 261.5,
+        "maxK": 280.34,
+        "observations": [
+          {
+            "date": "2023152",
+            "K": 267.92,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023152.h25v05.061.2023153214718"
+          },
+          {
+            "date": "2023169",
+            "K": 271.12,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023169.h25v05.061.2023170113203"
+          },
+          {
+            "date": "2023177",
+            "K": 268.38,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2023177.h25v05.061.2023179022251"
+          },
+          {
+            "date": "2023218",
+            "K": 261.5,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023218.h25v05.061.2023220204305"
+          },
+          {
+            "date": "2023235",
+            "K": 280.34,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023235.h25v05.061.2023236094202"
+          },
+          {
+            "date": "2023243",
+            "K": 277.08,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MOD11A1.A2023243.h25v05.061.2023244180044"
+          }
+        ],
+        "nRejected": 6
+      },
+      "unpairedDayNightDeltaK": 21.37,
+      "pairedDayNight": {
+        "nPaired": 4,
+        "meanDeltaK": 14.75,
+        "minDeltaK": 4.7,
+        "maxDeltaK": 22.36,
+        "observations": [
+          {
+            "date": "2023152",
+            "dayK": 282.52,
+            "nightK": 267.92,
+            "deltaK": 14.6,
+            "dayItemId": "MOD11A1.A2023152.h25v05.061.2023153211614",
+            "nightItemId": "MYD11A1.A2023152.h25v05.061.2023153214718"
+          },
+          {
+            "date": "2023169",
+            "dayK": 275.82,
+            "nightK": 271.12,
+            "deltaK": 4.7,
+            "dayItemId": "MOD11A1.A2023169.h25v05.061.2023170113203",
+            "nightItemId": "MOD11A1.A2023169.h25v05.061.2023170113203"
+          },
+          {
+            "date": "2023235",
+            "dayK": 302.7,
+            "nightK": 280.34,
+            "deltaK": 22.36,
+            "dayItemId": "MYD11A1.A2023235.h25v05.061.2023236175627",
+            "nightItemId": "MOD11A1.A2023235.h25v05.061.2023236094202"
+          },
+          {
+            "date": "2023243",
+            "dayK": 294.42,
+            "nightK": 277.08,
+            "deltaK": 17.34,
+            "dayItemId": "MOD11A1.A2023243.h25v05.061.2023244180044",
+            "nightItemId": "MOD11A1.A2023243.h25v05.061.2023244180044"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 6,
+        "meanNeighborhoodStdK": 4.99,
+        "meanAbsCenterNeighborhoodK": 1.7,
+        "maxAbsCenterNeighborhoodK": 5.96,
+        "meanValidPixels": 22.3,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 268.3,
+        "minK": 254.79,
+        "maxK": 280.95,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-84e093dffffffff": {
+      "window": "2023-12-01/2024-02-29",
+      "hemisphere": "south",
+      "cap": 12,
+      "availableDates": 91,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 5,
+      "day": {
+        "nAccepted": 8,
+        "nGoodQC": 1,
+        "nOtherQC": 7,
+        "status": "MODERATE",
+        "meanK": 285.44,
+        "minK": 274.5,
+        "maxK": 290.94,
+        "observations": [
+          {
+            "date": "2023343",
+            "K": 287.38,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023343.h22v13.061.2023344090724"
+          },
+          {
+            "date": "2023351",
+            "K": 286.38,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023351.h22v13.061.2023352092517"
+          },
+          {
+            "date": "2023360",
+            "K": 290.94,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023360.h22v13.061.2023365105444"
+          },
+          {
+            "date": "2024003",
+            "K": 274.5,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024003.h22v13.061.2024005154756"
+          },
+          {
+            "date": "2024011",
+            "K": 282.2,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2024011.h22v13.061.2024012233909"
+          },
+          {
+            "date": "2024027",
+            "K": 290.02,
+            "qc": 0,
+            "qcClass": "good",
+            "itemId": "MYD11A1.A2024027.h22v13.061.2024030231000"
+          },
+          {
+            "date": "2024052",
+            "K": 286.08,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2024052.h22v13.061.2024055231141"
+          },
+          {
+            "date": "2024060",
+            "K": 286.04,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024060.h22v13.061.2024066053939"
+          }
+        ],
+        "nRejected": 4
+      },
+      "night": {
+        "nAccepted": 8,
+        "nGoodQC": 0,
+        "nOtherQC": 8,
+        "status": "MODERATE",
+        "meanK": 275.31,
+        "minK": 269.22,
+        "maxK": 279.28,
+        "observations": [
+          {
+            "date": "2023335",
+            "K": 269.22,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2023335.h22v13.061.2023340032845"
+          },
+          {
+            "date": "2023343",
+            "K": 274.12,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2023343.h22v13.061.2023344174526"
+          },
+          {
+            "date": "2024003",
+            "K": 273.6,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024003.h22v13.061.2024005154756"
+          },
+          {
+            "date": "2024011",
+            "K": 276.66,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MYD11A1.A2024011.h22v13.061.2024012233909"
+          },
+          {
+            "date": "2024019",
+            "K": 277.48,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024019.h22v13.061.2024027130952"
+          },
+          {
+            "date": "2024035",
+            "K": 276.74,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024035.h22v13.061.2024039074000"
+          },
+          {
+            "date": "2024044",
+            "K": 279.28,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024044.h22v13.061.2024045205232"
+          },
+          {
+            "date": "2024052",
+            "K": 275.42,
+            "qc": 65,
+            "qcClass": "other",
+            "itemId": "MOD11A1.A2024052.h22v13.061.2024056104741"
+          }
+        ],
+        "nRejected": 4
+      },
+      "unpairedDayNightDeltaK": 10.13,
+      "pairedDayNight": {
+        "nPaired": 4,
+        "meanDeltaK": 7.59,
+        "minDeltaK": 0.9,
+        "maxDeltaK": 13.26,
+        "observations": [
+          {
+            "date": "2023343",
+            "dayK": 287.38,
+            "nightK": 274.12,
+            "deltaK": 13.26,
+            "dayItemId": "MOD11A1.A2023343.h22v13.061.2023344090724",
+            "nightItemId": "MYD11A1.A2023343.h22v13.061.2023344174526"
+          },
+          {
+            "date": "2024003",
+            "dayK": 274.5,
+            "nightK": 273.6,
+            "deltaK": 0.9,
+            "dayItemId": "MOD11A1.A2024003.h22v13.061.2024005154756",
+            "nightItemId": "MOD11A1.A2024003.h22v13.061.2024005154756"
+          },
+          {
+            "date": "2024011",
+            "dayK": 282.2,
+            "nightK": 276.66,
+            "deltaK": 5.54,
+            "dayItemId": "MYD11A1.A2024011.h22v13.061.2024012233909",
+            "nightItemId": "MYD11A1.A2024011.h22v13.061.2024012233909"
+          },
+          {
+            "date": "2024052",
+            "dayK": 286.08,
+            "nightK": 275.42,
+            "deltaK": 10.66,
+            "dayItemId": "MYD11A1.A2024052.h22v13.061.2024055231141",
+            "nightItemId": "MOD11A1.A2024052.h22v13.061.2024056104741"
+          }
+        ]
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 8,
+        "meanNeighborhoodStdK": 1.53,
+        "meanAbsCenterNeighborhoodK": 0.77,
+        "maxAbsCenterNeighborhoodK": 1.63,
+        "meanValidPixels": 13.4,
+        "support": "5x5 native 1 km pixels; neighbourhood mean is not substituted for the centre pixel"
+      },
+      "air": {
+        "meanK": 276.22,
+        "minK": 273.66,
+        "maxK": 279.37,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    },
+    "GD-84b2e43ffffffff": {
+      "window": "2023-12-01/2024-02-29",
+      "hemisphere": "south",
+      "cap": 12,
+      "availableDates": 91,
+      "selectedDates": 12,
+      "selection": "deterministic evenly spaced dates across the available window",
+      "nItems": 24,
+      "nOverlapItems": 12,
+      "nDatesWithMultipleItems": 12,
+      "nOverlapValidResolved": 0,
+      "day": {
+        "nAccepted": 0,
+        "nGoodQC": 0,
+        "nOtherQC": 0,
+        "status": "NO DATA",
+        "meanK": null,
+        "minK": null,
+        "maxK": null,
+        "observations": [],
+        "nRejected": 12
+      },
+      "night": {
+        "nAccepted": 0,
+        "nGoodQC": 0,
+        "nOtherQC": 0,
+        "status": "NO DATA",
+        "meanK": null,
+        "minK": null,
+        "maxK": null,
+        "observations": [],
+        "nRejected": 12
+      },
+      "unpairedDayNightDeltaK": null,
+      "pairedDayNight": {
+        "nPaired": 0,
+        "meanDeltaK": null,
+        "minDeltaK": null,
+        "maxDeltaK": null,
+        "observations": []
+      },
+      "spatialSensitivity": {
+        "phase": "day",
+        "nDates": 0,
+        "support": "no valid day neighbourhoods"
+      },
+      "air": {
+        "meanK": 273.0,
+        "minK": 265.79,
+        "maxK": 280.03,
+        "source": "NASA POWER / MERRA-2 monthly climatology 2001-2020",
+        "support": "2 m air temperature, monthly normals, point sample",
+        "class": "climatology"
+      }
+    }
+  },
+  "errors": {}
+}

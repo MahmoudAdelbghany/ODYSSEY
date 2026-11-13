@@ -1,0 +1,52 @@
+# Dependencies and builds
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Secrets: only the template is tracked
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Local state, logs and caches
+server/data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.log
+.cache/
+tmp/
+.playwright-mcp/
+.DS_Store
+
+# Optional external components (not redistributed; see THIRD_PARTY_NOTICES.md)
+external/
+
+# Local tooling
+.agents/
+.claude/
+skills-lock.json
+
+# Raw downloads and model weights (re-create with scripts/; see DATA_SOURCES.md)
+data/raw/
+*.pt
+*.onnx
+*.safetensors
+*.ckpt
+
+# Legacy demo media and frames (old UI; synthesized narration; not part of the release)
+demo/
+public/odyssey-demo.mp4
+*.webm
+
+# Local scratch screenshots in the repository root
+/*.png
+.gitmodules

@@ -1,0 +1,332 @@
+/* Brings the discovery screens onto the shared design system (src/ui.css). */
+
+.disc {
+  font-family: var(--font-sans);
+  color: var(--text);
+}
+
+/* Top bar: same as the workspace */
+.disc .disc-top {
+  height: var(--topbar-h);
+  flex-basis: var(--topbar-h);
+  padding: 0 var(--s-4) 0 var(--s-5);
+  background: rgba(5, 7, 10, 0.94);
+  border-bottom: 1px solid var(--border);
+}
+.disc .disc-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--s-5);
+}
+.disc .disc-brand b {
+  font: 400 var(--fs-xl) / 1 var(--font-serif);
+  color: var(--text);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.disc .disc-top-mid,
+.disc .disc-top-mid span {
+  font: 400 var(--fs-sm) / 1.4 var(--font-sans);
+  color: var(--text-2);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.disc .disc-top-right {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+
+/* Panels */
+.disc .disc-layout {
+  background: var(--border);
+}
+.disc .disc-left,
+.disc .disc-right {
+  background: #080b0f;
+  padding: var(--s-5);
+}
+.disc .disc-map {
+  background: var(--bg);
+}
+
+/* Section labels read like card titles, not eyebrows */
+.disc .disc-kicker,
+.disc .disc-list-head > span:first-child,
+.disc .disc-filter-head > span:first-child,
+.disc .gen-kicker,
+.disc .disc-missing-head,
+.disc .disc-evidence-head,
+.disc .disc-window-head {
+  font: 600 var(--fs-md) / 1.3 var(--font-sans);
+  color: var(--text);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Every in-panel button behaves like the shared secondary button */
+.disc .disc-reference-tabs button,
+.disc .disc-categories button,
+.disc .disc-rank-toggle button,
+.disc .disc-toggle,
+.disc .disc-list-actions button,
+.disc .disc-filter-head button,
+.disc .gen-profile-tabs button,
+.disc .gen-cat-row button,
+.disc .disc-drawer-actions button,
+.disc .disc-export,
+.disc .gen-dive {
+  min-height: 34px;
+  padding: 0 var(--s-3);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
+  color: var(--text-2);
+  font: 600 var(--fs-sm) / 1.2 var(--font-sans);
+  letter-spacing: 0;
+  text-transform: none;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.disc .disc-reference-tabs button:hover,
+.disc .disc-categories button:hover,
+.disc .disc-rank-toggle button:hover,
+.disc .disc-toggle:hover,
+.disc .disc-list-actions button:hover,
+.disc .disc-filter-head button:hover,
+.disc .gen-profile-tabs button:hover,
+.disc .gen-cat-row button:hover,
+.disc .disc-drawer-actions button:hover,
+.disc .disc-export:hover {
+  color: var(--text);
+  border-color: var(--text-3);
+  background: var(--surface-3);
+}
+.disc .disc-reference-tabs button.active,
+.disc .disc-categories button.active,
+.disc .disc-rank-toggle button.active,
+.disc .disc-toggle.active,
+.disc .gen-profile-tabs button.active,
+.disc .gen-cat-row button.active {
+  color: var(--text);
+  background: var(--surface-3);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.disc .disc-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  width: 100%;
+  justify-content: flex-start;
+}
+.disc .disc-toggle-dot {
+  border-color: var(--text-3);
+}
+.disc .disc-toggle.active .disc-toggle-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.disc .disc-categories,
+.disc .gen-cat-row {
+  gap: 6px;
+}
+
+/* The main action of the dossier */
+.disc .disc-promote {
+  min-height: 40px;
+  border-radius: var(--r-md);
+  border: 0;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: 600 var(--fs-md) / 1 var(--font-sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.disc .disc-promote:hover {
+  background: var(--accent-strong);
+}
+.disc .disc-promote.active {
+  background: var(--surface-3);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--border-strong);
+}
+
+/* Stat and evidence blocks become cards */
+.disc .disc-stat-grid,
+.disc .disc-score-hero,
+.disc .disc-score-modes,
+.disc .disc-contrast,
+.disc .disc-evidence-grid,
+.disc .disc-sar-block,
+.disc .disc-geology,
+.disc .gen-stat-grid,
+.disc .gen-facts,
+.disc .gen-enriched-grid,
+.disc .gen-thermal-grid,
+.disc .gen-method-summary {
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.disc .disc-stat-grid div,
+.disc .disc-score-hero > div,
+.disc .disc-score-modes > div,
+.disc .disc-contrast > div,
+.disc .disc-evidence-grid div {
+  border-color: var(--border);
+}
+.disc .disc-stat-grid span,
+.disc .disc-score-hero span,
+.disc .disc-score-modes span,
+.disc .disc-contrast span,
+.disc .disc-evidence-grid span,
+.disc .disc-score-hero i,
+.disc .disc-score-modes i,
+.disc .disc-contrast i,
+.disc .disc-evidence-grid i {
+  color: var(--text-3);
+  font-size: var(--fs-xs);
+  letter-spacing: 0;
+}
+.disc .disc-stat-grid b,
+.disc .disc-score-hero b,
+.disc .disc-score-modes b {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Candidate and region lists */
+.disc .disc-item,
+.disc .gen-item {
+  border-radius: var(--r-md);
+  border: 1px solid transparent;
+  transition: background 0.15s, border-color 0.15s;
+}
+.disc .disc-item:hover,
+.disc .gen-item:hover {
+  background: var(--surface-2);
+}
+.disc .disc-item.active,
+.disc .gen-item.active {
+  background: var(--surface-2);
+  border-color: var(--border-strong);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+.disc .disc-item-name,
+.disc .disc-item-top b {
+  color: var(--text);
+}
+.disc .disc-item-sub,
+.disc .disc-item-meta {
+  color: var(--text-3);
+}
+
+/* Dossier heading matches workspace section titles */
+.disc .disc-dossier-title h2 {
+  font: 400 var(--fs-2xl) / 1.1 var(--font-serif);
+  color: var(--text);
+  letter-spacing: 0;
+}
+.disc .disc-dossier-title p,
+.disc .disc-coords {
+  color: var(--text-2);
+}
+.disc .disc-grade,
+.disc .disc-fragility,
+.disc .gen-badge,
+.disc .gen-class {
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* Dimension bars use the shared meter look */
+.disc .disc-dim-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+.disc .disc-dim-head,
+.disc .disc-dim-head b {
+  color: var(--text);
+}
+.disc .disc-dim-val {
+  color: var(--text-3);
+}
+
+/* Forms */
+.disc input[type='range'] {
+  accent-color: var(--accent);
+}
+.disc .disc-filter label span {
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}
+
+/* Map chrome */
+.disc .disc-map-hud,
+.disc .disc-map-hud span,
+.disc .disc-map-legend,
+.disc .disc-map-foot {
+  font: 400 var(--fs-sm) / 1.4 var(--font-sans);
+  color: var(--text-2);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.disc .disc-site text,
+.disc .disc-map svg text {
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+
+/* Footer and drawers */
+.disc .disc-foot {
+  color: var(--text-3);
+  font-size: var(--fs-xs);
+  letter-spacing: 0;
+  text-transform: none;
+  border-top: 1px solid var(--border);
+}
+.disc .disc-drawer,
+.disc .disc-method {
+  background: var(--surface);
+  border-color: var(--border);
+}
+.disc .disc-drawer-head,
+.disc .disc-method .disc-drawer-head {
+  font: 400 var(--fs-2xl) / 1.1 var(--font-serif);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.disc .disc-reference-tabs button,
+.disc .disc-categories button,
+.disc .disc-rank-toggle button,
+.disc .gen-profile-tabs button,
+.disc .gen-cat-row button {
+  height: auto;
+  padding: 7px var(--s-3);
+  white-space: nowrap;
+}
+
+.disc .gen-profile-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.disc .gen-bar {
+  font-size: var(--fs-sm);
+  letter-spacing: 0;
+  color: var(--text-2);
+}
+.disc .gen-bar > i {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  overflow: hidden;
+}

@@ -1,0 +1,350 @@
+{
+  "version": "m9-groups-v1",
+  "generatedAt": "2026-11-13T20:28:23Z",
+  "sourceVersion": "m8-v1.2",
+  "method": "Connected components of same-category generated regions whose corrected footprints are within 10 km boundary-to-boundary. This is a versioned audit grouping only; the original 80 regions and IDs are unchanged.",
+  "parameters": {
+    "footprintGroupKm": 10.0,
+    "centerDedupKm": 80.0
+  },
+  "groups": [
+    {
+      "id": "GG-001",
+      "regionIds": [
+        "GD-8420051ffffffff",
+        "GD-8420205ffffffff",
+        "GD-8420265ffffffff",
+        "GD-84202d5ffffffff",
+        "GD-84202e1ffffffff",
+        "GD-84210a3ffffffff",
+        "GD-8421193ffffffff"
+      ],
+      "categories": [
+        "other"
+      ],
+      "size": 7,
+      "representativeRegion": "GD-8420265ffffffff",
+      "combinedCellCount": 95,
+      "combinedAreaKm2": 168183.0,
+      "maxBestScore": 91.0,
+      "minNoveltyKm": 1183.5,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-002",
+      "regionIds": [
+        "GD-8425151ffffffff",
+        "GD-8425169ffffffff",
+        "GD-8425a0bffffffff",
+        "GD-8425a4bffffffff"
+      ],
+      "categories": [
+        "high_relief"
+      ],
+      "size": 4,
+      "representativeRegion": "GD-8425169ffffffff",
+      "combinedCellCount": 69,
+      "combinedAreaKm2": 122154.0,
+      "maxBestScore": 97.1,
+      "minNoveltyKm": 355.3,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-003",
+      "regionIds": [
+        "GD-84ed4b9ffffffff",
+        "GD-84f3b35ffffffff",
+        "GD-84f3b47ffffffff",
+        "GD-84f3b5dffffffff"
+      ],
+      "categories": [
+        "polar"
+      ],
+      "size": 4,
+      "representativeRegion": "GD-84f3b35ffffffff",
+      "combinedCellCount": 47,
+      "combinedAreaKm2": 83206.4,
+      "maxBestScore": 100.0,
+      "minNoveltyKm": 9.1,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-004",
+      "regionIds": [
+        "GD-8415955ffffffff",
+        "GD-8415b35ffffffff",
+        "GD-84246ddffffffff"
+      ],
+      "categories": [
+        "other"
+      ],
+      "size": 3,
+      "representativeRegion": "GD-84246ddffffffff",
+      "combinedCellCount": 41,
+      "combinedAreaKm2": 72584.2,
+      "maxBestScore": 90.4,
+      "minNoveltyKm": 1014.0,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-005",
+      "regionIds": [
+        "GD-8424407ffffffff",
+        "GD-84245c3ffffffff",
+        "GD-84245dbffffffff"
+      ],
+      "categories": [
+        "moderate_relief"
+      ],
+      "size": 3,
+      "representativeRegion": "GD-84245c3ffffffff",
+      "combinedCellCount": 45,
+      "combinedAreaKm2": 79665.6,
+      "maxBestScore": 93.0,
+      "minNoveltyKm": 639.7,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-006",
+      "regionIds": [
+        "GD-8424535ffffffff",
+        "GD-8424c5dffffffff",
+        "GD-8424ec5ffffffff"
+      ],
+      "categories": [
+        "moderate_relief"
+      ],
+      "size": 3,
+      "representativeRegion": "GD-8424535ffffffff",
+      "combinedCellCount": 33,
+      "combinedAreaKm2": 58421.4,
+      "maxBestScore": 90.8,
+      "minNoveltyKm": 175.2,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-007",
+      "regionIds": [
+        "GD-842482bffffffff",
+        "GD-8424861ffffffff",
+        "GD-84249cdffffffff"
+      ],
+      "categories": [
+        "high_relief"
+      ],
+      "size": 3,
+      "representativeRegion": "GD-842482bffffffff",
+      "combinedCellCount": 44,
+      "combinedAreaKm2": 77895.3,
+      "maxBestScore": 95.7,
+      "minNoveltyKm": 130.3,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-008",
+      "regionIds": [
+        "GD-8403543ffffffff",
+        "GD-84035edffffffff"
+      ],
+      "categories": [
+        "polar"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-8403543ffffffff",
+      "combinedCellCount": 34,
+      "combinedAreaKm2": 60191.9,
+      "maxBestScore": 100.0,
+      "minNoveltyKm": 17.3,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-009",
+      "regionIds": [
+        "GD-842001bffffffff",
+        "GD-84200c3ffffffff"
+      ],
+      "categories": [
+        "moderate_relief"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-84200c3ffffffff",
+      "combinedCellCount": 31,
+      "combinedAreaKm2": 54880.8,
+      "maxBestScore": 92.3,
+      "minNoveltyKm": 992.7,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-010",
+      "regionIds": [
+        "GD-842401bffffffff",
+        "GD-84242b5ffffffff"
+      ],
+      "categories": [
+        "moderate_relief"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-842401bffffffff",
+      "combinedCellCount": 25,
+      "combinedAreaKm2": 44258.7,
+      "maxBestScore": 91.8,
+      "minNoveltyKm": 278.4,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-011",
+      "regionIds": [
+        "GD-8425a2bffffffff",
+        "GD-8425a6bffffffff"
+      ],
+      "categories": [
+        "moderate_relief"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-8425a2bffffffff",
+      "combinedCellCount": 15,
+      "combinedAreaKm2": 26555.2,
+      "maxBestScore": 91.3,
+      "minNoveltyKm": 230.3,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-012",
+      "regionIds": [
+        "GD-843d22dffffffff",
+        "GD-843d26bffffffff"
+      ],
+      "categories": [
+        "high_relief"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-843d26bffffffff",
+      "combinedCellCount": 24,
+      "combinedAreaKm2": 42488.3,
+      "maxBestScore": 94.5,
+      "minNoveltyKm": 94.5,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-013",
+      "regionIds": [
+        "GD-843d617ffffffff",
+        "GD-843d683ffffffff"
+      ],
+      "categories": [
+        "hyper_arid"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-843d683ffffffff",
+      "combinedCellCount": 38,
+      "combinedAreaKm2": 67273.2,
+      "maxBestScore": 95.6,
+      "minNoveltyKm": 234.1,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-014",
+      "regionIds": [
+        "GD-84e741dffffffff",
+        "GD-84e76b7ffffffff"
+      ],
+      "categories": [
+        "polar"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-84e76b7ffffffff",
+      "combinedCellCount": 38,
+      "combinedAreaKm2": 67273.2,
+      "maxBestScore": 100.0,
+      "minNoveltyKm": 2585.1,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-015",
+      "regionIds": [
+        "GD-84ed569ffffffff",
+        "GD-84ed73dffffffff"
+      ],
+      "categories": [
+        "polar"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-84ed569ffffffff",
+      "combinedCellCount": 26,
+      "combinedAreaKm2": 46029.1,
+      "maxBestScore": 100.0,
+      "minNoveltyKm": 247.0,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-016",
+      "regionIds": [
+        "GD-84f2857ffffffff",
+        "GD-84f2a27ffffffff"
+      ],
+      "categories": [
+        "polar"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-84f2a27ffffffff",
+      "combinedCellCount": 35,
+      "combinedAreaKm2": 61962.2,
+      "maxBestScore": 100.0,
+      "minNoveltyKm": 970.7,
+      "reason": "same-category footprints within 10 km boundary distance"
+    },
+    {
+      "id": "GG-017",
+      "regionIds": [
+        "GD-84f39b9ffffffff",
+        "GD-84f39ebffffffff"
+      ],
+      "categories": [
+        "polar"
+      ],
+      "size": 2,
+      "representativeRegion": "GD-84f39ebffffffff",
+      "combinedCellCount": 21,
+      "combinedAreaKm2": 37177.3,
+      "maxBestScore": 100.0,
+      "minNoveltyKm": 632.7,
+      "reason": "same-category footprints within 10 km boundary distance"
+    }
+  ],
+  "ungrouped": [
+    "GD-84e7747ffffffff",
+    "GD-840d707ffffffff",
+    "GD-84ed5cdffffffff",
+    "GD-84ef4a1ffffffff",
+    "GD-8402283ffffffff",
+    "GD-84ef1e7ffffffff",
+    "GD-8424943ffffffff",
+    "GD-8420887ffffffff",
+    "GD-842512bffffffff",
+    "GD-84240a9ffffffff",
+    "GD-843d049ffffffff",
+    "GD-843d035ffffffff",
+    "GD-8424345ffffffff",
+    "GD-8424aedffffffff",
+    "GD-84258e3ffffffff",
+    "GD-843d2c3ffffffff",
+    "GD-8424a2dffffffff",
+    "GD-84b22e5ffffffff",
+    "GD-8424f2dffffffff",
+    "GD-843d62dffffffff",
+    "GD-84208d5ffffffff",
+    "GD-8424aa9ffffffff",
+    "GD-84b2e43ffffffff",
+    "GD-8424717ffffffff",
+    "GD-843d467ffffffff",
+    "GD-8425b5bffffffff",
+    "GD-8420033ffffffff",
+    "GD-84155abffffffff",
+    "GD-8421733ffffffff",
+    "GD-8414725ffffffff",
+    "GD-84b8087ffffffff",
+    "GD-84b8287ffffffff",
+    "GD-84e093dffffffff"
+  ],
+  "note": "Groups identify landscapes that may have been split by the seed-and-grow coherence threshold. They are not merged into the original catalogue."
+}

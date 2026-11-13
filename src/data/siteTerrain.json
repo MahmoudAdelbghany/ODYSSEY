@@ -1,0 +1,1177 @@
+{
+  "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+  "license": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021. Free and open with attribution.",
+  "resolution": "30 m source, resampled to 40 m heightmaps (512 x 320)",
+  "sites": {
+    "atacama": {
+      "file": "/sites/terrain/atacama.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32719",
+      "boundsUtm": [
+        571439.97,
+        7394500.23,
+        591919.97,
+        7407300.23
+      ],
+      "min": 2299.65,
+      "max": 2303.13,
+      "mean": 2300.85,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 0.08,
+        "p95Slope": 0.16,
+        "maxSlope": 1.26,
+        "flatFraction": 1.0,
+        "roughness": 0.05,
+        "elevRange": 3.48
+      }
+    },
+    "gobi": {
+      "file": "/sites/terrain/gobi.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32648",
+      "boundsUtm": [
+        325419.77,
+        4700830.21,
+        345899.77,
+        4713630.21
+      ],
+      "min": 1107.15,
+      "max": 1434.06,
+      "mean": 1178.14,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 1.8,
+        "p95Slope": 8.43,
+        "maxSlope": 36.04,
+        "flatFraction": 0.9081,
+        "roughness": 0.96,
+        "elevRange": 326.92
+      }
+    },
+    "svalbard": {
+      "file": "/sites/terrain/svalbard.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32633",
+      "boundsUtm": [
+        503459.95,
+        8674360.05,
+        523939.95,
+        8687160.05
+      ],
+      "min": -0.45,
+      "max": 1045.73,
+      "mean": 278.64,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 12.3,
+        "p95Slope": 34.98,
+        "maxSlope": 66.33,
+        "flatFraction": 0.3971,
+        "roughness": 1.88,
+        "elevRange": 1046.18
+      }
+    },
+    "dryvalleys": {
+      "file": "/sites/terrain/dryvalleys.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32758",
+      "boundsUtm": [
+        417300.46,
+        1390240.31,
+        437780.46,
+        1403040.31
+      ],
+      "min": 89.58,
+      "max": 1806.71,
+      "mean": 818.81,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 16.23,
+        "p95Slope": 34.32,
+        "maxSlope": 61.76,
+        "flatFraction": 0.1549,
+        "roughness": 1.48,
+        "elevRange": 1717.13
+      }
+    },
+    "cratersmoon": {
+      "file": "/sites/terrain/cratersmoon.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32612",
+      "boundsUtm": [
+        287310.24,
+        4801873.35,
+        307790.24,
+        4814673.35
+      ],
+      "min": 1608.38,
+      "max": 1991.95,
+      "mean": 1708.77,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 2.15,
+        "p95Slope": 7.01,
+        "maxSlope": 41.97,
+        "flatFraction": 0.9281,
+        "roughness": 0.71,
+        "elevRange": 383.58
+      }
+    },
+    "meteorcrater": {
+      "file": "/sites/terrain/meteorcrater.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32612",
+      "boundsUtm": [
+        487939.63,
+        3869970.14,
+        508419.63,
+        3882770.14
+      ],
+      "min": 1525.14,
+      "max": 1789.75,
+      "mean": 1661.42,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 1.43,
+        "p95Slope": 3.11,
+        "maxSlope": 45.72,
+        "flatFraction": 0.9771,
+        "roughness": 0.53,
+        "elevRange": 264.61
+      }
+    },
+    "hawaii": {
+      "file": "/sites/terrain/hawaii.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32605",
+      "boundsUtm": [
+        249297.69,
+        2142498.93,
+        269777.69,
+        2155298.93
+      ],
+      "min": 895.39,
+      "max": 1912.61,
+      "mean": 1176.79,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 3.84,
+        "p95Slope": 8.5,
+        "maxSlope": 56.11,
+        "flatFraction": 0.7896,
+        "roughness": 0.94,
+        "elevRange": 1017.22
+      }
+    },
+    "puna": {
+      "file": "/sites/terrain/puna.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32719",
+      "boundsUtm": [
+        641739.83,
+        7283189.55,
+        662219.83,
+        7295989.55
+      ],
+      "min": 3467.99,
+      "max": 4039.07,
+      "mean": 3474.61,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 0.57,
+        "p95Slope": 1.62,
+        "maxSlope": 38.79,
+        "flatFraction": 0.9819,
+        "roughness": 0.37,
+        "elevRange": 571.08
+      }
+    },
+    "danakil": {
+      "file": "/sites/terrain/danakil.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32637",
+      "boundsUtm": [
+        630009.74,
+        1568259.81,
+        650489.74,
+        1581059.81
+      ],
+      "min": -126.98,
+      "max": 171.03,
+      "mean": -119.19,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 0.52,
+        "p95Slope": 1.95,
+        "maxSlope": 35.21,
+        "flatFraction": 0.9885,
+        "roughness": 0.35,
+        "elevRange": 298.01
+      }
+    },
+    "khaybar": {
+      "file": "/sites/terrain/khaybar.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32637",
+      "boundsUtm": [
+        580580.16,
+        2758850.22,
+        601060.16,
+        2771650.22
+      ],
+      "min": 970.75,
+      "max": 1349.4,
+      "mean": 1075.2,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 3.68,
+        "p95Slope": 22.07,
+        "maxSlope": 41.75,
+        "flatFraction": 0.839,
+        "roughness": 1.33,
+        "elevRange": 378.66
+      }
+    },
+    "namib": {
+      "file": "/sites/terrain/namib.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32733",
+      "boundsUtm": [
+        499980.0,
+        7394729.62,
+        520460.0,
+        7407529.62
+      ],
+      "min": 373.83,
+      "max": 568.7,
+      "mean": 472.99,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 1.06,
+        "p95Slope": 2.5,
+        "maxSlope": 25.13,
+        "flatFraction": 0.9869,
+        "roughness": 0.32,
+        "elevRange": 194.86
+      }
+    },
+    "bodele": {
+      "file": "/sites/terrain/bodele.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32634",
+      "boundsUtm": [
+        170306.45,
+        1875599.81,
+        190786.45,
+        1888399.81
+      ],
+      "min": 160.31,
+      "max": 211.18,
+      "mean": 166.98,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 1.17,
+        "p95Slope": 5.35,
+        "maxSlope": 22.93,
+        "flatFraction": 0.9431,
+        "roughness": 0.49,
+        "elevRange": 50.88
+      }
+    },
+    "makgadikgadi": {
+      "file": "/sites/terrain/makgadikgadi.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32735",
+      "boundsUtm": [
+        333339.96,
+        7726069.94,
+        353819.96,
+        7738869.94
+      ],
+      "min": 899.8,
+      "max": 910.42,
+      "mean": 903.64,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 0.25,
+        "p95Slope": 0.69,
+        "maxSlope": 2.33,
+        "flatFraction": 1.0,
+        "roughness": 0.13,
+        "elevRange": 10.63
+      }
+    },
+    "nullarbor": {
+      "file": "/sites/terrain/nullarbor.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32752",
+      "boundsUtm": [
+        489280.0,
+        6619410.48,
+        509760.0,
+        6632210.48
+      ],
+      "min": 154.28,
+      "max": 181.51,
+      "mean": 168.55,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 0.33,
+        "p95Slope": 0.75,
+        "maxSlope": 2.15,
+        "flatFraction": 1.0,
+        "roughness": 0.09,
+        "elevRange": 27.23
+      }
+    },
+    "chyulu": {
+      "file": "/sites/terrain/chyulu.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32737",
+      "boundsUtm": [
+        356369.51,
+        9695099.85,
+        376849.51,
+        9707899.85
+      ],
+      "min": 1005.1,
+      "max": 2131.34,
+      "mean": 1209.1,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 4.47,
+        "p95Slope": 19.33,
+        "maxSlope": 50.91,
+        "flatFraction": 0.745,
+        "roughness": 1.08,
+        "elevRange": 1126.24
+      }
+    },
+    "undara": {
+      "file": "/sites/terrain/undara.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32755",
+      "boundsUtm": [
+        235919.51,
+        7979629.8,
+        256399.51,
+        7992429.8
+      ],
+      "min": 560.9,
+      "max": 949.97,
+      "mean": 741.82,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 2.66,
+        "p95Slope": 8.66,
+        "maxSlope": 31.74,
+        "flatFraction": 0.8725,
+        "roughness": 0.74,
+        "elevRange": 389.07
+      }
+    },
+    "kerguelen": {
+      "file": "/sites/terrain/kerguelen.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32742",
+      "boundsUtm": [
+        526110.05,
+        4532669.52,
+        546590.05,
+        4545469.52
+      ],
+      "min": -2.48,
+      "max": 648.92,
+      "mean": 163.14,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 11.08,
+        "p95Slope": 33.81,
+        "maxSlope": 59.92,
+        "flatFraction": 0.3822,
+        "roughness": 2.18,
+        "elevRange": 651.4
+      }
+    },
+    "devon": {
+      "file": "/sites/terrain/devon.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32616",
+      "boundsUtm": [
+        489280.0,
+        8317209.81,
+        509760.0,
+        8330009.81
+      ],
+      "min": 362.23,
+      "max": 593.84,
+      "mean": 484.95,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 2.85,
+        "p95Slope": 6.44,
+        "maxSlope": 28.67,
+        "flatFraction": 0.8962,
+        "roughness": 0.44,
+        "elevRange": 231.61
+      }
+    },
+    "riotinto": {
+      "file": "/sites/terrain/riotinto.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32629",
+      "boundsUtm": [
+        701339.83,
+        4168840.08,
+        721819.83,
+        4181640.08
+      ],
+      "min": 156.59,
+      "max": 693.06,
+      "mean": 348.6,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 9.39,
+        "p95Slope": 21.0,
+        "maxSlope": 49.64,
+        "flatFraction": 0.2437,
+        "roughness": 2.11,
+        "elevRange": 536.47
+      }
+    },
+    "lonar": {
+      "file": "/sites/terrain/lonar.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32643",
+      "boundsUtm": [
+        646710.39,
+        2202460.29,
+        667190.39,
+        2215260.29
+      ],
+      "min": 479.5,
+      "max": 619.05,
+      "mean": 552.95,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 1.89,
+        "p95Slope": 5.05,
+        "maxSlope": 34.5,
+        "flatFraction": 0.9486,
+        "roughness": 0.51,
+        "elevRange": 139.55
+      }
+    },
+    "qaidam": {
+      "file": "/sites/terrain/qaidam.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32646",
+      "boundsUtm": [
+        578740.32,
+        4087239.69,
+        599220.32,
+        4100039.69
+      ],
+      "min": 2685.43,
+      "max": 2717.34,
+      "mean": 2698.1,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 0.47,
+        "p95Slope": 2.2,
+        "maxSlope": 13.56,
+        "flatFraction": 0.9902,
+        "roughness": 0.38,
+        "elevRange": 31.9
+      }
+    },
+    "iceland": {
+      "file": "/sites/terrain/iceland.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32627",
+      "boundsUtm": [
+        587570.11,
+        7087239.75,
+        608050.11,
+        7100039.75
+      ],
+      "min": 537.5,
+      "max": 1181.64,
+      "mean": 775.72,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 13.72,
+        "p95Slope": 31.27,
+        "maxSlope": 58.39,
+        "flatFraction": 0.2288,
+        "roughness": 2.65,
+        "elevRange": 644.14
+      }
+    },
+    "wadirum": {
+      "file": "/sites/terrain/wadirum.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32636",
+      "boundsUtm": [
+        724179.95,
+        3268290.12,
+        744659.95,
+        3281090.12
+      ],
+      "min": 790.94,
+      "max": 1732.16,
+      "mean": 1048.61,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 14.57,
+        "p95Slope": 44.94,
+        "maxSlope": 71.79,
+        "flatFraction": 0.4319,
+        "roughness": 3.83,
+        "elevRange": 941.22
+      }
+    },
+    "ergchebbi": {
+      "file": "/sites/terrain/ergchebbi.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32630",
+      "boundsUtm": [
+        389320.43,
+        3440260.2,
+        409800.43,
+        3453060.2
+      ],
+      "min": 694.71,
+      "max": 900.45,
+      "mean": 728.33,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 2.24,
+        "p95Slope": 9.41,
+        "maxSlope": 41.0,
+        "flatFraction": 0.885,
+        "roughness": 0.82,
+        "elevRange": 205.74
+      }
+    },
+    "wawannamus": {
+      "file": "/sites/terrain/wawannamus.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32633",
+      "boundsUtm": [
+        772609.62,
+        2750390.42,
+        793089.62,
+        2763190.42
+      ],
+      "min": 361.0,
+      "max": 512.17,
+      "mean": 442.26,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 1.01,
+        "p95Slope": 2.69,
+        "maxSlope": 43.41,
+        "flatFraction": 0.9683,
+        "roughness": 0.4,
+        "elevRange": 151.17
+      }
+    },
+    "oldoinyo": {
+      "file": "/sites/terrain/oldoinyo.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32736",
+      "boundsUtm": [
+        813340.46,
+        9690219.77,
+        833820.46,
+        9703019.77
+      ],
+      "min": 658.74,
+      "max": 2940.34,
+      "mean": 1312.6,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 11.52,
+        "p95Slope": 32.51,
+        "maxSlope": 66.78,
+        "flatFraction": 0.3668,
+        "roughness": 2.4,
+        "elevRange": 2281.59
+      }
+    },
+    "uyuni": {
+      "file": "/sites/terrain/uyuni.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32719",
+      "boundsUtm": [
+        647599.86,
+        7767019.88,
+        668079.86,
+        7779819.88
+      ],
+      "min": 3653.5,
+      "max": 3653.5,
+      "mean": 3653.5,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 0.0,
+        "p95Slope": 0.0,
+        "maxSlope": 0.0,
+        "flatFraction": 1.0,
+        "roughness": 0.0,
+        "elevRange": 0.0
+      }
+    },
+    "pinacate": {
+      "file": "/sites/terrain/pinacate.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32612",
+      "boundsUtm": [
+        253000.35,
+        3511260.04,
+        273480.35,
+        3524060.04
+      ],
+      "min": 119.37,
+      "max": 1197.74,
+      "mean": 438.79,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 6.28,
+        "p95Slope": 19.0,
+        "maxSlope": 40.49,
+        "flatFraction": 0.5609,
+        "roughness": 1.5,
+        "elevRange": 1078.38
+      }
+    },
+    "mojave": {
+      "file": "/sites/terrain/mojave.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32611",
+      "boundsUtm": [
+        626639.88,
+        3867669.93,
+        647119.88,
+        3880469.93
+      ],
+      "min": 747.05,
+      "max": 2164.08,
+      "mean": 1217.35,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 12.99,
+        "p95Slope": 34.9,
+        "maxSlope": 66.38,
+        "flatFraction": 0.3844,
+        "roughness": 2.89,
+        "elevRange": 1417.03
+      }
+    },
+    "kamchatka": {
+      "file": "/sites/terrain/kamchatka.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32657",
+      "boundsUtm": [
+        552129.63,
+        6200129.81,
+        572609.63,
+        6212929.81
+      ],
+      "min": 28.0,
+      "max": 752.81,
+      "mean": 216.95,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 4.11,
+        "p95Slope": 12.07,
+        "maxSlope": 34.34,
+        "flatFraction": 0.7296,
+        "roughness": 1.28,
+        "elevRange": 724.81
+      }
+    },
+    "kawahijen": {
+      "file": "/sites/terrain/kawahijen.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32750",
+      "boundsUtm": [
+        185544.07,
+        9101639.09,
+        206024.07,
+        9114439.09
+      ],
+      "min": 347.67,
+      "max": 2790.02,
+      "mean": 1370.1,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 15.66,
+        "p95Slope": 35.66,
+        "maxSlope": 67.48,
+        "flatFraction": 0.1253,
+        "roughness": 3.52,
+        "elevRange": 2442.36
+      }
+    },
+    "pinnacles": {
+      "file": "/sites/terrain/pinnacles.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32750",
+      "boundsUtm": [
+        307609.58,
+        6606789.96,
+        328089.58,
+        6619589.96
+      ],
+      "min": 0.0,
+      "max": 121.61,
+      "mean": 20.12,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 1.01,
+        "p95Slope": 4.23,
+        "maxSlope": 15.83,
+        "flatFraction": 0.9686,
+        "roughness": 0.47,
+        "elevRange": 121.61
+      }
+    },
+    "whitedesert": {
+      "file": "/sites/terrain/whitedesert.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32635",
+      "boundsUtm": [
+        588710.48,
+        3013659.8,
+        609190.48,
+        3026459.8
+      ],
+      "min": 20.42,
+      "max": 302.96,
+      "mean": 91.32,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 2.97,
+        "p95Slope": 12.21,
+        "maxSlope": 36.81,
+        "flatFraction": 0.8438,
+        "roughness": 1.15,
+        "elevRange": 282.54
+      }
+    },
+    "axelheiberg": {
+      "file": "/sites/terrain/axelheiberg.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32616",
+      "boundsUtm": [
+        428178.15,
+        8809799.94,
+        448658.15,
+        8822599.94
+      ],
+      "min": 98.29,
+      "max": 1636.04,
+      "mean": 902.0,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 13.31,
+        "p95Slope": 34.03,
+        "maxSlope": 66.69,
+        "flatFraction": 0.2811,
+        "roughness": 2.0,
+        "elevRange": 1537.75
+      }
+    },
+    "kangerlussuaq": {
+      "file": "/sites/terrain/kangerlussuaq.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32622",
+      "boundsUtm": [
+        502839.69,
+        7425009.63,
+        523319.69,
+        7437809.63
+      ],
+      "min": -0.0,
+      "max": 648.03,
+      "mean": 224.58,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 9.21,
+        "p95Slope": 24.95,
+        "maxSlope": 55.61,
+        "flatFraction": 0.3767,
+        "roughness": 1.6,
+        "elevRange": 648.03
+      }
+    },
+    "deathvalley": {
+      "file": "/sites/terrain/deathvalley.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32611",
+      "boundsUtm": [
+        489279.53,
+        4033009.73,
+        509759.53,
+        4045809.73
+      ],
+      "min": -83.7,
+      "max": 2027.94,
+      "mean": 445.94,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 12.2,
+        "p95Slope": 37.83,
+        "maxSlope": 60.33,
+        "flatFraction": 0.4987,
+        "roughness": 3.16,
+        "elevRange": 2111.64
+      }
+    },
+    "wolfeCreek": {
+      "file": "/sites/terrain/wolfeCreek.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32752",
+      "boundsUtm": [
+        362530.05,
+        7873520.05,
+        383010.05,
+        7886320.05
+      ],
+      "min": 323.3,
+      "max": 383.1,
+      "mean": 342.43,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 0.42,
+        "p95Slope": 1.12,
+        "maxSlope": 28.72,
+        "flatFraction": 0.998,
+        "roughness": 0.2,
+        "elevRange": 59.8
+      }
+    },
+    "lanzarote": {
+      "file": "/sites/terrain/lanzarote.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32628",
+      "boundsUtm": [
+        623150.27,
+        3206789.52,
+        643630.27,
+        3219589.52
+      ],
+      "min": -0.13,
+      "max": 542.93,
+      "mean": 218.09,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 4.88,
+        "p95Slope": 19.62,
+        "maxSlope": 51.02,
+        "flatFraction": 0.7425,
+        "roughness": 1.2,
+        "elevRange": 543.05
+      }
+    },
+    "socotra": {
+      "file": "/sites/terrain/socotra.bin",
+      "width": 512,
+      "height": 320,
+      "mpp": 40.0,
+      "widthMeters": 20480.0,
+      "heightMeters": 12800.0,
+      "crs": "EPSG:32640",
+      "boundsUtm": [
+        163662.0,
+        1377289.7,
+        184142.0,
+        1390089.7
+      ],
+      "min": 122.43,
+      "max": 1343.86,
+      "mean": 646.39,
+      "voidPct": 0.0,
+      "date": "2011-2015",
+      "source": "Copernicus DEM GLO-30 (30 m), ESA / DLR, via AWS Open Data",
+      "credit": "Copernicus DEM \u00a9 DLR e.V. 2010-2014 / ESA 2021",
+      "stats": {
+        "meanSlope": 15.41,
+        "p95Slope": 36.7,
+        "maxSlope": 66.39,
+        "flatFraction": 0.1896,
+        "roughness": 3.11,
+        "elevRange": 1221.42
+      }
+    }
+  }
+}

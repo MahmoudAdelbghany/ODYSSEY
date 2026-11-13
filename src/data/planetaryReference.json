@@ -1,0 +1,1846 @@
+{
+  "generatedAt": "2026-11-13",
+  "method": "Same-baseline DEM comparison. Each body uses an approximately 12.8 km window (Moon 13.2 km, Mars 13.4 km due to integer native pixels) at its native DEM resolution: Earth 400 m / 463 m from Copernicus GLO-30 heightmaps, Moon 400 m from LOLA LDEM_45S_400M, Mars 463 m from MOLA. Slope and roughness are derived at the stated baseline. Absolute elevation uses body-specific datums and is not a cross-body similarity metric.",
+  "references": {
+    "moon": {
+      "name": "Lunar south pole / Shackleton region",
+      "lat": -89.9,
+      "lon": 0.0,
+      "source": "LRO LOLA 400 m south-polar stereographic DEM (LDEM_45S_400M, PDS LRO-L-LOLA-4-GDR-V1.0)",
+      "datum": "1737.4 km lunar reference sphere",
+      "resolutionM": 400,
+      "windowKm": 12.8,
+      "pixels": [
+        33,
+        33
+      ],
+      "elevationMean": 161.0,
+      "elevationMin": -2789.0,
+      "elevationMax": 1715.0,
+      "reliefP95P5": 3712.9,
+      "slopeMean": 20.33,
+      "slopeP95": 32.76,
+      "roughness": 71.07,
+      "class": "derived",
+      "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+    },
+    "mars": {
+      "name": "Jezero crater floor / landing region",
+      "lat": 18.44,
+      "lon": 77.45,
+      "source": "MGS MOLA 463 m global DEM COG (mola128_mola64_merge_90Nto90S)",
+      "datum": "Mars areoid (GMM-2B)",
+      "resolutionM": 463,
+      "windowKm": 12.8,
+      "pixels": [
+        29,
+        29
+      ],
+      "elevationMean": -2540.5,
+      "elevationMin": -2675.0,
+      "elevationMax": -2207.0,
+      "reliefP95P5": 256.0,
+      "slopeMean": 1.59,
+      "slopeP95": 4.35,
+      "roughness": 11.57,
+      "class": "derived",
+      "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+    }
+  },
+  "earth": {
+    "atacama": {
+      "400m": {
+        "name": "atacama",
+        "lat": -23.5,
+        "lon": -68.2,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 2300.8,
+        "elevationMin": 2300.6,
+        "elevationMax": 2301.1,
+        "reliefP95P5": 0.3,
+        "slopeMean": 0.01,
+        "slopeP95": 0.01,
+        "roughness": 0.05,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "atacama",
+        "lat": -23.5,
+        "lon": -68.2,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 2300.8,
+        "elevationMin": 2300.6,
+        "elevationMax": 2301.0,
+        "reliefP95P5": 0.3,
+        "slopeMean": 0.01,
+        "slopeP95": 0.01,
+        "roughness": 0.04,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "puna": {
+      "400m": {
+        "name": "puna",
+        "lat": -24.5,
+        "lon": -67.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 3469.1,
+        "elevationMin": 3468.3,
+        "elevationMax": 3487.2,
+        "reliefP95P5": 2.6,
+        "slopeMean": 0.04,
+        "slopeP95": 0.12,
+        "roughness": 0.56,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "puna",
+        "lat": -24.5,
+        "lon": -67.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 3469.1,
+        "elevationMin": 3468.3,
+        "elevationMax": 3486.8,
+        "reliefP95P5": 2.6,
+        "slopeMean": 0.03,
+        "slopeP95": 0.12,
+        "roughness": 0.63,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "danakil": {
+      "400m": {
+        "name": "danakil",
+        "lat": 14.24,
+        "lon": 40.3,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": -122.7,
+        "elevationMin": -124.9,
+        "elevationMax": -84.2,
+        "reliefP95P5": 6.8,
+        "slopeMean": 0.14,
+        "slopeP95": 0.73,
+        "roughness": 2.58,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "danakil",
+        "lat": 14.24,
+        "lon": 40.3,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": -122.6,
+        "elevationMin": -125.3,
+        "elevationMax": -84.7,
+        "reliefP95P5": 6.0,
+        "slopeMean": 0.14,
+        "slopeP95": 0.73,
+        "roughness": 2.94,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "khaybar": {
+      "400m": {
+        "name": "khaybar",
+        "lat": 25.0,
+        "lon": 39.9,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1080.1,
+        "elevationMin": 996.7,
+        "elevationMax": 1344.9,
+        "reliefP95P5": 137.5,
+        "slopeMean": 2.11,
+        "slopeP95": 10.86,
+        "roughness": 23.5,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "khaybar",
+        "lat": 25.0,
+        "lon": 39.9,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1080.3,
+        "elevationMin": 996.6,
+        "elevationMax": 1308.9,
+        "reliefP95P5": 141.5,
+        "slopeMean": 1.97,
+        "slopeP95": 9.58,
+        "roughness": 24.42,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "namib": {
+      "400m": {
+        "name": "namib",
+        "lat": -23.5,
+        "lon": 15.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 471.7,
+        "elevationMin": 399.6,
+        "elevationMax": 535.2,
+        "reliefP95P5": 107.8,
+        "slopeMean": 0.61,
+        "slopeP95": 1.03,
+        "roughness": 2.5,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "namib",
+        "lat": -23.5,
+        "lon": 15.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 471.7,
+        "elevationMin": 399.6,
+        "elevationMax": 535.3,
+        "reliefP95P5": 108.7,
+        "slopeMean": 0.6,
+        "slopeP95": 0.97,
+        "roughness": 2.84,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "bodele": {
+      "400m": {
+        "name": "bodele",
+        "lat": 17.0,
+        "lon": 18.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 167.0,
+        "elevationMin": 162.4,
+        "elevationMax": 197.2,
+        "reliefP95P5": 9.6,
+        "slopeMean": 0.35,
+        "slopeP95": 1.26,
+        "roughness": 3.62,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "bodele",
+        "lat": 17.0,
+        "lon": 18.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 166.9,
+        "elevationMin": 162.7,
+        "elevationMax": 192.2,
+        "reliefP95P5": 10.9,
+        "slopeMean": 0.32,
+        "slopeP95": 1.23,
+        "roughness": 3.7,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "makgadikgadi": {
+      "400m": {
+        "name": "makgadikgadi",
+        "lat": -20.5,
+        "lon": 25.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 903.9,
+        "elevationMin": 901.4,
+        "elevationMax": 909.5,
+        "reliefP95P5": 5.7,
+        "slopeMean": 0.09,
+        "slopeP95": 0.3,
+        "roughness": 0.78,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "makgadikgadi",
+        "lat": -20.5,
+        "lon": 25.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 903.9,
+        "elevationMin": 901.1,
+        "elevationMax": 909.7,
+        "reliefP95P5": 5.7,
+        "slopeMean": 0.09,
+        "slopeP95": 0.26,
+        "roughness": 0.84,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "nullarbor": {
+      "400m": {
+        "name": "nullarbor",
+        "lat": -30.5,
+        "lon": 129.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 169.9,
+        "elevationMin": 156.2,
+        "elevationMax": 181.4,
+        "reliefP95P5": 14.5,
+        "slopeMean": 0.17,
+        "slopeP95": 0.45,
+        "roughness": 1.24,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "nullarbor",
+        "lat": -30.5,
+        "lon": 129.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 169.9,
+        "elevationMin": 156.1,
+        "elevationMax": 181.5,
+        "reliefP95P5": 14.3,
+        "slopeMean": 0.16,
+        "slopeP95": 0.42,
+        "roughness": 1.35,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "chyulu": {
+      "400m": {
+        "name": "chyulu",
+        "lat": -2.7,
+        "lon": 37.8,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1153.2,
+        "elevationMin": 1010.3,
+        "elevationMax": 1824.0,
+        "reliefP95P5": 447.8,
+        "slopeMean": 2.7,
+        "slopeP95": 8.85,
+        "roughness": 19.66,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "chyulu",
+        "lat": -2.7,
+        "lon": 37.8,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1153.9,
+        "elevationMin": 1009.6,
+        "elevationMax": 1842.0,
+        "reliefP95P5": 447.7,
+        "slopeMean": 2.66,
+        "slopeP95": 8.96,
+        "roughness": 21.56,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "undara": {
+      "400m": {
+        "name": "undara",
+        "lat": -18.2,
+        "lon": 144.6,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 740.6,
+        "elevationMin": 635.1,
+        "elevationMax": 840.6,
+        "reliefP95P5": 138.6,
+        "slopeMean": 1.29,
+        "slopeP95": 3.2,
+        "roughness": 8.73,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "undara",
+        "lat": -18.2,
+        "lon": 144.6,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 740.4,
+        "elevationMin": 634.1,
+        "elevationMax": 837.2,
+        "reliefP95P5": 140.3,
+        "slopeMean": 1.23,
+        "slopeP95": 2.94,
+        "roughness": 9.4,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "kerguelen": {
+      "400m": {
+        "name": "kerguelen",
+        "lat": -49.3,
+        "lon": 69.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 159.3,
+        "elevationMin": -1.2,
+        "elevationMax": 600.8,
+        "reliefP95P5": 454.3,
+        "slopeMean": 7.85,
+        "slopeP95": 21.45,
+        "roughness": 66.36,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "kerguelen",
+        "lat": -49.3,
+        "lon": 69.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 158.7,
+        "elevationMin": -0.6,
+        "elevationMax": 585.6,
+        "reliefP95P5": 452.7,
+        "slopeMean": 7.46,
+        "slopeP95": 20.48,
+        "roughness": 71.47,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "devon": {
+      "400m": {
+        "name": "devon",
+        "lat": 75.0,
+        "lon": -87.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 486.5,
+        "elevationMin": 380.4,
+        "elevationMax": 592.5,
+        "reliefP95P5": 134.8,
+        "slopeMean": 2.47,
+        "slopeP95": 5.19,
+        "roughness": 16.58,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "devon",
+        "lat": 75.0,
+        "lon": -87.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 486.6,
+        "elevationMin": 382.9,
+        "elevationMax": 592.9,
+        "reliefP95P5": 134.2,
+        "slopeMean": 2.39,
+        "slopeP95": 4.84,
+        "roughness": 18.67,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "svalbard": {
+      "400m": {
+        "name": "svalbard",
+        "lat": 78.2,
+        "lon": 15.6,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 300.9,
+        "elevationMin": -0.3,
+        "elevationMax": 1041.5,
+        "reliefP95P5": 758.9,
+        "slopeMean": 10.95,
+        "slopeP95": 26.44,
+        "roughness": 88.33,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "svalbard",
+        "lat": 78.2,
+        "lon": 15.6,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 301.0,
+        "elevationMin": -0.0,
+        "elevationMax": 1028.6,
+        "reliefP95P5": 751.1,
+        "slopeMean": 10.61,
+        "slopeP95": 25.07,
+        "roughness": 97.98,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "riotinto": {
+      "400m": {
+        "name": "riotinto",
+        "lat": 37.7,
+        "lon": -6.6,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 364.8,
+        "elevationMin": 173.0,
+        "elevationMax": 664.7,
+        "reliefP95P5": 264.6,
+        "slopeMean": 4.19,
+        "slopeP95": 9.47,
+        "roughness": 29.94,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "riotinto",
+        "lat": 37.7,
+        "lon": -6.6,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 364.5,
+        "elevationMin": 173.3,
+        "elevationMax": 658.5,
+        "reliefP95P5": 263.3,
+        "slopeMean": 3.94,
+        "slopeP95": 8.88,
+        "roughness": 32.58,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "lonar": {
+      "400m": {
+        "name": "lonar",
+        "lat": 19.97,
+        "lon": 76.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 558.4,
+        "elevationMin": 479.5,
+        "elevationMax": 605.4,
+        "reliefP95P5": 67.8,
+        "slopeMean": 1.14,
+        "slopeP95": 2.33,
+        "roughness": 10.54,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "lonar",
+        "lat": 19.97,
+        "lon": 76.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 558.4,
+        "elevationMin": 479.5,
+        "elevationMax": 607.3,
+        "reliefP95P5": 66.2,
+        "slopeMean": 1.06,
+        "slopeP95": 2.18,
+        "roughness": 10.86,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "qaidam": {
+      "400m": {
+        "name": "qaidam",
+        "lat": 37.0,
+        "lon": 94.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 2698.1,
+        "elevationMin": 2688.4,
+        "elevationMax": 2710.7,
+        "reliefP95P5": 15.9,
+        "slopeMean": 0.11,
+        "slopeP95": 0.27,
+        "roughness": 0.73,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "qaidam",
+        "lat": 37.0,
+        "lon": 94.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 2698.1,
+        "elevationMin": 2688.4,
+        "elevationMax": 2710.7,
+        "reliefP95P5": 15.8,
+        "slopeMean": 0.1,
+        "slopeP95": 0.25,
+        "roughness": 0.7,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "gobi": {
+      "400m": {
+        "name": "gobi",
+        "lat": 42.5,
+        "lon": 103.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1171.0,
+        "elevationMin": 1114.4,
+        "elevationMax": 1382.3,
+        "reliefP95P5": 171.0,
+        "slopeMean": 0.89,
+        "slopeP95": 2.92,
+        "roughness": 6.12,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "gobi",
+        "lat": 42.5,
+        "lon": 103.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1171.0,
+        "elevationMin": 1114.4,
+        "elevationMax": 1365.5,
+        "reliefP95P5": 171.9,
+        "slopeMean": 0.82,
+        "slopeP95": 2.52,
+        "roughness": 6.18,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "dryvalleys": {
+      "400m": {
+        "name": "dryvalleys",
+        "lat": -77.5,
+        "lon": 162.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 829.9,
+        "elevationMin": 110.3,
+        "elevationMax": 1790.1,
+        "reliefP95P5": 1356.0,
+        "slopeMean": 14.35,
+        "slopeP95": 29.31,
+        "roughness": 90.23,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "dryvalleys",
+        "lat": -77.5,
+        "lon": 162.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 829.8,
+        "elevationMin": 111.6,
+        "elevationMax": 1788.3,
+        "reliefP95P5": 1356.9,
+        "slopeMean": 13.85,
+        "slopeP95": 27.33,
+        "roughness": 101.64,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "iceland": {
+      "400m": {
+        "name": "iceland",
+        "lat": 64.0,
+        "lon": -19.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 760.5,
+        "elevationMin": 569.9,
+        "elevationMax": 1159.2,
+        "reliefP95P5": 420.8,
+        "slopeMean": 8.48,
+        "slopeP95": 18.1,
+        "roughness": 62.94,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "iceland",
+        "lat": 64.0,
+        "lon": -19.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 761.0,
+        "elevationMin": 570.0,
+        "elevationMax": 1142.4,
+        "reliefP95P5": 431.2,
+        "slopeMean": 7.96,
+        "slopeP95": 17.22,
+        "roughness": 67.81,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "wadirum": {
+      "400m": {
+        "name": "wadirum",
+        "lat": 29.58,
+        "lon": 35.42,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1071.8,
+        "elevationMin": 823.9,
+        "elevationMax": 1680.8,
+        "reliefP95P5": 593.9,
+        "slopeMean": 10.13,
+        "slopeP95": 27.95,
+        "roughness": 88.75,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "wadirum",
+        "lat": 29.58,
+        "lon": 35.42,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1070.2,
+        "elevationMin": 824.4,
+        "elevationMax": 1679.8,
+        "reliefP95P5": 584.4,
+        "slopeMean": 9.6,
+        "slopeP95": 26.25,
+        "roughness": 95.05,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "ergchebbi": {
+      "400m": {
+        "name": "ergchebbi",
+        "lat": 31.15,
+        "lon": -4.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 724.7,
+        "elevationMin": 695.5,
+        "elevationMax": 857.7,
+        "reliefP95P5": 59.3,
+        "slopeMean": 0.84,
+        "slopeP95": 2.98,
+        "roughness": 8.91,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "ergchebbi",
+        "lat": 31.15,
+        "lon": -4.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 724.6,
+        "elevationMin": 695.4,
+        "elevationMax": 853.2,
+        "reliefP95P5": 58.2,
+        "slopeMean": 0.78,
+        "slopeP95": 3.03,
+        "roughness": 8.83,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "wawannamus": {
+      "400m": {
+        "name": "wawannamus",
+        "lat": 24.9,
+        "lon": 17.8,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 442.8,
+        "elevationMin": 361.8,
+        "elevationMax": 487.8,
+        "reliefP95P5": 56.3,
+        "slopeMean": 0.75,
+        "slopeP95": 3.38,
+        "roughness": 9.77,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "wawannamus",
+        "lat": 24.9,
+        "lon": 17.8,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 442.9,
+        "elevationMin": 361.3,
+        "elevationMax": 488.3,
+        "reliefP95P5": 56.3,
+        "slopeMean": 0.73,
+        "slopeP95": 3.79,
+        "roughness": 10.68,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "oldoinyo": {
+      "400m": {
+        "name": "oldoinyo",
+        "lat": -2.76,
+        "lon": 35.91,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1324.6,
+        "elevationMin": 697.6,
+        "elevationMax": 2874.7,
+        "reliefP95P5": 1332.0,
+        "slopeMean": 10.93,
+        "slopeP95": 30.41,
+        "roughness": 72.97,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "oldoinyo",
+        "lat": -2.76,
+        "lon": 35.91,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1323.0,
+        "elevationMin": 698.7,
+        "elevationMax": 2833.2,
+        "reliefP95P5": 1344.2,
+        "slopeMean": 10.69,
+        "slopeP95": 28.76,
+        "roughness": 85.2,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "uyuni": {
+      "400m": {
+        "name": "uyuni",
+        "lat": -20.13,
+        "lon": -67.49,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 3653.5,
+        "elevationMin": 3653.5,
+        "elevationMax": 3653.5,
+        "reliefP95P5": 0.0,
+        "slopeMean": 0.0,
+        "slopeP95": 0.0,
+        "roughness": 0.0,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "uyuni",
+        "lat": -20.13,
+        "lon": -67.49,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 3653.5,
+        "elevationMin": 3653.5,
+        "elevationMax": 3653.5,
+        "reliefP95P5": 0.0,
+        "slopeMean": 0.0,
+        "slopeP95": 0.0,
+        "roughness": 0.0,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "pinacate": {
+      "400m": {
+        "name": "pinacate",
+        "lat": 31.77,
+        "lon": -113.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 535.9,
+        "elevationMin": 185.5,
+        "elevationMax": 1142.6,
+        "reliefP95P5": 625.2,
+        "slopeMean": 5.65,
+        "slopeP95": 11.32,
+        "roughness": 27.84,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "pinacate",
+        "lat": 31.77,
+        "lon": -113.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 534.9,
+        "elevationMin": 185.5,
+        "elevationMax": 1131.6,
+        "reliefP95P5": 629.7,
+        "slopeMean": 5.5,
+        "slopeP95": 10.95,
+        "roughness": 31.55,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "mojave": {
+      "400m": {
+        "name": "mojave",
+        "lat": 35.0,
+        "lon": -115.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1305.2,
+        "elevationMin": 917.4,
+        "elevationMax": 2099.3,
+        "reliefP95P5": 696.5,
+        "slopeMean": 9.32,
+        "slopeP95": 23.23,
+        "roughness": 70.08,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "mojave",
+        "lat": 35.0,
+        "lon": -115.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1305.7,
+        "elevationMin": 918.2,
+        "elevationMax": 2084.9,
+        "reliefP95P5": 699.4,
+        "slopeMean": 8.87,
+        "slopeP95": 22.96,
+        "roughness": 76.59,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "cratersmoon": {
+      "400m": {
+        "name": "cratersmoon",
+        "lat": 43.4,
+        "lon": -113.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1715.6,
+        "elevationMin": 1637.9,
+        "elevationMax": 1939.7,
+        "reliefP95P5": 144.4,
+        "slopeMean": 1.21,
+        "slopeP95": 3.92,
+        "roughness": 11.26,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "cratersmoon",
+        "lat": 43.4,
+        "lon": -113.5,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1715.6,
+        "elevationMin": 1638.3,
+        "elevationMax": 1937.0,
+        "reliefP95P5": 145.3,
+        "slopeMean": 1.18,
+        "slopeP95": 4.16,
+        "roughness": 12.27,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "kamchatka": {
+      "400m": {
+        "name": "kamchatka",
+        "lat": 56.0,
+        "lon": 160.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 194.9,
+        "elevationMin": 55.7,
+        "elevationMax": 420.6,
+        "reliefP95P5": 279.7,
+        "slopeMean": 1.88,
+        "slopeP95": 4.18,
+        "roughness": 11.25,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "kamchatka",
+        "lat": 56.0,
+        "lon": 160.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 194.5,
+        "elevationMin": 57.0,
+        "elevationMax": 418.9,
+        "reliefP95P5": 278.2,
+        "slopeMean": 1.75,
+        "slopeP95": 3.87,
+        "roughness": 11.83,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "kawahijen": {
+      "400m": {
+        "name": "kawahijen",
+        "lat": -8.06,
+        "lon": 114.24,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1527.5,
+        "elevationMin": 614.2,
+        "elevationMax": 2742.9,
+        "reliefP95P5": 1391.4,
+        "slopeMean": 13.33,
+        "slopeP95": 27.25,
+        "roughness": 76.05,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "kawahijen",
+        "lat": -8.06,
+        "lon": 114.24,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1524.3,
+        "elevationMin": 614.2,
+        "elevationMax": 2756.4,
+        "reliefP95P5": 1363.0,
+        "slopeMean": 12.93,
+        "slopeP95": 26.05,
+        "roughness": 87.5,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "pinnacles": {
+      "400m": {
+        "name": "pinnacles",
+        "lat": -30.6,
+        "lon": 115.1,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 14.6,
+        "elevationMin": 0.0,
+        "elevationMax": 106.5,
+        "reliefP95P5": 64.7,
+        "slopeMean": 0.51,
+        "slopeP95": 2.09,
+        "roughness": 4.56,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "pinnacles",
+        "lat": -30.6,
+        "lon": 115.1,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 14.6,
+        "elevationMin": 0.0,
+        "elevationMax": 104.7,
+        "reliefP95P5": 64.8,
+        "slopeMean": 0.48,
+        "slopeP95": 1.83,
+        "roughness": 4.86,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "whitedesert": {
+      "400m": {
+        "name": "whitedesert",
+        "lat": 27.3,
+        "lon": 28.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 85.0,
+        "elevationMin": 34.4,
+        "elevationMax": 289.1,
+        "reliefP95P5": 90.2,
+        "slopeMean": 1.4,
+        "slopeP95": 5.02,
+        "roughness": 13.23,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "whitedesert",
+        "lat": 27.3,
+        "lon": 28.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 85.0,
+        "elevationMin": 34.8,
+        "elevationMax": 289.3,
+        "reliefP95P5": 89.5,
+        "slopeMean": 1.33,
+        "slopeP95": 4.67,
+        "roughness": 14.62,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "axelheiberg": {
+      "400m": {
+        "name": "axelheiberg",
+        "lat": 79.4,
+        "lon": -90.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 973.0,
+        "elevationMin": 379.8,
+        "elevationMax": 1561.1,
+        "reliefP95P5": 904.8,
+        "slopeMean": 10.44,
+        "slopeP95": 24.69,
+        "roughness": 71.17,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "axelheiberg",
+        "lat": 79.4,
+        "lon": -90.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 972.3,
+        "elevationMin": 362.4,
+        "elevationMax": 1542.2,
+        "reliefP95P5": 902.7,
+        "slopeMean": 10.02,
+        "slopeP95": 23.5,
+        "roughness": 79.65,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "kangerlussuaq": {
+      "400m": {
+        "name": "kangerlussuaq",
+        "lat": 67.0,
+        "lon": -50.7,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 240.6,
+        "elevationMin": 0.0,
+        "elevationMax": 638.2,
+        "reliefP95P5": 530.4,
+        "slopeMean": 7.19,
+        "slopeP95": 17.49,
+        "roughness": 50.42,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "kangerlussuaq",
+        "lat": 67.0,
+        "lon": -50.7,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 241.3,
+        "elevationMin": 0.0,
+        "elevationMax": 638.8,
+        "reliefP95P5": 534.1,
+        "slopeMean": 6.92,
+        "slopeP95": 17.26,
+        "roughness": 56.96,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "deathvalley": {
+      "400m": {
+        "name": "deathvalley",
+        "lat": 36.5,
+        "lon": -116.9,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 310.1,
+        "elevationMin": -82.4,
+        "elevationMax": 1521.1,
+        "reliefP95P5": 1238.3,
+        "slopeMean": 8.37,
+        "slopeP95": 25.7,
+        "roughness": 63.6,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "deathvalley",
+        "lat": 36.5,
+        "lon": -116.9,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 311.5,
+        "elevationMin": -81.9,
+        "elevationMax": 1500.2,
+        "reliefP95P5": 1228.4,
+        "slopeMean": 7.96,
+        "slopeP95": 23.55,
+        "roughness": 68.7,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "meteorcrater": {
+      "400m": {
+        "name": "meteorcrater",
+        "lat": 35.03,
+        "lon": -111.02,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1667.2,
+        "elevationMin": 1552.5,
+        "elevationMax": 1733.3,
+        "reliefP95P5": 122.1,
+        "slopeMean": 0.92,
+        "slopeP95": 1.67,
+        "roughness": 7.23,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "meteorcrater",
+        "lat": 35.03,
+        "lon": -111.02,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1667.2,
+        "elevationMin": 1552.5,
+        "elevationMax": 1735.0,
+        "reliefP95P5": 123.1,
+        "slopeMean": 0.86,
+        "slopeP95": 1.6,
+        "roughness": 7.25,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "wolfeCreek": {
+      "400m": {
+        "name": "wolfeCreek",
+        "lat": -19.17,
+        "lon": 127.79,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 343.4,
+        "elevationMin": 323.5,
+        "elevationMax": 381.2,
+        "reliefP95P5": 31.2,
+        "slopeMean": 0.33,
+        "slopeP95": 0.79,
+        "roughness": 2.4,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "wolfeCreek",
+        "lat": -19.17,
+        "lon": 127.79,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 343.4,
+        "elevationMin": 324.9,
+        "elevationMax": 380.1,
+        "reliefP95P5": 30.9,
+        "slopeMean": 0.32,
+        "slopeP95": 0.75,
+        "roughness": 2.69,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "lanzarote": {
+      "400m": {
+        "name": "lanzarote",
+        "lat": 29.04,
+        "lon": -13.63,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 216.7,
+        "elevationMin": 0.0,
+        "elevationMax": 488.6,
+        "reliefP95P5": 274.2,
+        "slopeMean": 2.96,
+        "slopeP95": 8.78,
+        "roughness": 23.06,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "lanzarote",
+        "lat": 29.04,
+        "lon": -13.63,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 216.5,
+        "elevationMin": 0.0,
+        "elevationMax": 448.1,
+        "reliefP95P5": 277.2,
+        "slopeMean": 2.85,
+        "slopeP95": 8.0,
+        "roughness": 24.4,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "hawaii": {
+      "400m": {
+        "name": "hawaii",
+        "lat": 19.42,
+        "lon": -155.29,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 1174.0,
+        "elevationMin": 932.2,
+        "elevationMax": 1650.5,
+        "reliefP95P5": 476.0,
+        "slopeMean": 2.9,
+        "slopeP95": 7.05,
+        "roughness": 16.83,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "hawaii",
+        "lat": 19.42,
+        "lon": -155.29,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 1174.5,
+        "elevationMin": 932.2,
+        "elevationMax": 1650.5,
+        "reliefP95P5": 476.3,
+        "slopeMean": 2.8,
+        "slopeP95": 6.79,
+        "roughness": 18.21,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    },
+    "socotra": {
+      "400m": {
+        "name": "socotra",
+        "lat": 12.5,
+        "lon": 54.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 400,
+        "windowKm": 12.8,
+        "pixels": [
+          32,
+          32
+        ],
+        "elevationMean": 688.7,
+        "elevationMin": 260.5,
+        "elevationMax": 1340.9,
+        "reliefP95P5": 680.7,
+        "slopeMean": 9.45,
+        "slopeP95": 24.91,
+        "roughness": 73.33,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      },
+      "463m": {
+        "name": "socotra",
+        "lat": 12.5,
+        "lon": 54.0,
+        "source": "Copernicus DEM GLO-30 (30 m source, 40 m heightmap)",
+        "datum": "Earth mean sea level / EGM2008",
+        "resolutionM": 463,
+        "windowKm": 12.8,
+        "pixels": [
+          28,
+          28
+        ],
+        "elevationMean": 689.1,
+        "elevationMin": 227.8,
+        "elevationMax": 1319.2,
+        "reliefP95P5": 689.1,
+        "slopeMean": 8.98,
+        "slopeP95": 24.0,
+        "roughness": 80.59,
+        "class": "derived",
+        "note": "Slope and roughness are derived from a DEM at the stated baseline. Absolute elevation uses a body-specific datum and is not a cross-body similarity metric."
+      }
+    }
+  }
+}

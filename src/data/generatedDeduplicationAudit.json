@@ -1,0 +1,1482 @@
+{
+  "version": "m9-dedup-v1",
+  "generatedAt": "2026-11-13T20:28:23Z",
+  "sourceVersion": "m8-v1.2",
+  "method": "Footprint-aware duplication audit of the original 80 generated regions. Region footprints are unions of member H3 cell polygons. Distances are minimum boundary-to-boundary distances computed with haversine; pairs are checked with +360/-360 longitude shifts for antimeridian cases. No original region is deleted or modified.",
+  "parameters": {
+    "centerDedupKm": 80.0,
+    "footprintGroupKm": 10.0,
+    "pairCount": 3160
+  },
+  "summary": {
+    "regions": 80,
+    "h3CellOverlaps": 0,
+    "polygonIntersections": 50,
+    "polygonOverlapAreaPositive": 0,
+    "pairsWithin25KmFootprint": 51,
+    "pairsWithin10KmFootprint": 50,
+    "sameCategoryPairsWithin25Km": 33,
+    "centerFarButFootprintWithin25Km": 51,
+    "proposedGroups": 17,
+    "proposedGroupedRegions": 47
+  },
+  "closestPairs": [
+    {
+      "a": "GD-84f3b47ffffffff",
+      "b": "GD-84f3b5dffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 82.105,
+      "sameCategory": true,
+      "categories": [
+        "polar",
+        "polar"
+      ],
+      "classifications": [
+        "new",
+        "existing"
+      ],
+      "scores": [
+        100.0,
+        100.0
+      ],
+      "cells": [
+        12,
+        10
+      ],
+      "tempDeltaC": -3.43,
+      "precipDeltaMm": -36.7
+    },
+    {
+      "a": "GD-84245c3ffffffff",
+      "b": "GD-84245dbffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 106.969,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        93.0,
+        90.6
+      ],
+      "cells": [
+        19,
+        13
+      ],
+      "tempDeltaC": 1.19,
+      "precipDeltaMm": -38.7
+    },
+    {
+      "a": "GD-8424aedffffffff",
+      "b": "GD-8424aa9ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 114.904,
+      "sameCategory": false,
+      "categories": [
+        "hyper_arid",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.1,
+        93.3
+      ],
+      "cells": [
+        19,
+        13
+      ],
+      "tempDeltaC": 1.54,
+      "precipDeltaMm": -95.6
+    },
+    {
+      "a": "GD-842482bffffffff",
+      "b": "GD-8424861ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 115.106,
+      "sameCategory": true,
+      "categories": [
+        "high_relief",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.7,
+        93.3
+      ],
+      "cells": [
+        19,
+        12
+      ],
+      "tempDeltaC": 3.07,
+      "precipDeltaMm": 27.6
+    },
+    {
+      "a": "GD-8415955ffffffff",
+      "b": "GD-8415b35ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 115.438,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        87.5,
+        86.4
+      ],
+      "cells": [
+        13,
+        9
+      ],
+      "tempDeltaC": 0.05,
+      "precipDeltaMm": -11.7
+    },
+    {
+      "a": "GD-842401bffffffff",
+      "b": "GD-84242b5ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 115.792,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.8,
+        91.4
+      ],
+      "cells": [
+        15,
+        10
+      ],
+      "tempDeltaC": 1.51,
+      "precipDeltaMm": -14.4
+    },
+    {
+      "a": "GD-8424535ffffffff",
+      "b": "GD-8424ec5ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 117.241,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        90.8,
+        90.5
+      ],
+      "cells": [
+        15,
+        7
+      ],
+      "tempDeltaC": -1.49,
+      "precipDeltaMm": -29.4
+    },
+    {
+      "a": "GD-842482bffffffff",
+      "b": "GD-84249cdffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 119.454,
+      "sameCategory": true,
+      "categories": [
+        "high_relief",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.7,
+        93.5
+      ],
+      "cells": [
+        19,
+        13
+      ],
+      "tempDeltaC": 3.01,
+      "precipDeltaMm": -65.7
+    },
+    {
+      "a": "GD-8425a0bffffffff",
+      "b": "GD-8425a6bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 125.996,
+      "sameCategory": false,
+      "categories": [
+        "high_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.5,
+        91.2
+      ],
+      "cells": [
+        19,
+        7
+      ],
+      "tempDeltaC": -5.02,
+      "precipDeltaMm": 9.9
+    },
+    {
+      "a": "GD-843d26bffffffff",
+      "b": "GD-843d22dffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 126.178,
+      "sameCategory": true,
+      "categories": [
+        "high_relief",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        94.5,
+        93.5
+      ],
+      "cells": [
+        19,
+        5
+      ],
+      "tempDeltaC": -2.86,
+      "precipDeltaMm": -74.8
+    },
+    {
+      "a": "GD-8425a2bffffffff",
+      "b": "GD-8425b5bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 126.329,
+      "sameCategory": false,
+      "categories": [
+        "moderate_relief",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.3,
+        88.2
+      ],
+      "cells": [
+        8,
+        7
+      ],
+      "tempDeltaC": -1.95,
+      "precipDeltaMm": 7.6
+    },
+    {
+      "a": "GD-8425a2bffffffff",
+      "b": "GD-8425a6bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 126.917,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.3,
+        91.2
+      ],
+      "cells": [
+        8,
+        7
+      ],
+      "tempDeltaC": -0.42,
+      "precipDeltaMm": 11.2
+    },
+    {
+      "a": "GD-8425a0bffffffff",
+      "b": "GD-8425a4bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 127.014,
+      "sameCategory": true,
+      "categories": [
+        "high_relief",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.5,
+        93.9
+      ],
+      "cells": [
+        19,
+        12
+      ],
+      "tempDeltaC": 0.42,
+      "precipDeltaMm": -22.0
+    },
+    {
+      "a": "GD-843d049ffffffff",
+      "b": "GD-843d22dffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 127.474,
+      "sameCategory": false,
+      "categories": [
+        "hyper_arid",
+        "high_relief"
+      ],
+      "classifications": [
+        "nearby",
+        "new"
+      ],
+      "scores": [
+        95.6,
+        93.5
+      ],
+      "cells": [
+        19,
+        5
+      ],
+      "tempDeltaC": -3.32,
+      "precipDeltaMm": -114.0
+    },
+    {
+      "a": "GD-8425a0bffffffff",
+      "b": "GD-8425a2bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 128.228,
+      "sameCategory": false,
+      "categories": [
+        "high_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.5,
+        91.3
+      ],
+      "cells": [
+        19,
+        8
+      ],
+      "tempDeltaC": -4.6,
+      "precipDeltaMm": -1.2
+    },
+    {
+      "a": "GD-8425a4bffffffff",
+      "b": "GD-8425a6bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 128.573,
+      "sameCategory": false,
+      "categories": [
+        "high_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        93.9,
+        91.2
+      ],
+      "cells": [
+        12,
+        7
+      ],
+      "tempDeltaC": -5.44,
+      "precipDeltaMm": 32.0
+    },
+    {
+      "a": "GD-8425a6bffffffff",
+      "b": "GD-8425b5bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 128.768,
+      "sameCategory": false,
+      "categories": [
+        "moderate_relief",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.2,
+        88.2
+      ],
+      "cells": [
+        7,
+        7
+      ],
+      "tempDeltaC": -1.53,
+      "precipDeltaMm": -3.6
+    },
+    {
+      "a": "GD-8420887ffffffff",
+      "b": "GD-84208d5ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 128.815,
+      "sameCategory": false,
+      "categories": [
+        "hyper_arid",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.7,
+        93.5
+      ],
+      "cells": [
+        19,
+        13
+      ],
+      "tempDeltaC": -4.05,
+      "precipDeltaMm": -52.5
+    },
+    {
+      "a": "GD-8421193ffffffff",
+      "b": "GD-84210a3ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 130.76,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        88.2,
+        87.3
+      ],
+      "cells": [
+        12,
+        13
+      ],
+      "tempDeltaC": 0.86,
+      "precipDeltaMm": -26.2
+    },
+    {
+      "a": "GD-8420265ffffffff",
+      "b": "GD-8421193ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 130.902,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.0,
+        88.2
+      ],
+      "cells": [
+        19,
+        12
+      ],
+      "tempDeltaC": 0.22,
+      "precipDeltaMm": -25.1
+    },
+    {
+      "a": "GD-8420265ffffffff",
+      "b": "GD-8420205ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 131.146,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.0,
+        86.5
+      ],
+      "cells": [
+        19,
+        12
+      ],
+      "tempDeltaC": 1.08,
+      "precipDeltaMm": -16.9
+    },
+    {
+      "a": "GD-8420051ffffffff",
+      "b": "GD-84202e1ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 131.266,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        87.8,
+        86.9
+      ],
+      "cells": [
+        13,
+        9
+      ],
+      "tempDeltaC": 1.26,
+      "precipDeltaMm": -31.3
+    },
+    {
+      "a": "GD-842001bffffffff",
+      "b": "GD-8420051ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 131.358,
+      "sameCategory": false,
+      "categories": [
+        "moderate_relief",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        90.4,
+        87.8
+      ],
+      "cells": [
+        15,
+        13
+      ],
+      "tempDeltaC": -0.33,
+      "precipDeltaMm": -14.9
+    },
+    {
+      "a": "GD-84246ddffffffff",
+      "b": "GD-8415b35ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 140.917,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        90.4,
+        86.4
+      ],
+      "cells": [
+        19,
+        9
+      ],
+      "tempDeltaC": 1.09,
+      "precipDeltaMm": -38.7
+    },
+    {
+      "a": "GD-84200c3ffffffff",
+      "b": "GD-842001bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 148.786,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        92.3,
+        90.4
+      ],
+      "cells": [
+        16,
+        15
+      ],
+      "tempDeltaC": 0.26,
+      "precipDeltaMm": -3.1
+    }
+  ],
+  "centerFarButFootprintClose": [
+    {
+      "a": "GD-84f3b47ffffffff",
+      "b": "GD-84f3b5dffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 82.105,
+      "sameCategory": true,
+      "categories": [
+        "polar",
+        "polar"
+      ],
+      "classifications": [
+        "new",
+        "existing"
+      ],
+      "scores": [
+        100.0,
+        100.0
+      ],
+      "cells": [
+        12,
+        10
+      ],
+      "tempDeltaC": -3.43,
+      "precipDeltaMm": -36.7
+    },
+    {
+      "a": "GD-84245c3ffffffff",
+      "b": "GD-84245dbffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 106.969,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        93.0,
+        90.6
+      ],
+      "cells": [
+        19,
+        13
+      ],
+      "tempDeltaC": 1.19,
+      "precipDeltaMm": -38.7
+    },
+    {
+      "a": "GD-8424aedffffffff",
+      "b": "GD-8424aa9ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 114.904,
+      "sameCategory": false,
+      "categories": [
+        "hyper_arid",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.1,
+        93.3
+      ],
+      "cells": [
+        19,
+        13
+      ],
+      "tempDeltaC": 1.54,
+      "precipDeltaMm": -95.6
+    },
+    {
+      "a": "GD-842482bffffffff",
+      "b": "GD-8424861ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 115.106,
+      "sameCategory": true,
+      "categories": [
+        "high_relief",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.7,
+        93.3
+      ],
+      "cells": [
+        19,
+        12
+      ],
+      "tempDeltaC": 3.07,
+      "precipDeltaMm": 27.6
+    },
+    {
+      "a": "GD-8415955ffffffff",
+      "b": "GD-8415b35ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 115.438,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        87.5,
+        86.4
+      ],
+      "cells": [
+        13,
+        9
+      ],
+      "tempDeltaC": 0.05,
+      "precipDeltaMm": -11.7
+    },
+    {
+      "a": "GD-842401bffffffff",
+      "b": "GD-84242b5ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 115.792,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.8,
+        91.4
+      ],
+      "cells": [
+        15,
+        10
+      ],
+      "tempDeltaC": 1.51,
+      "precipDeltaMm": -14.4
+    },
+    {
+      "a": "GD-8424535ffffffff",
+      "b": "GD-8424ec5ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 117.241,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        90.8,
+        90.5
+      ],
+      "cells": [
+        15,
+        7
+      ],
+      "tempDeltaC": -1.49,
+      "precipDeltaMm": -29.4
+    },
+    {
+      "a": "GD-842482bffffffff",
+      "b": "GD-84249cdffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 119.454,
+      "sameCategory": true,
+      "categories": [
+        "high_relief",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.7,
+        93.5
+      ],
+      "cells": [
+        19,
+        13
+      ],
+      "tempDeltaC": 3.01,
+      "precipDeltaMm": -65.7
+    },
+    {
+      "a": "GD-8425a0bffffffff",
+      "b": "GD-8425a6bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 125.996,
+      "sameCategory": false,
+      "categories": [
+        "high_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.5,
+        91.2
+      ],
+      "cells": [
+        19,
+        7
+      ],
+      "tempDeltaC": -5.02,
+      "precipDeltaMm": 9.9
+    },
+    {
+      "a": "GD-843d26bffffffff",
+      "b": "GD-843d22dffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 126.178,
+      "sameCategory": true,
+      "categories": [
+        "high_relief",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        94.5,
+        93.5
+      ],
+      "cells": [
+        19,
+        5
+      ],
+      "tempDeltaC": -2.86,
+      "precipDeltaMm": -74.8
+    },
+    {
+      "a": "GD-8425a2bffffffff",
+      "b": "GD-8425b5bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 126.329,
+      "sameCategory": false,
+      "categories": [
+        "moderate_relief",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.3,
+        88.2
+      ],
+      "cells": [
+        8,
+        7
+      ],
+      "tempDeltaC": -1.95,
+      "precipDeltaMm": 7.6
+    },
+    {
+      "a": "GD-8425a2bffffffff",
+      "b": "GD-8425a6bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 126.917,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.3,
+        91.2
+      ],
+      "cells": [
+        8,
+        7
+      ],
+      "tempDeltaC": -0.42,
+      "precipDeltaMm": 11.2
+    },
+    {
+      "a": "GD-8425a0bffffffff",
+      "b": "GD-8425a4bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 127.014,
+      "sameCategory": true,
+      "categories": [
+        "high_relief",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.5,
+        93.9
+      ],
+      "cells": [
+        19,
+        12
+      ],
+      "tempDeltaC": 0.42,
+      "precipDeltaMm": -22.0
+    },
+    {
+      "a": "GD-843d049ffffffff",
+      "b": "GD-843d22dffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 127.474,
+      "sameCategory": false,
+      "categories": [
+        "hyper_arid",
+        "high_relief"
+      ],
+      "classifications": [
+        "nearby",
+        "new"
+      ],
+      "scores": [
+        95.6,
+        93.5
+      ],
+      "cells": [
+        19,
+        5
+      ],
+      "tempDeltaC": -3.32,
+      "precipDeltaMm": -114.0
+    },
+    {
+      "a": "GD-8425a0bffffffff",
+      "b": "GD-8425a2bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 128.228,
+      "sameCategory": false,
+      "categories": [
+        "high_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.5,
+        91.3
+      ],
+      "cells": [
+        19,
+        8
+      ],
+      "tempDeltaC": -4.6,
+      "precipDeltaMm": -1.2
+    },
+    {
+      "a": "GD-8425a4bffffffff",
+      "b": "GD-8425a6bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 128.573,
+      "sameCategory": false,
+      "categories": [
+        "high_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        93.9,
+        91.2
+      ],
+      "cells": [
+        12,
+        7
+      ],
+      "tempDeltaC": -5.44,
+      "precipDeltaMm": 32.0
+    },
+    {
+      "a": "GD-8425a6bffffffff",
+      "b": "GD-8425b5bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 128.768,
+      "sameCategory": false,
+      "categories": [
+        "moderate_relief",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.2,
+        88.2
+      ],
+      "cells": [
+        7,
+        7
+      ],
+      "tempDeltaC": -1.53,
+      "precipDeltaMm": -3.6
+    },
+    {
+      "a": "GD-8420887ffffffff",
+      "b": "GD-84208d5ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 128.815,
+      "sameCategory": false,
+      "categories": [
+        "hyper_arid",
+        "high_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        95.7,
+        93.5
+      ],
+      "cells": [
+        19,
+        13
+      ],
+      "tempDeltaC": -4.05,
+      "precipDeltaMm": -52.5
+    },
+    {
+      "a": "GD-8421193ffffffff",
+      "b": "GD-84210a3ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 130.76,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        88.2,
+        87.3
+      ],
+      "cells": [
+        12,
+        13
+      ],
+      "tempDeltaC": 0.86,
+      "precipDeltaMm": -26.2
+    },
+    {
+      "a": "GD-8420265ffffffff",
+      "b": "GD-8421193ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 130.902,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.0,
+        88.2
+      ],
+      "cells": [
+        19,
+        12
+      ],
+      "tempDeltaC": 0.22,
+      "precipDeltaMm": -25.1
+    },
+    {
+      "a": "GD-8420265ffffffff",
+      "b": "GD-8420205ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 131.146,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        91.0,
+        86.5
+      ],
+      "cells": [
+        19,
+        12
+      ],
+      "tempDeltaC": 1.08,
+      "precipDeltaMm": -16.9
+    },
+    {
+      "a": "GD-8420051ffffffff",
+      "b": "GD-84202e1ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 131.266,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        87.8,
+        86.9
+      ],
+      "cells": [
+        13,
+        9
+      ],
+      "tempDeltaC": 1.26,
+      "precipDeltaMm": -31.3
+    },
+    {
+      "a": "GD-842001bffffffff",
+      "b": "GD-8420051ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 131.358,
+      "sameCategory": false,
+      "categories": [
+        "moderate_relief",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        90.4,
+        87.8
+      ],
+      "cells": [
+        15,
+        13
+      ],
+      "tempDeltaC": -0.33,
+      "precipDeltaMm": -14.9
+    },
+    {
+      "a": "GD-84246ddffffffff",
+      "b": "GD-8415b35ffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 140.917,
+      "sameCategory": true,
+      "categories": [
+        "other",
+        "other"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        90.4,
+        86.4
+      ],
+      "cells": [
+        19,
+        9
+      ],
+      "tempDeltaC": 1.09,
+      "precipDeltaMm": -38.7
+    },
+    {
+      "a": "GD-84200c3ffffffff",
+      "b": "GD-842001bffffffff",
+      "footprintKm": 0.0,
+      "centerKm": 148.786,
+      "sameCategory": true,
+      "categories": [
+        "moderate_relief",
+        "moderate_relief"
+      ],
+      "classifications": [
+        "new",
+        "new"
+      ],
+      "scores": [
+        92.3,
+        90.4
+      ],
+      "cells": [
+        16,
+        15
+      ],
+      "tempDeltaC": 0.26,
+      "precipDeltaMm": -3.1
+    }
+  ],
+  "proposedGroups": [
+    {
+      "regionIds": [
+        "GD-84e741dffffffff",
+        "GD-84e76b7ffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "polar"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-8403543ffffffff",
+        "GD-84035edffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "polar"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-84f2857ffffffff",
+        "GD-84f2a27ffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "polar"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-84ed4b9ffffffff",
+        "GD-84f3b35ffffffff",
+        "GD-84f3b47ffffffff",
+        "GD-84f3b5dffffffff"
+      ],
+      "size": 4,
+      "categories": [
+        "polar"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-84ed569ffffffff",
+        "GD-84ed73dffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "polar"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-84f39b9ffffffff",
+        "GD-84f39ebffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "polar"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-8425151ffffffff",
+        "GD-8425169ffffffff",
+        "GD-8425a0bffffffff",
+        "GD-8425a4bffffffff"
+      ],
+      "size": 4,
+      "categories": [
+        "high_relief"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-842482bffffffff",
+        "GD-8424861ffffffff",
+        "GD-84249cdffffffff"
+      ],
+      "size": 3,
+      "categories": [
+        "high_relief"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-843d617ffffffff",
+        "GD-843d683ffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "hyper_arid"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-843d22dffffffff",
+        "GD-843d26bffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "high_relief"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-8424407ffffffff",
+        "GD-84245c3ffffffff",
+        "GD-84245dbffffffff"
+      ],
+      "size": 3,
+      "categories": [
+        "moderate_relief"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-842001bffffffff",
+        "GD-84200c3ffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "moderate_relief"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-842401bffffffff",
+        "GD-84242b5ffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "moderate_relief"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-8425a2bffffffff",
+        "GD-8425a6bffffffff"
+      ],
+      "size": 2,
+      "categories": [
+        "moderate_relief"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-8420051ffffffff",
+        "GD-8420205ffffffff",
+        "GD-8420265ffffffff",
+        "GD-84202d5ffffffff",
+        "GD-84202e1ffffffff",
+        "GD-84210a3ffffffff",
+        "GD-8421193ffffffff"
+      ],
+      "size": 7,
+      "categories": [
+        "other"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-8424535ffffffff",
+        "GD-8424c5dffffffff",
+        "GD-8424ec5ffffffff"
+      ],
+      "size": 3,
+      "categories": [
+        "moderate_relief"
+      ]
+    },
+    {
+      "regionIds": [
+        "GD-8415955ffffffff",
+        "GD-8415b35ffffffff",
+        "GD-84246ddffffffff"
+      ],
+      "size": 3,
+      "categories": [
+        "other"
+      ]
+    }
+  ],
+  "cellOverlaps": [],
+  "antimeridianCorrections": [
+    {
+      "id": "GD-84f39b9ffffffff",
+      "originalBounds": [
+        -178.99999,
+        -85.64876,
+        178.85186,
+        -84.04245
+      ],
+      "correctedBounds": [
+        164.77984,
+        -85.64876,
+        186.02271,
+        -84.04245
+      ],
+      "reason": "H3 ring crosses the antimeridian; longitudes were unwrapped in a local frame"
+    }
+  ],
+  "note": "The 80 km centre-to-centre rule prevents coincident region centres. It does not prevent adjacent footprints or landscapes split by the seed-and-grow coherence threshold. Proposed groups are audit evidence, not a replacement catalogue."
+}

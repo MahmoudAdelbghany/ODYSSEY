@@ -10,7 +10,7 @@
   height: var(--topbar-h);
   flex-basis: var(--topbar-h);
   padding: 0 var(--s-4) 0 var(--s-5);
-  background: rgba(5, 7, 10, 0.94);
+  background: rgba(8, 13, 23, 0.94);
   border-bottom: 1px solid var(--border);
 }
 .disc .disc-brand {
@@ -43,7 +43,7 @@
 }
 .disc .disc-left,
 .disc .disc-right {
-  background: #080b0f;
+  background: #0c1424;
   padding: var(--s-5);
 }
 .disc .disc-map {

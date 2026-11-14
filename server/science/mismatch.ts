@@ -26,8 +26,8 @@ export type CompatibilityClass =
 export interface Comparison {
   dimension: string;
   label: string;
-  earth: Pick<Measurement, 'value' | 'range' | 'unit' | 'status' | 'source' | 'support' | 'note'>;
-  planet: Pick<Measurement, 'value' | 'range' | 'unit' | 'status' | 'source' | 'support' | 'note' | 'sourceUrl'>;
+  earth: Pick<Measurement, 'value' | 'range' | 'unit' | 'status' | 'source' | 'support' | 'note' | 'uncertainty' | 'sourceUrl' | 'evidenceState'>;
+  planet: Pick<Measurement, 'value' | 'range' | 'unit' | 'status' | 'source' | 'support' | 'note' | 'sourceUrl' | 'uncertainty' | 'evidenceState'>;
   absoluteDifference: number | null;
   relativeDifference: number | null;
   ratio: number | null;
@@ -127,7 +127,7 @@ function withGap(c: Omit<Comparison, 'earthState' | 'targetState' | 'gapOutcome'
   return { ...c, earthState, targetState, gapOutcome, gapSide, nextAction };
 }
 
-const slim = (x: Measurement) => ({ value: x.value, range: x.range, unit: x.unit, status: x.status, source: x.source, support: x.support, note: x.note });
+const slim = (x: Measurement) => ({ value: x.value, range: x.range, unit: x.unit, status: x.status, source: x.source, support: x.support, note: x.note, uncertainty: x.uncertainty, sourceUrl: x.sourceUrl, evidenceState: x.evidenceState });
 
 export function compareMeasurements(earth: Measurement, planet: Measurement): Comparison {
   return withGap(compareRaw(earth, planet), earth, planet);
@@ -140,7 +140,7 @@ function compareRaw(earth: Measurement, planet: Measurement): Omit<Comparison, '
     dimension: earth.dimension,
     label,
     earth: slim(earth),
-    planet: { ...slim(planet), sourceUrl: planet.sourceUrl },
+    planet: slim(planet),
     absoluteDifference: null,
     relativeDifference: null,
     ratio: null,

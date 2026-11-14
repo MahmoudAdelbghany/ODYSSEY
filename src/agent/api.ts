@@ -37,6 +37,8 @@ export interface MeasurementView {
   sourceUrl?: string | null;
   evidenceState?: string;
   nextAction?: string;
+  uncertainty?: number | null;
+  support?: { spatial: string; temporal: string; resolutionM: number | null; period: string | null; description: string };
 }
 
 export interface GapFields {

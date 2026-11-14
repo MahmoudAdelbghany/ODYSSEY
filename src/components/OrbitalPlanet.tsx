@@ -2,6 +2,7 @@ import { useEffect, useRef, type ReactNode } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { mlScore, type ProfileKey, type Site } from '../types';
+import { spawnCount } from './spawn';
 
 const R = 100;
 const DEG = Math.PI / 180;
@@ -27,6 +28,8 @@ type Props = {
   lens: ReactNode;
   /** 'centered' frames the planet in the middle of its own column (no room left for a floating lens). */
   framing?: 'offset' | 'centered';
+  /** Opening screen: light analog sites one by one (shared clock with the landing counter). */
+  spawn?: boolean;
 };
 
 type PlanetApi = {
@@ -88,6 +91,7 @@ export function OrbitalPlanet({
   onSelect,
   lens,
   framing = 'offset',
+  spawn = false,
 }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const lensRef = useRef<HTMLDivElement>(null);
@@ -108,6 +112,7 @@ export function OrbitalPlanet({
     campaignSiteIds,
     onSelect,
     framing,
+    spawn,
   });
 
   useEffect(() => {
@@ -127,6 +132,7 @@ export function OrbitalPlanet({
       campaignSiteIds,
       onSelect,
       framing,
+      spawn,
     };
   });
 
@@ -1158,14 +1164,21 @@ export function OrbitalPlanet({
         const initializing = propsRef.current.mode === 'initializing';
         if (discovery) item.lit = true;
         if (initializing && scanY <= item.siteY + 7) item.lit = true;
-        const targetOpacity = item.lit
-          ? (idx < 5 ? 0.9 : 0.36) * revealClamped * markerFade * (dimmed ? 0.18 : 1)
-          : 0;
+        const spawning = propsRef.current.spawn && propsRef.current.mode === 'opening';
+        const spawnOrder = spawning ? propsRef.current.sites.findIndex((x) => x.id === item.site.id) : -1;
+        const spawnLit = spawning && spawnOrder >= 0 && spawnOrder < spawnCount(propsRef.current.sites.length);
+        const targetOpacity = spawning
+          ? (spawnLit ? 0.95 * markerFade : 0)
+          : item.lit
+            ? (idx < 5 ? 0.9 : 0.36) * revealClamped * markerFade * (dimmed ? 0.18 : 1)
+            : 0;
         const boost = selected || inHighlight ? 1.45 : 1;
         item.material.opacity += (targetOpacity - item.material.opacity) * 0.1;
         item.tipMaterial.opacity += (Math.min(1, targetOpacity * boost) - item.tipMaterial.opacity) * 0.1;
         item.material.color.set(
-          selected
+          spawning
+            ? '#f2867a'
+            : selected
             ? '#e4b57a'
             : inHighlight
               ? '#d4a15c'

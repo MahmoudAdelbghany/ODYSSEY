@@ -7,6 +7,11 @@ import { evaluateRequirement } from '../mission/evaluate';
 import terrainRaw from '../data/siteTerrain.json';
 import type { SiteTerrainData } from '../types';
 import { RequirementEvidenceRow } from './Evidence';
+import { ChallengeMatch, TwinViewer } from './Twin';
+import { RealityCheck, SimilarityBreakdown, type TwinLayer } from './Visuals';
+import { PhysicsDiagrams } from './Physics';
+import type { ProfileKey } from '../types';
+import { Segmented } from './ui';
 
 const TERRAIN = (terrainRaw as unknown as SiteTerrainData).sites;
 
@@ -18,9 +23,11 @@ const GROUPS: Array<{ title: string; prefixes: string[] }> = [
   { title: 'Geology and resources', prefixes: ['geology.', 'resources.'] },
 ];
 
-export function SiteSection({ site, state, target, onDive, onBack }: { site: Site | null; state: AgentStateView | null; target: string; onDive: () => void; onBack: () => void }) {
+export function SiteSection({ site, state, target, onDive, onBack, onOpenLab }: { site: Site | null; state: AgentStateView | null; target: string; onDive: () => void; onBack: () => void; onOpenLab?: () => void }) {
+  const [layer, setLayer] = useState<TwinLayer>('terrain');
   const [rows, setRows] = useState<ComparisonView[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [challengeExp, setChallengeExp] = useState<string | null>(null);
   const siteId = site?.id ?? null;
 
   useEffect(() => {
@@ -64,6 +71,21 @@ export function SiteSection({ site, state, target, onDive, onBack }: { site: Sit
         actions={<button type="button" className="btn btn-primary" onClick={onDive}>View 3D terrain</button>}
       />
       <div className="stack">
+        <SimilarityBreakdown site={site} profile={(state?.parsed?.profile ?? 'expedition') as ProfileKey} layer={layer} onLayer={(l) => { setLayer(l); document.getElementById('planetary-twin')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} />
+      <TwinViewer site={site} target={target} rows={rows} layer={layer} onLayer={setLayer} />
+        {perExperiment.length ? (() => {
+          const chosen = perExperiment.find((x) => x.e.id === challengeExp) ?? perExperiment[0];
+          return (
+            <div className="stack">
+              {perExperiment.length > 1 ? (
+                <Segmented label="Experiment to challenge" value={chosen.e.id} options={perExperiment.map(({ e }) => ({ value: e.id, label: e.shortName || e.name }))} onChange={setChallengeExp} />
+              ) : null}
+              <ChallengeMatch key={`${site.id}|${chosen.e.id}`} site={site} candidate={chosen.c!} experimentName={chosen.e.name} profile={state?.parsed?.profile ?? 'expedition'} />
+            </div>
+          );
+        })() : null}
+      <RealityCheck rows={rows} state={state} onOpenLab={onOpenLab} />
+      <PhysicsDiagrams key={layer} site={site} target={target} rows={rows} initial={layer === 'atmosphere' ? 'dust' : 'light'} />
         {perExperiment.length ? (
           <div className="card">
             <h3 className="card-title">Suitability by experiment</h3>
@@ -73,7 +95,7 @@ export function SiteSection({ site, state, target, onDive, onBack }: { site: Sit
                   <summary>
                     <span className="strong">{e.name}</span>
                     <Badge tone={DECISION[c!.decision].tone}>{DECISION[c!.decision].label}</Badge>
-                    <span className="num">{c!.aggregate ?? '–'}</span>
+                    <span className="num" title="Validated suitability for this experiment">{c!.experimentScore ?? '–'}</span>
                   </summary>
                   <ul className="list">{c!.reasons.map((r, i) => <li key={i}>{clean(r)}</li>)}</ul>
                 </details>
@@ -104,6 +126,7 @@ export function SiteSection({ site, state, target, onDive, onBack }: { site: Sit
 
         {error ? <div className="notice notice-error">Could not load the comparison: {error}</div> : null}
         {rows ? (
+          <Disclosure summary="All measured conditions" meta={`${measured.length}`}>
           <div className="card">
             <h3 className="card-title">Compared with {target === 'mars_jezero' ? 'Mars (Jezero)' : 'the lunar south pole'}</h3>
             {GROUPS.map((g) => {
@@ -135,6 +158,7 @@ export function SiteSection({ site, state, target, onDive, onBack }: { site: Sit
               );
             })}
           </div>
+          </Disclosure>
         ) : !error ? (
           <p className="subtle">Loading measurements…</p>
         ) : null}

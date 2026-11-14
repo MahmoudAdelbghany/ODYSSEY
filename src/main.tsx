@@ -5,6 +5,7 @@ import './mission.css';
 import './orbital.css';
 import './ui.css';
 import './workspace/workspace.css';
+import './workspace/signature.css';
 import App from './App';
 
 createRoot(document.getElementById('root')!).render(

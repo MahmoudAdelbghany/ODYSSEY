@@ -11,6 +11,8 @@ import { Workspace, type GlobeView } from './workspace/Workspace';
 import { GlobeHint } from './workspace/GlobeHint';
 import { useGlobeHint } from './workspace/useGlobeHint';
 import { About } from './workspace/About';
+import { ExploreButton, SearchTicker } from './workspace/ExploreButton';
+import globalDiscovery from './data/globalDiscovery.json';
 import siteImageryRaw from './data/siteImagery.json';
 import siteTerrainRaw from './data/siteTerrain.json';
 
@@ -151,6 +153,7 @@ export default function OrbitalExperience(_props: { onOpenBriefing?: (hash?: str
           onSelect={(id) => setSelectedId(id)}
           lens={null}
           framing={mode === 'workspace' ? 'centered' : 'offset'}
+          spawn={mode === 'opening' && !discoveryOpen}
         />
       </div>
       <div className="orb-vignette" />
@@ -172,14 +175,12 @@ export default function OrbitalExperience(_props: { onOpenBriefing?: (hash?: str
             </button>
           </header>
           <div className="start-body">
+            <span className="start-kicker">Planetary mission intelligence</span>
             <h1>Rehearse the Moon and Mars on Earth.</h1>
-            <p className="start-lead">
-              Describe a mission. ODYSSEY splits it into experiments, finds Earth sites for each one from open NASA and ESA data, and shows what Earth cannot reproduce.
-            </p>
             <div className="start-form">
               <label className="field">
                 <span className="field-label">Mission brief</span>
-                <textarea ref={briefRef} className="textarea" rows={4} value={brief} onChange={(e) => setBrief(e.target.value)} placeholder="Describe the mission, its experiments and its duration." />
+                <textarea ref={briefRef} className="textarea" rows={5} value={brief} onChange={(e) => setBrief(e.target.value)} placeholder="Describe the mission, its experiments and its duration." />
               </label>
               <div className="row start-examples">
                 <span className="subtle">Examples:</span>
@@ -192,12 +193,11 @@ export default function OrbitalExperience(_props: { onOpenBriefing?: (hash?: str
               {startError ? <div className="notice notice-error">{startError}</div> : null}
               <div className="row">
                 <button type="button" className="btn btn-primary btn-lg" onClick={analyze} disabled={starting || brief.trim().length < 12}>
-                  {starting ? 'Starting…' : 'Analyze mission'}
+                  {starting ? 'Starting…' : 'Analyze mission →'}
                 </button>
-                <button type="button" className="btn btn-ghost btn-lg" onClick={() => setDiscoveryOpen(true)}>
-                  Browse the global discovery screen
-                </button>
+                <ExploreButton sites={data.sites} onClick={() => setDiscoveryOpen(true)} />
               </div>
+              <SearchTicker total={data.sites.length} cells={globalDiscovery.counts.usableLandCells} />
             </div>
           </div>
         </div>

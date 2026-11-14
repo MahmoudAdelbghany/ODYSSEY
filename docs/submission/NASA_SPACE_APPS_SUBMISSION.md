@@ -4,9 +4,9 @@
 **Project title:** ODYSSEY: Planetary Analog Mission Planner
 
 * Public GitHub repository: https://github.com/MahmoudAdelbghany/ODYSSEY
-* Public demonstration: `<DEMO URL: to be added; none exists yet>`
-* Demo video or slides: `<LINK: to be added; at most 30 s or 7 slides>`
-* Team members: `<to be completed by the team>`
+* Live application: https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io
+* NASA Space Apps project page: https://www.spaceappschallenge.org/2026/find-a-team/ns-sbys-bs-jd/?tab=project
+* Team: ناسا سبيس ابس جدا
 
 ## High-level summary
 
@@ -82,9 +82,9 @@ WorldClim 2.1, Natural Earth, Macrostrat, OurAirports, Open-Meteo (elevation), C
 
 * **Claude Code (Anthropic), model Claude Opus 5.5:** an AI coding assistant used to write and review code, run tests and research and verify data sources. Every source it cited was checked against the original document.
 * **Microsoft Edge TTS** (neural voices): narration for earlier demo videos. Those videos are not part of this release.
-* `<The team should list any other AI tools used.>`
+* **ElevenLabs** (text-to-speech model `eleven_v4`, voice "Eric"; Music model `music_v2_5`): the synthetic narration and the instrumental music of the 30-second demo video. **ElevenLabs Scribe** transcribed the final mix to check that the narration matched the script and that the music had no vocals. The video description states that the voice is synthetic.
 
-No AI-generated imagery is presented as data. The globe, terrain and site images come from NASA, ESA and Copernicus data. The provenance of three decorative images (starfield, grain texture, poster) is to be confirmed by the team. If any is AI-generated, it needs the visible watermark the Space Apps rules require.
+No AI-generated imagery is used. The globe, terrain, site and context images come from NASA, ESA, USGS and Copernicus data; the starfield and grain textures are generated procedurally by code in this repository.
 
 **Funding review note:** DeepSeek is developed by a company based in China, and one radiation reference (Zhang et al. 2020) comes from the Chang'E-4 mission. Confirm with the Local Lead whether the Space Apps rules on Chinese entities affect Global Judging. Switching the in-product model is one setting.
 

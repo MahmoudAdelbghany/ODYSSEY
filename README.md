@@ -4,9 +4,11 @@
 
 ODYSSEY turns a mission brief ("a seven-day lunar expedition with geological sampling, rover navigation…") into experiments, finds the Earth sites that suit each one from open NASA and partner-agency data, compares every site with the lunar south pole or Mars (Jezero crater) condition by condition, and says what no site can reproduce and how to test it instead.
 
-Built for the NASA Space Apps Challenge 2026, *Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars*.
+Built by team **ناسا سبيس ابس جدا** for the NASA Space Apps Challenge 2026, *Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars*.
 
-![The ODYSSEY start screen: a mission brief over a 3D Earth](docs/screenshots/ux-01-start.png)
+**Try it:** [live application](https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io) · [example analysis](https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io/?run=65a483d3-9cd9-4369-b094-4df64a0c179a) · [NASA Space Apps project page](https://www.spaceappschallenge.org/2026/find-a-team/ns-sbys-bs-jd/?tab=project)
+
+![The ODYSSEY start screen: a mission brief over a 3D Earth](docs/screenshots/v2-01-start.jpg)
 
 ## Why it is different
 
@@ -17,13 +19,37 @@ Built for the NASA Space Apps Challenge 2026, *Identify Earth Locations that Ana
 
 ## What it looks like
 
-| Requirements, with the evidence behind each | Where Earth falls short |
+| While the agent works: the target and Earth are scanned together | Mission control: the brief as a plan |
 |---|---|
-| ![Mission section: surface bearing strength needs a field measurement, with the test protocol](docs/screenshots/02-mission-evidence.png) | ![Gaps grouped into integration needed and field measurement required](docs/screenshots/05-where-earth-falls-short.png) |
-| **Candidates per experiment** | **A campaign across sites** |
-| ![Candidate list for geological sampling](docs/screenshots/03-candidates.png) | ![Two-site campaign plan](docs/screenshots/07-campaign.png) |
+| ![Mars and Earth linked by a scan beam while the analysis runs](docs/screenshots/v2-20-run-scan.jpg) | ![Mission control with the five experiments](docs/screenshots/v2-02-mission-control.jpg) |
+| **Candidates per experiment, scores coloured by value** | **Why a site scores what it does** |
+| ![Candidate list with grouped score tiles](docs/screenshots/v2-04-candidates.jpg) | ![Similarity breakdown: six weighted dimensions add up to the score](docs/screenshots/v2-07-similarity.jpg) |
+| **Challenge this match** | **Physics Earth cannot copy** |
+| ![Screening similarity 92 becomes a validated suitability of 76](docs/screenshots/v2-09-challenge.jpg) | ![Pressure on a log scale and gravity bars, with the proposed tests](docs/screenshots/v2-10-reality-check.jpg) |
+| **Tradeoffs across experiments** | **Simulation lab** |
+| ![Sites against experiments matrix](docs/screenshots/v2-05-tradeoffs.jpg) | ![A proposed thermal-vacuum test in four steps](docs/screenshots/v2-16-lab-plan.jpg) |
 
-More: [site detail](docs/screenshots/ev-02-site-requirements.png), [interventions](docs/screenshots/06-interventions.png), [report](docs/screenshots/08-report.png), [agent activity](docs/screenshots/ux-09-activity.png), [global discovery](docs/screenshots/ux-13-generated.png), [phone layout](docs/screenshots/ev-06-mobile.png).
+More: [planetary twin](docs/screenshots/v2-08-twin.jpg), [illumination](docs/screenshots/v2-11-illumination.jpg), [dust transport](docs/screenshots/v2-12-dust.jpg), [feature relationships](docs/screenshots/v2-13-relationships.jpg), [ranking evolution](docs/screenshots/v2-06-ranking.jpg), [reality gap](docs/screenshots/v2-14-reality-gap.jpg), [campaign](docs/screenshots/v2-17-campaign.jpg), [mission replay](docs/screenshots/v2-18-replay.jpg), [report](docs/screenshots/v2-19-report.jpg).
+
+## The workspace
+
+The sidebar follows the mission in four stages.
+
+| Stage | Section | What it answers |
+|---|---|---|
+| Define | Mission control | Target, duration, experiments and requirements, with a photo per experiment |
+| Define | Experiments | Each requirement with the evidence behind it |
+| Discover | Candidates | Sites ranked per experiment; the best one opens automatically |
+| Discover | Tradeoffs | Every site against every experiment, and how validation reorders the ranking |
+| Discover | Planetary twin | Why the similarity score is what it is; Earth and target side by side; *Challenge this match*; the physics Earth cannot copy (gravity, pressure, illumination, dust) |
+| Discover | Relationships | How measured Earth conditions move together across the analog sites |
+| Validate | Reality gap | Conditions no site reproduces, and evidence that is missing and why |
+| Rehearse | Simulation lab | Controlled tests for what Earth cannot provide, as numbered proposed steps |
+| Rehearse | Campaign | A multi-site field plan, optimised three ways |
+| Rehearse | Mission replay | The analysis from brief to residual gaps, as a timeline |
+| Rehearse | Report | Narrative, findings and exports (Markdown, JSON) |
+
+*Story mode* walks through the stages for a presentation.
 
 ## The demonstration
 
@@ -65,8 +91,8 @@ Step-by-step walkthrough: [`docs/demo/README.md`](docs/demo/README.md).
                    Sentinel-2, WorldCover, Macrostrat, WorldClim, RADARSAT-1 …)
                │
                ▼
-  React + Three.js workspace (src/workspace): Brief · Mission · Candidates · Site ·
-  Where Earth fails · Interventions · Campaign · Report, with a live agent trace
+  React + Three.js workspace (src/workspace): 11 sections in four stages
+  (Define, Discover, Validate, Rehearse), with a live agent trace
 ```
 \* Optional components; see [Configuration](#configuration).
 
@@ -115,6 +141,8 @@ Open http://localhost:5173, keep or edit the sample brief, and press **Analyze m
 
 Production: `npm run build && npm start`, then open http://127.0.0.1:8787.
 
+Container: `docker build -t odyssey .` then `docker run -p 8787:8787 --env-file .env odyssey`. The public deployment (https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io) runs this image on Azure Container Apps.
+
 Exports: the Report section downloads Markdown and JSON; the API serves `GET /api/runs/<id>/report.md` and `report.json`.
 
 ## Tests
@@ -158,6 +186,6 @@ ODYSSEY's original code and documentation: **Apache License 2.0** ([`LICENSE`](L
 
 ## Team and acknowledgements
 
-Team: *to be completed by the team before submission.*
+Team: **ناسا سبيس ابس جدا** ([NASA Space Apps project page](https://www.spaceappschallenge.org/2026/find-a-team/ns-sbys-bs-jd/?tab=project)).
 
 Thanks to the authors of Earth-Location-Nasa (`mernaahany`) and the Reranker (`WA-on-test2`), and to the NASA, ESA, CSA, USGS, Macrostrat, WorldClim, Natural Earth and OurAirports teams whose open data make this possible. AI use is disclosed in [`docs/submission/NASA_SPACE_APPS_SUBMISSION.md`](docs/submission/NASA_SPACE_APPS_SUBMISSION.md).

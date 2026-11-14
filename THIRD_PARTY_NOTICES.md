@@ -63,7 +63,8 @@ All under the SIL Open Font License 1.1; the licence text and copyright notices 
 | `public/sites/terrain/*`, `public/generated/terrain/*` (heightmaps) | Copernicus DEM GLO-30, ESA / DLR / Airbus | Copernicus DEM licence (free, attribution) | Resampled to 40 m | "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved" |
 | `public/sar/*.jpg` | RADARSAT-1 archive, Canadian Space Agency | Released under an open licence (CSA open data portal) | Browse thumbnails | Canadian Space Agency. **Exact attribution wording to confirm.** |
 | `public/world-110m.json` | Natural Earth via world-atlas | Public domain (Natural Earth) | None | Natural Earth |
-| `public/img/starfield.jpg`, `public/img/grain.png`, `public/img/odyssey_poster.jpg` | ODYSSEY team concept film (frame grab and procedural textures) | Team-created; **owner to confirm provenance and whether any is AI-generated** | n/a | n/a |
+| `public/img/stars.svg`, `public/img/grain.svg` | Generated procedurally by the ODYSSEY team (seeded random star points; SVG fractal noise) | Project work, Apache-2.0 | n/a | n/a |
+| `public/img/og.jpg` | Screenshot of the ODYSSEY start screen | Project work, Apache-2.0 | Contains NASA Blue Marble imagery (public domain) | NASA |
 | `public/favicon.svg`, `public/icons.svg` | ODYSSEY / Vite template | Project / MIT | n/a | n/a |
 
 Not redistributed: earlier demo videos and synthesized-voice narration (Microsoft Edge TTS neural voices) remain outside the release.
@@ -79,3 +80,11 @@ Not redistributed: earlier demo videos and synthesized-voice narration (Microsof
 | Open-Meteo, USGS earthquake API | **Legacy** live-conditions panel only | Open-Meteo CC BY 4.0 (link required); USGS public domain. |
 
 Development tools used to build ODYSSEY are listed in `docs/submission/NASA_SPACE_APPS_SUBMISSION.md`.
+
+## Context photographs and target globe textures (added in 1.1.0)
+
+| Files | Source | Licence / terms | Changes | Credit |
+|---|---|---|---|---|
+| `public/visuals/*.jpg` | NASA Image and Video Library: Apollo 11, 15 and 17 surface photographs; LRO south-pole mosaic PIA13523; Curiosity PIA19140, PIA22486, PIA26019; Perseverance PIA24542, PIA25290; Webb Pathfinder in Chamber A (GSFC) | NASA media guidelines; generally not copyrighted in the United States | Resized to 1400 px wide | Per file in `public/visuals/CREDITS.md` |
+| `public/tex/targets/moon_lroc_2k.jpg` | NASA Scientific Visualization Studio, CGI Moon Kit (LRO WAC colour mosaic), https://svs.gsfc.nasa.gov/4720 | Public domain (NASA) | Converted from TIFF | NASA SVS |
+| `public/tex/targets/mars_viking_2k.jpg` | Mars Viking MDIM 2.1 colourised mosaic (NASA/USGS), tiles from NASA Mars Trek | Public domain (NASA/USGS) | Stitched, downsampled to 2048 × 1024 | NASA/USGS |

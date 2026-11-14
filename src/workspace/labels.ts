@@ -1,5 +1,5 @@
 import type { GapFields } from '../agent/api';
-export type Tone = 'ok' | 'warn' | 'bad' | 'info' | 'muted';
+export type Tone = 'ok' | 'warn' | 'bad' | 'info' | 'muted' | 'sci' | 'field';
 
 export const TOOL_LABEL: Record<string, string> = {
   parse_mission: 'Read the mission brief',
@@ -161,22 +161,23 @@ export function dimensionLabel(key: string, fallback?: string) {
 }
 
 
+/** One visual language for evidence: Verified (green), Modeled (blue), Unvalidated (orange), Field measurement required (violet). */
 export const STATE_TONE: Record<string, Tone> = {
   verified_measurement: 'ok',
   verified_derived: 'ok',
-  modelled: 'info',
-  validated_proxy: 'info',
+  validated_proxy: 'ok',
+  modelled: 'sci',
   unvalidated_estimate: 'warn',
   searching: 'muted',
   not_investigated: 'muted',
-  source_found_not_integrated: 'warn',
+  source_found_not_integrated: 'muted',
   not_covering_location: 'muted',
-  insufficient_spatial_resolution: 'muted',
+  insufficient_spatial_resolution: 'field',
   insufficient_temporal_coverage: 'muted',
   insufficient_sample: 'muted',
   retrieval_failed: 'muted',
-  not_remotely_observable: 'muted',
-  field_measurement_required: 'info',
+  not_remotely_observable: 'field',
+  field_measurement_required: 'field',
   not_applicable: 'muted',
   not_physically_reproducible: 'bad',
 };
@@ -187,9 +188,36 @@ export function comparisonBadge(c: { classification: string } & GapFields): { la
     if (c.gapOutcome === 'not_applicable') return { label: 'Not applicable', tone: 'muted' };
     if (c.classification === 'incompatible_support') return { label: 'Not comparable', tone: 'muted' };
     if (c.gapSide === 'target') return { label: 'Target value missing', tone: 'muted' };
-    if (c.gapOutcome === 'field_measurement') return { label: 'Needs field data', tone: 'info' };
+    if (c.gapOutcome === 'field_measurement') return { label: 'Needs field data', tone: 'field' };
     if (c.gapSide === 'both') return { label: 'Missing both sides', tone: 'muted' };
     return { label: 'Earth value missing', tone: 'muted' };
   }
   return COMPARISON[c.classification] ?? { label: c.classification, tone: 'muted' };
 }
+
+/** Colour for a 0–100 score where higher is better: coral → amber → gold → green. */
+const SCORE_STOPS: Array<[number, [number, number, number]]> = [
+  [0, [242, 134, 122]],
+  [40, [242, 155, 92]],
+  [60, [245, 196, 81]],
+  [80, [126, 214, 165]],
+  [100, [84, 207, 168]],
+];
+export function scoreColor(v: number): string {
+  const x = Math.max(0, Math.min(100, v));
+  for (let i = 1; i < SCORE_STOPS.length; i++) {
+    const [b, cb] = SCORE_STOPS[i];
+    const [a, ca] = SCORE_STOPS[i - 1];
+    if (x <= b) {
+      const t = (x - a) / (b - a);
+      const c = ca.map((n, k) => Math.round(n + (cb[k] - n) * t));
+      return `rgb(${c[0]}, ${c[1]}, ${c[2]})`;
+    }
+  }
+  return 'rgb(84, 207, 168)';
+}
+
+export const RANKING_GROUPS: Array<{ title: string; keys: string[] }> = [
+  { title: 'Fit to the target', keys: ['experimentalSuitability', 'terrainSimilarity', 'thermalCompatibility', 'geologicalRelevance'] },
+  { title: 'Practicality and evidence', keys: ['operationalFeasibility', 'evidenceCompleteness', 'interventionFeasibility'] },
+];

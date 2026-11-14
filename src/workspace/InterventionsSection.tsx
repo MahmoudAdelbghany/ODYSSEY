@@ -1,3 +1,5 @@
+import { PlanetaryVisual } from './PlanetaryVisual';
+import { VISUALS } from './visuals';
 import { useEffect, useMemo, useState } from 'react';
 import { api, type AgentStateView, type InterventionView, type ModelOutput } from '../agent/api';
 import { Badge, Disclosure, Empty, SectionHeader, Segmented } from './ui';
@@ -53,7 +55,7 @@ const OUTPUT_LABEL: Record<string, string> = {
 
 type Result = ModelOutput & { steps?: Array<{ t_h: number; setpointK: number }>; totalHours?: number; note?: string };
 
-export function InterventionsSection({ state, running }: { state: AgentStateView | null; running: boolean }) {
+export function InterventionsSection({ state, running, onCampaign }: { state: AgentStateView | null; running: boolean; onCampaign?: () => void }) {
   const options = useMemo(() => {
     const seen = new Map<string, InterventionView>();
     for (const i of state?.interventions ?? []) if (!seen.has(`${i.name}|${i.targetGap}`)) seen.set(`${i.name}|${i.targetGap}`, i);
@@ -84,7 +86,7 @@ export function InterventionsSection({ state, running }: { state: AgentStateView
   if (!options.length) {
     return (
       <>
-        <SectionHeader title="Interventions" />
+        <SectionHeader title="Simulation lab" />
         <Empty title="No interventions yet">
           {running ? 'The agent proposes interventions after it finds conditions no site can reproduce.' : 'This run found no condition that needs a controlled facility.'}
         </Empty>
@@ -94,7 +96,8 @@ export function InterventionsSection({ state, running }: { state: AgentStateView
   const tag = item ? INTERVENTION_LABEL[item.label] : null;
   return (
     <>
-      <SectionHeader title="Interventions" lead="Ways to recreate conditions that no site on Earth provides. Results are setpoints or first-order models, never measurements." />
+      <PlanetaryVisual visual={VISUALS.chamber} kicker="Simulation lab" title="How can the experiment recover what Earth cannot provide?" height={200} className="pv-hero" />
+      <SectionHeader title="Simulation lab" lead="Turn a condition Earth cannot provide into a controlled test you can plan. Outputs are setpoints or first-order models, never measurements." />
       <label className="field">
         <span className="field-label">Condition to recreate</span>
         <select className="select" value={item?.id ?? ''} onChange={(e) => { setSelectedId(e.target.value); setModelChoice(null); }}>
@@ -105,6 +108,19 @@ export function InterventionsSection({ state, running }: { state: AgentStateView
       </label>
       {item ? (
         <div className="stack ws-gap-top">
+          <section className="card lab-plan reveal" aria-label="Proposed test configuration">
+            <span className="mctl-kicker">Detected limitation</span>
+            <h3 className="lab-title">{item.targetGapLabel.split(' (')[0]}</h3>
+            <p className="muted">{item.name}</p>
+            <ol className="lab-steps">
+              <li><span className="num">01</span><div><b>What the controlled test reproduces</b><p className="muted">{clean(item.reproduces) || 'Not specified'}</p></div></li>
+              <li><span className="num">02</span><div><b>Configure the controlled condition</b><p className="muted">{item.controlVariables.length ? item.controlVariables.map((c) => `${c.name}: ${c.target ? `${c.target[0]}${c.target[1] !== c.target[0] ? ` to ${c.target[1]}` : ''} ${c.unit}` : 'to be set'}`).join('; ') : 'Control variables to be defined.'}</p></div></li>
+              <li><span className="num">03</span><div><b>Instrument and calibrate</b><p className="muted">{[...item.instrumentation.slice(0, 3), ...item.calibration.slice(0, 1)].join(', ') || 'Not specified'}</p></div></li>
+              <li><span className="num">04</span><div><b>Compare results with the target constraints</b><p className="muted">What it still cannot reproduce: {clean(item.cannotReproduce) || 'not specified'}</p></div></li>
+            </ol>
+            <p className="subtle lab-note">This is a proposed test configuration, not a completed physical simulation or a validated result.</p>
+            {onCampaign ? <button type="button" className="btn btn-secondary ws-gap-top" onClick={onCampaign}>See where it fits in the campaign →</button> : null}
+          </section>
           <div className="card">
             <div className="spread">
               <h3 className="card-title">{item.name}</h3>

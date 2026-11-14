@@ -1,7 +1,9 @@
-import { useMemo, useState } from 'react';
+import { PlanetaryVisual } from './PlanetaryVisual';
+import { targetVisual } from './visuals';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { api, type AgentStateView, type CandidateView } from '../agent/api';
-import { Badge, Disclosure, Empty, Meter, SectionHeader, Segmented } from './ui';
-import { clean, comparisonBadge, DECISION, dimensionLabel, EVIDENCE, fmtValue, HANDLING, RANKING_LABEL, REQUIREMENT_KIND } from './labels';
+import { Badge, Disclosure, Empty, SectionHeader, Segmented } from './ui';
+import { clean, comparisonBadge, DECISION, dimensionLabel, EVIDENCE, fmtValue, HANDLING, RANKING_GROUPS, RANKING_LABEL, REQUIREMENT_KIND, scoreColor } from './labels';
 import { InvestigateButton, RequirementEvidenceRow, StateBadge } from './Evidence';
 import { OUTCOME_LABEL } from '../mission/evidence';
 
@@ -37,7 +39,8 @@ export function MissionSection({ state, running }: { state: AgentStateView | nul
   const p = state.parsed;
   return (
     <>
-      <SectionHeader title="Mission" lead={`${experiments.length} experiments for ${p.body === 'Moon' ? 'the lunar south pole' : p.body === 'Mars' ? 'Mars (Jezero)' : 'an unresolved target'}${p.durationDays ? `, ${p.durationDays} days` : ''}.`} />
+      <PlanetaryVisual visual={targetVisual(p.body)} kicker={p.body === 'Mars' ? 'Mars · Jezero crater' : 'Moon · south polar region'} title="What must the mission prove?" height={200} className="pv-hero" />
+      <SectionHeader title="Experiments" lead={`${experiments.length} experiments for ${p.body === 'Moon' ? 'the lunar south pole' : p.body === 'Mars' ? 'Mars (Jezero)' : 'an unresolved target'}${p.durationDays ? `, ${p.durationDays} days` : ''}.`} />
       {p.unmatchedIntents.length ? <div className="notice">Not covered by any experiment: {p.unmatchedIntents.join('; ')}</div> : null}
       <div className="stack">
         {experiments.map((e, i) => {
@@ -82,6 +85,17 @@ export function CandidatesSection({ state, running, experimentId, onExperiment, 
   const kept = list.filter((c) => c.decision !== 'rejected');
   const rejected = list.filter((c) => c.decision === 'rejected');
   const rerank = state?.reranks.filter((r) => r.target === 'candidates' && r.experimentId === active?.id).at(-1);
+  const shown = kept.slice(0, 8);
+  const at = shown.findIndex((c) => c.siteId === selectedSiteId);
+  const firstId = shown[0]?.siteId;
+  // Open the best site automatically when the list appears or the experiment changes.
+  useEffect(() => {
+    if (firstId && at < 0) onSelectSite(firstId);
+  }, [firstId, at, onSelectSite]);
+  const listRef = useRef<HTMLOListElement | null>(null);
+  useEffect(() => {
+    listRef.current?.querySelector('.ws-candidate.is-selected')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }, [selectedSiteId]);
   return (
     <>
       <SectionHeader title="Candidates" lead="Sites that pass the hard limits for each experiment, best first." />
@@ -93,9 +107,11 @@ export function CandidatesSection({ state, running, experimentId, onExperiment, 
           <p className="subtle ws-gap-top">
             {kept.filter((c) => c.decision === 'viable').length} recommended, {kept.filter((c) => c.decision === 'downgraded').length} usable with gaps, {rejected.length} rejected out of {list.length} sites.
           </p>
-          <ol className="ws-candidates">
-            {kept.slice(0, 8).map((c, i) => (
-              <CandidateRow key={c.siteId} c={c} rank={i + 1} selected={selectedSiteId === c.siteId} onSelect={() => onSelectSite(c.siteId)} onOpen={() => onOpenSite(c.siteId)} />
+          <ol className="ws-candidates" ref={listRef}>
+            {shown.map((c, i) => (
+              <CandidateRow key={c.siteId} c={c} rank={i + 1} total={shown.length} selected={selectedSiteId === c.siteId} onSelect={() => onSelectSite(c.siteId)} onOpen={() => onOpenSite(c.siteId)}
+                onPrev={i > 0 ? () => onSelectSite(shown[i - 1].siteId) : undefined}
+                onNext={i < shown.length - 1 ? () => onSelectSite(shown[i + 1].siteId) : undefined} />
             ))}
           </ol>
           {rejected.length ? (
@@ -157,7 +173,7 @@ export function CandidatesSection({ state, running, experimentId, onExperiment, 
   );
 }
 
-function CandidateRow({ c, rank, selected, onSelect, onOpen }: { c: CandidateView; rank: number; selected: boolean; onSelect: () => void; onOpen: () => void }) {
+function CandidateRow({ c, rank, total, selected, onSelect, onOpen, onPrev, onNext }: { c: CandidateView; rank: number; total: number; selected: boolean; onSelect: () => void; onOpen: () => void; onPrev?: () => void; onNext?: () => void }) {
   const d = DECISION[c.decision];
   return (
     <li className={`ws-candidate${selected ? ' is-selected' : ''}`}>
@@ -171,16 +187,38 @@ function CandidateRow({ c, rank, selected, onSelect, onOpen }: { c: CandidateVie
         <span className="ws-score num" title="Weighted summary of the rankings below. Not a probability.">{c.aggregate ?? '–'}</span>
       </button>
       {selected ? (
-        <div className="ws-candidate-detail">
-          {Object.entries(RANKING_LABEL).map(([k, label]) => (
-            <Meter key={k} label={label} value={c.rankings[k] ?? null} />
+        <div className="ws-candidate-detail cand-detail">
+          {RANKING_GROUPS.map((g) => (
+            <section key={g.title} className="cand-group">
+              <h4>{g.title}</h4>
+              <div className="cand-tiles" style={{ ['--n' as string]: g.keys.length }}>
+                {g.keys.map((k) => {
+                  const v = c.rankings[k] ?? null;
+                  return (
+                    <div key={k} className={`cand-tile${v == null ? ' is-empty' : ''}`} style={v == null ? undefined : { ['--score' as string]: scoreColor(v) }}>
+                      <span className="cand-tile-label">{RANKING_LABEL[k]}</span>
+                      <b className="num">{v ?? 'No data'}</b>
+                      <span className="cand-tile-track"><span style={{ width: `${v ?? 0}%` }} /></span>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
           ))}
-          <ul className="list ws-gap-top">
-            {c.reasons.slice(0, 3).map((r, i) => (
-              <li key={i}>{clean(r)}</li>
-            ))}
+          <ul className="cand-reasons">
+            {c.reasons.slice(0, 3).map((r, i) => {
+              const kind = /mismatch|violat|reject|below the/i.test(r) ? 'bad' : /no data|unresolved|missing|insufficient/i.test(r) ? 'field' : /marginal|only|partial/i.test(r) ? 'warn' : 'ok';
+              return <li key={i} className={`is-${kind}`}>{clean(r)}</li>;
+            })}
           </ul>
-          <button type="button" className="btn btn-secondary btn-sm ws-gap-top" onClick={onOpen}>Investigate this site</button>
+          <div className="cand-nav">
+            <button type="button" className="btn btn-primary btn-sm" onClick={onOpen}>Investigate this site →</button>
+            <span className="cand-nav-step">
+              <button type="button" className="btn btn-ghost btn-sm" onClick={onPrev} disabled={!onPrev} aria-label="Previous site">←</button>
+              <span className="num subtle">{rank} / {total}</span>
+              <button type="button" className="btn btn-secondary btn-sm" onClick={onNext} disabled={!onNext}>Next site →</button>
+            </span>
+          </div>
         </div>
       ) : null}
     </li>
@@ -201,7 +239,7 @@ export function GapsSection({ state, running, experimentId, onExperiment, onSele
   const unknown = gaps.filter((g) => g.kind === 'unresolved_evidence');
   return (
     <>
-      <SectionHeader title="Where Earth falls short" lead="Conditions of the target that Earth does not reproduce, and whether they matter for this experiment." />
+      <SectionHeader title="Reality gap" lead="Where Earth stops being a good stand-in for the target, and whether it matters for this experiment. Missing evidence is shown as missing, never as a match." />
       <ExperimentPicker experiments={experiments} value={active?.id ?? null} onChange={onExperiment} />
       {!sites.length ? (
         <Empty title="No comparison yet">{waiting(running, 'The comparison')}</Empty>
@@ -337,7 +375,7 @@ export function GapsSection({ state, running, experimentId, onExperiment, onSele
 }
 
 /* 7. Campaign */
-export function CampaignSection({ state, running, planId, onPlan, onSelectSite }: { state: AgentStateView | null; running: boolean; planId: string | null; onPlan: (id: string) => void; onSelectSite: (id: string) => void }) {
+export function CampaignSection({ state, running, planId, onPlan, onSelectSite, onReport }: { state: AgentStateView | null; running: boolean; planId: string | null; onPlan: (id: string) => void; onSelectSite: (id: string) => void; onReport?: () => void }) {
   const campaign = state?.campaign;
   if (!campaign) {
     return (
@@ -361,6 +399,15 @@ export function CampaignSection({ state, running, planId, onPlan, onSelectSite }
             <div><span className="subtle">Weakest fit</span><b className="num">{Math.round(plan.metrics.minFit)}</b></div>
             <div><span className="subtle">Open gaps</span><b className="num">{plan.metrics.residualCount}</b></div>
           </div>
+          <div className="camp-strip" aria-label="Campaign sites">
+            {plan.stops.map((s, i) => (
+              <button key={s.siteId} type="button" className="camp-tile reveal" style={{ animationDelay: `${i * 80}ms` }} onClick={() => onSelectSite(s.siteId)}>
+                <img src={`/sites/close/${s.siteId}.jpg`} alt={`Satellite view of ${s.siteName}`} loading="lazy" onError={(e) => { const img = e.currentTarget; if (!img.src.endsWith(`/sites/${s.siteId}.jpg`)) img.src = `/sites/${s.siteId}.jpg`; }} />
+                <span><span className="num">{i + 1}</span> {s.siteName.split(',')[0]}</span>
+              </button>
+            ))}
+          </div>
+          <p className="subtle">Site imagery: Copernicus Sentinel-2 (ESA), or MODIS Terra (NASA GIBS) where no Sentinel-2 crop exists.</p>
           <ol className="ws-timeline">
             {plan.stops.map((s, i) => (
               <li key={s.siteId}>
@@ -393,6 +440,7 @@ export function CampaignSection({ state, running, planId, onPlan, onSelectSite }
               <ul className="list">{campaign.infeasible.map((x) => <li key={x.experimentId}>{x.experimentName}: {x.reasons.join('; ')}</li>)}</ul>
             </div>
           ) : null}
+          {onReport ? <button type="button" className="btn btn-primary btn-lg" onClick={onReport}>Generate the mission report →</button> : null}
         </div>
       ) : null}
     </>

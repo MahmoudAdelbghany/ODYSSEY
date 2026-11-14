@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Tone } from './labels';
+import { scoreColor } from './labels';
 
 export function Badge({ tone = 'muted', children, plain }: { tone?: Tone; children: ReactNode; plain?: boolean }) {
   return <span className={`badge badge-${tone}${plain ? ' badge-plain' : ''}`}>{children}</span>;
@@ -47,10 +48,10 @@ export function Meter({ label, value }: { label: string; value: number | null })
         <span className="no-data">No data</span>
       ) : (
         <span className="meter-track">
-          <span style={{ width: `${Math.max(2, value)}%` }} />
+          <span style={{ width: `${Math.max(2, value)}%`, background: `linear-gradient(90deg, color-mix(in srgb, ${scoreColor(value)} 35%, transparent), ${scoreColor(value)})` }} />
         </span>
       )}
-      <b>{value ?? '–'}</b>
+      <b style={value == null ? undefined : { color: scoreColor(value) }}>{value ?? '–'}</b>
     </div>
   );
 }

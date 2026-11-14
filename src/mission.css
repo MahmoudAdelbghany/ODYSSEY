@@ -12,7 +12,7 @@
 .mc-stars {
   position: absolute;
   inset: 0;
-  background: url('/img/starfield.jpg') center/cover;
+  background: url('/img/stars.svg') center/cover;
   opacity: 0.42;
   filter: saturate(0.7) brightness(0.55);
   z-index: 0;

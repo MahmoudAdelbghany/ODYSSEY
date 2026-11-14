@@ -6,7 +6,7 @@ ODYSSEY turns a mission brief ("a seven-day lunar expedition with geological sam
 
 Built by team **ناسا سبيس ابس جدا** for the NASA Space Apps Challenge 2026, *Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars*.
 
-**Try it:** [live application](https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io) · [example analysis](https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io/?run=65a483d3-9cd9-4369-b094-4df64a0c179a) · [NASA Space Apps project page](https://www.spaceappschallenge.org/2026/find-a-team/ns-sbys-bs-jd/?tab=project)
+**Try it:** [live application](https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io) · [example analysis](https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io/?run=65a483d3-9cd9-4369-b094-4df64a0c179a) · [NASA Space Apps project page](https://www.spaceappschallenge.org/2026/find-a-team/ns-sbys-bs-jd/?tab=project) · [project description (PDF)](docs/submission/ODYSSEY_project_description.pdf)
 
 ![The ODYSSEY start screen: a mission brief over a 3D Earth](docs/screenshots/v2-01-start.jpg)
 

@@ -12,7 +12,7 @@ Nothing has been committed, pushed or made public. The release candidate passes 
 | 2 | **Reranker is private** (`WA-on-test2/Reranker`, Apache-2.0) | Handled by exclusion | Not in the release; literature reranking is disabled without it. Its owner may make it public. |
 | 3 | **Existing Git history** contains a work e-mail address as commit author (27 of 31 commits) and about 250 MB of old media | Open | Recommended: publish a **fresh history** (one commit of the release candidate) under the owner's GitHub noreply address, rather than pushing this history. This needs no force-push, because the repository has no remote yet. |
 | 4 | **Rotate API keys.** The OpenCode and Serper keys were pasted into an AI chat during development. | Open | Rotate both. They are not in any tracked file, built asset, demo export or historical blob (scanned), but they were exposed outside the repository. Removing a key from files would not remove it from history; here it was never committed. |
-| 5 | **Public demo URL** | Done | Deployed on Azure Container Apps: https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io |
+| 5 | **Public demo URL** | Done | Deployed on Azure Container Apps: https://odyssey.qd.je |
 | 6 | **Decorative image provenance** | Done | The starfield, grain and poster images of unknown origin were removed. The starfield and grain are now generated procedurally (`public/img/stars.svg`, `grain.svg`). |
 | 7 | **Team name, repository URL, project page** | Done | Team ناسا سبيس ابس جدا; repository and NASA project page linked in `README.md` and the submission notes. |
 | 8 | **RADARSAT-1 attribution wording** | Minor | CSA states the archive is "released under an open license"; confirm the exact credit line. |

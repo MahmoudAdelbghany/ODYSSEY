@@ -4,7 +4,7 @@
 **Project title:** ODYSSEY: Planetary Analog Mission Planner
 
 * Public GitHub repository: https://github.com/MahmoudAdelbghany/ODYSSEY
-* Live application: https://odyssey.mangostone-fb14a5e3.swedencentral.azurecontainerapps.io
+* Live application: https://odyssey.qd.je
 * NASA Space Apps project page: https://www.spaceappschallenge.org/2026/find-a-team/ns-sbys-bs-jd/?tab=project
 * Team: ناسا سبيس ابس جدا
 

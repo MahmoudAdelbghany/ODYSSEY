@@ -5,6 +5,7 @@
 
 * Public GitHub repository: https://github.com/MahmoudAdelbghany/ODYSSEY
 * Live application: https://odyssey.qd.je
+* Demo video (30 s): https://youtu.be/i5nh3yk-ONs
 * NASA Space Apps project page: https://www.spaceappschallenge.org/2026/find-a-team/ns-sbys-bs-jd/?tab=project
 * Team: ناسا سبيس ابس جدا
 
